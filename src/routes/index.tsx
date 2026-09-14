@@ -8,6 +8,7 @@ import {
   Monitor,
   Phone,
   Refrigerator,
+  Star,
   Trees,
   Truck,
   Warehouse,
@@ -187,23 +188,41 @@ function Hero() {
 }
 
 function TrustBar() {
-  const stats = [
-    { value: "50,000+", label: "Junk removals since 2005" },
-    { value: "21 years", label: "Locally owned in San Diego" },
-    { value: "1,400+", label: "Five-star Google & Yelp reviews" },
-    { value: "Veteran", label: "Owned and family operated" },
-  ];
   return (
     <section className="border-b border-line bg-cream">
       <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-px bg-line sm:grid-cols-4">
-        {stats.map((stat) => (
-          <li key={stat.label} className="bg-cream px-4 py-6 sm:px-6">
-            <p className="font-display text-3xl font-bold tracking-wide text-ink uppercase">
-              {stat.value}
-            </p>
-            <p className="mt-1 text-sm text-taupe">{stat.label}</p>
-          </li>
-        ))}
+        <li className="bg-cream px-4 py-6 sm:px-6">
+          <p className="font-display text-2xl font-bold tracking-wide text-ink uppercase sm:text-3xl">
+            #1 in satisfied customers
+          </p>
+          <p className="mt-1 text-sm text-taupe">thousands served since 2005</p>
+        </li>
+        <li className="bg-cream px-4 py-6 sm:px-6">
+          <p className="font-display text-3xl font-bold tracking-wide text-ink uppercase">
+            21 years
+          </p>
+          <p className="mt-1 text-sm text-taupe">Local San Diego Business</p>
+        </li>
+        <li className="bg-cream px-4 py-6 sm:px-6">
+          <p className="flex gap-0.5" aria-label="Five yellow stars">
+            {Array.from({ length: 5 }, (_, i) => (
+              <Star
+                key={i}
+                className="size-6 fill-yellow-400 text-yellow-400"
+                strokeWidth={1.25}
+              />
+            ))}
+          </p>
+          <p className="mt-1 text-sm text-taupe">
+            Highest rated junk hauling service
+          </p>
+        </li>
+        <li className="bg-cream px-4 py-6 sm:px-6">
+          <p className="font-display text-3xl font-bold tracking-wide text-ink uppercase">
+            Veteran
+          </p>
+          <p className="mt-1 text-sm text-taupe">Owned and family operated</p>
+        </li>
       </ul>
     </section>
   );
