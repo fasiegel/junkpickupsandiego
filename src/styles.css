@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sand: #efe6d6;
+  --color-cream: #fbf6ec;
+  --color-paper: #fffbf4;
+  --color-ink: #1b1712;
+  --color-ink-soft: #2a241c;
+  --color-rust: #b33a0f;
+  --color-rust-hover: #9a300c;
+  --color-taupe: #6a6358;
+  --color-line: #d9cdb8;
+  --color-fill: #c9b79a;
+  --font-sans: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Barlow Condensed", "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --shadow-border:
+    0px 0px 0px 1px rgba(27, 23, 18, 0.08), 0px 1px 2px -1px rgba(27, 23, 18, 0.08),
+    0px 2px 4px 0px rgba(27, 23, 18, 0.05);
+  --shadow-border-hover:
+    0px 0px 0px 1px rgba(27, 23, 18, 0.12), 0px 1px 2px -1px rgba(27, 23, 18, 0.1),
+    0px 4px 8px 0px rgba(27, 23, 18, 0.06);
+  --bed-left: 46.8%;
+  --bed-top: 21.2%;
+  --bed-width: 50.7%;
+  --bed-height: 36.2%;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  summary {
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+@layer components {
+  .truck-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2.75rem;
+    background: transparent;
+  }
+
+  .truck-range:focus-visible {
+    outline: 2px solid var(--color-rust);
+    outline-offset: 4px;
+    border-radius: 999px;
+  }
+
+  .truck-range::-webkit-slider-runnable-track {
+    height: 0.5rem;
+    border-radius: 999px;
+    background: var(--color-line);
+  }
+
+  .truck-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-top: -0.625rem;
+    border-radius: 999px;
+    background: var(--color-rust);
+    box-shadow: var(--shadow-border);
+  }
+
+  .truck-range::-moz-range-track {
+    height: 0.5rem;
+    border-radius: 999px;
+    background: var(--color-line);
+  }
+
+  .truck-range::-moz-range-thumb {
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 0;
+    border-radius: 999px;
+    background: var(--color-rust);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
