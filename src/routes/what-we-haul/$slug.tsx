@@ -112,7 +112,7 @@ function ItemPage() {
       <section className="border-t border-line bg-cream py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h2 className="font-display text-3xl font-bold tracking-wide text-ink uppercase">
-            {item.haulingTitle} across the county
+            {item.haulingTitle} across in San Diego
           </h2>
           <ul className="mt-6 flex flex-wrap gap-2">
             {AREA_REGIONS.flatMap((region) => areasInRegion(region).slice(0, 3)).map(
