@@ -120,7 +120,7 @@ export const PRICE_EXCLUSION =
 export function quoteSms(tier: TruckTier, service: ServiceKind): string {
   const price = priceFor(tier, service);
   const label = service === "curbside" ? "curbside" : "full-service";
-  return `Hi Fred — junk haul in San Diego. Looks like about ${tier.name} (${tier.yards} cubic yards / ${tier.lbs.toLocaleString()} lbs), ${label}, around $${price}. Sending pictures to confirm.`;
+  return `Hey Fred, just wanted to confirm pricing on this quote. $${price}, ${tier.name}, ${label}.`;
 }
 
 export const NEIGHBORHOODS = [
