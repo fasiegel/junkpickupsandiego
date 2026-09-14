@@ -134,7 +134,7 @@ export const HAUL_ITEMS: HaulItem[] = [
     details:
       "We haul appliances such as refrigerators, washers, dryers, stoves, dishwashers, and water heaters for homeowners in San Diego. Empty them and unplug — we do not unhook gas or punch a water line. Curbside if it sits in the driveway or garage. Full-service if we walk it out of the kitchen. Customers get the lowest posted prices for appliance hauling in San Diego. Text a picture for a firm number.",
     price:
-      "One appliance from $69 curbside / $130 full-service. Fridge plus washer plus dryer is often a 3/10 truck.",
+      "One appliance from $69 curbside / $130 full-service. Fridge plus washer plus dryer is often Tier 3.",
     examples: [
       "Refrigerators and freezers",
       "Washers and dryers",
@@ -249,7 +249,7 @@ export const HAUL_ITEMS: HaulItem[] = [
     details:
       "We haul garage cleanouts for homeowners in San Diego. The stall that stopped being a parking spot. Mixed household junk, priced by how full the dump bed is. Use the truck load calculator, then text Fred a picture of the whole pile. You pull what you keep. Posted rates are household junk only. Customers come back for the lowest posted garage-cleanout prices in San Diego.",
     price:
-      "A stall that fills about half the bed is often 5/10 — $299 curbside / $450 full-service.",
+      "A stall that fills about half the bed is often Tier 5 — $299 curbside / $450 full-service.",
     examples: [
       "Boxes, bags, and broken furniture",
       "Old tools and holiday decor",
@@ -278,7 +278,7 @@ export const HAUL_ITEMS: HaulItem[] = [
     details:
       "We haul apartment and condo cleanouts for San Diego renters and homeowners. Furniture that failed Craigslist, mattresses, kitchen piles, and the storage cage. Loading docks count as curbside if we can drive to them. If we carry from the unit, that is full-service. Lease-end weeks fill the route — morning texts get same-day more often. Customers get the lowest posted prices for apartment cleanouts in San Diego.",
     price:
-      "A 1-bedroom cleanout is often 8/10 — $479 curbside / $720 full-service. Smaller piles use the calculator.",
+      "A 1-bedroom cleanout is often Tier 8 — $479 curbside / $720 full-service. Smaller piles use the calculator.",
     examples: [
       "Furniture that failed Craigslist",
       "Mattresses and box springs",
@@ -291,7 +291,7 @@ export const HAUL_ITEMS: HaulItem[] = [
     slogan: {
       title: "Low cost junk hauling",
       kicker: "Pay for the space you use",
-      copy: "Move-out piles priced by the dump bed. 1/10 truck from $69. A packed bed is $599 curbside. Household junk only.",
+      copy: "Move-out piles priced by the dump bed. Tier 1 from $69. A packed bed is $599 curbside. Household junk only.",
       src: "/images/job-sectional.jpg",
       alt: "Sectional sofa staged for a low-cost apartment haul in San Diego",
       variant: "panel",
@@ -339,7 +339,7 @@ export const HAUL_ITEMS: HaulItem[] = [
     details:
       "We haul patio and outdoor items such as BBQ grills, patio tables, lounge chairs, and broken umbrellas for homeowners in San Diego. Propane tanks stay with you. Yard waste, dirt, and construction debris are not on posted rates — those get a custom quote from a photo. Empty the grill. Customers get the lowest posted prices for outdoor hauling in San Diego.",
     price:
-      "A patio set at the curb is often 1/10–3/10. Mixed backyard piles are quoted from photos.",
+      "A patio set at the curb is often Tier 1–3. Mixed backyard piles are quoted from photos.",
     examples: [
       "BBQ grills, tank removed",
       "Patio tables and chairs",
@@ -367,7 +367,7 @@ export const HAUL_ITEMS: HaulItem[] = [
     summary:
       "We haul mixed household junk — bags, boxes, and broken chairs — for homeowners in San Diego. Our customers enjoy the lowest prices for junk hauling in San Diego.",
     details:
-      "We haul mixed household junk for homeowners in San Diego: bags, boxes, broken chairs, and the pile that is not one clean category. Priced by the dump bed. Slide the calculator to the fill that matches, then text a picture so Fred can confirm. Posted prices are household junk only — not construction debris or yard waste. Customers get the lowest posted truck-load rates in San Diego, from $69 for a small pile to $599 for a packed curbside truck.",
+      "We haul mixed household junk for homeowners in San Diego: bags, boxes, broken chairs, and the pile that is not one clean category. Priced by dump-bed tier. Hover the calculator to the tier that matches, then text a picture so Fred can confirm. Posted prices are household junk only — not construction debris or yard waste. Customers get the lowest posted truck-load rates in San Diego, from $69 for a small pile to $599 for a packed curbside truck.",
     price: "From $69 for a small pile to $599 for a packed curbside truck.",
     examples: [
       "Bags and boxes",

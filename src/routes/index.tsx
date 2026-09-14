@@ -115,7 +115,7 @@ function Home() {
           alt="Furniture pile in a San Diego apartment parking lot ready for a cheap haul"
           kicker="Pay for the space you use"
           title="Low cost junk hauling"
-          copy="1/10 truck from $69. A packed dump bed is $599 curbside. Household junk only."
+          copy="Tier 1 from $69. A packed dump bed is $599 curbside. Household junk only."
           variant="panel"
           flip
         />
@@ -373,7 +373,7 @@ const FAQS = [
   },
   {
     q: "How does the truck load calculator work?",
-    a: "It prices household junk by how much of a 20-cubic-yard dump bed the pile will fill, in tenths. Match the pile to a fill level, choose curbside or full-service, then text Fred a picture so he can confirm. Posted prices do not include construction debris or yard waste.",
+    a: "It prices household junk by how much of a 20-cubic-yard dump bed the pile will fill, in ten tiers. Match the pile to a tier, choose curbside or full-service, then text Fred a picture so he can confirm. Posted prices do not include construction debris or yard waste.",
   },
   {
     q: "What is the difference between curbside and full-service?",

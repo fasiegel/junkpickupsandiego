@@ -7,15 +7,16 @@ import {
   PRICE_EXCLUSION,
   priceFor,
   quoteSms,
+  TIER_COUNT,
   type ServiceKind,
   TRUCK_TIERS,
 } from "@/lib/pricing";
 import { cn } from "@/lib/utils";
 
 export function TruckCalculator() {
-  const [tenths, setTenths] = useState(3);
+  const [tierN, setTierN] = useState(3);
   const [service, setService] = useState<ServiceKind>("curbside");
-  const tier = getTier(tenths);
+  const tier = getTier(tierN);
   const price = priceFor(tier, service);
   const other: ServiceKind = service === "curbside" ? "full" : "curbside";
   const otherPrice = priceFor(tier, other);
@@ -35,8 +36,9 @@ export function TruckCalculator() {
             Hover over the truck bed to see the price.
           </h2>
           <p className="max-w-md text-base leading-relaxed text-taupe">
-            Hover or drag the cargo area — same as the slider. Household junk
-            only, from $69 for a small pile up to $599 for a packed truck.
+            Ten load tiers. Hover or drag the cargo area — same as the slider.
+            Household junk only, from $69 for Tier 1 up to $599 for a packed
+            truck.
           </p>
         </div>
 
@@ -57,7 +59,7 @@ export function TruckCalculator() {
               />
             </div>
 
-            <DumpBed tenths={tier.n} onSelect={setTenths} />
+            <DumpBed tierN={tier.n} onSelect={setTierN} />
           </div>
 
           <aside className="flex flex-col rounded-xl bg-ink p-6 text-cream shadow-[var(--shadow-border)] sm:p-8">
@@ -67,8 +69,8 @@ export function TruckCalculator() {
             <p className="mt-3 font-display text-7xl font-bold leading-none tracking-wide tabular-nums">
               ${price}
             </p>
-            <p className="mt-2 font-display text-2xl font-bold tracking-wide text-rust uppercase tabular-nums">
-              {tier.n}/10 truck
+            <p className="mt-2 font-display text-2xl font-bold tracking-wide text-rust uppercase">
+              {tier.name}
             </p>
             <p className="mt-2 text-sm text-line">
               Labor, haul, and dump included. No travel surcharge.
@@ -112,7 +114,7 @@ export function TruckCalculator() {
         <p className="mt-6 flex items-start gap-2 text-sm text-taupe">
           <MessageSquareText className="mt-0.5 size-4 shrink-0 text-rust" />
           <span>
-            Calculator shows posted truck-load rates for household junk.{" "}
+            Calculator shows posted truck-load tiers for household junk.{" "}
             {PRICE_EXCLUSION} A photo is how Fred confirms the load before the
             truck rolls.
           </span>
@@ -155,26 +157,27 @@ function ServiceToggle({
   );
 }
 
-function tenthsFromClientX(el: HTMLElement, clientX: number): number {
+function tierFromClientX(el: HTMLElement, clientX: number): number {
   const rect = el.getBoundingClientRect();
   const t = (clientX - rect.left) / Math.max(rect.width, 1);
-  return Math.min(10, Math.max(1, Math.ceil(t * 10)));
+  return Math.min(TIER_COUNT, Math.max(1, Math.ceil(t * TIER_COUNT)));
 }
 
 function DumpBed({
-  tenths,
+  tierN,
   onSelect,
 }: {
-  tenths: number;
+  tierN: number;
   onSelect: (n: number) => void;
 }) {
   const bedRef = useRef<HTMLDivElement>(null);
   const dragging = useRef(false);
+  const selected = getTier(tierN);
 
   const applyPointer = (clientX: number) => {
     const el = bedRef.current;
     if (!el) return;
-    onSelect(tenthsFromClientX(el, clientX));
+    onSelect(tierFromClientX(el, clientX));
   };
 
   return (
@@ -186,25 +189,26 @@ function DumpBed({
       <div className="relative overflow-hidden rounded-lg bg-ink">
         <img
           src="/images/dump-truck.jpg"
-          alt="Fred's dump truck with a black cargo bed, used to price a load by how full the bed is"
+          alt="Fred's dump truck with a black cargo bed, used to price a load by dump-bed tier"
           className="block h-auto w-full"
         />
 
         <div
           ref={bedRef}
-          className="absolute z-10 grid cursor-ew-resize grid-cols-10 overflow-hidden touch-none"
+          className="absolute z-10 grid cursor-ew-resize overflow-hidden touch-none"
           style={{
             left: "var(--bed-left)",
             top: "var(--bed-top)",
             width: "var(--bed-width)",
             height: "var(--bed-height)",
+            gridTemplateColumns: `repeat(${TIER_COUNT}, minmax(0, 1fr))`,
           }}
           role="slider"
-          aria-label="Dump bed fill"
+          aria-label="Dump bed load tier"
           aria-valuemin={1}
-          aria-valuemax={10}
-          aria-valuenow={tenths}
-          aria-valuetext={`${tenths} tenths of a truck`}
+          aria-valuemax={TIER_COUNT}
+          aria-valuenow={tierN}
+          aria-valuetext={selected.name}
           tabIndex={0}
           onPointerDown={(e) => {
             dragging.current = true;
@@ -225,11 +229,11 @@ function DumpBed({
           onKeyDown={(e) => {
             if (e.key === "ArrowRight" || e.key === "ArrowUp") {
               e.preventDefault();
-              onSelect(Math.min(10, tenths + 1));
+              onSelect(Math.min(TIER_COUNT, tierN + 1));
             }
             if (e.key === "ArrowLeft" || e.key === "ArrowDown") {
               e.preventDefault();
-              onSelect(Math.max(1, tenths - 1));
+              onSelect(Math.max(1, tierN - 1));
             }
             if (e.key === "Home") {
               e.preventDefault();
@@ -237,13 +241,13 @@ function DumpBed({
             }
             if (e.key === "End") {
               e.preventDefault();
-              onSelect(10);
+              onSelect(TIER_COUNT);
             }
           }}
         >
           {TRUCK_TIERS.map((cell) => {
-            const filled = cell.n <= tenths;
-            const edge = cell.n === tenths;
+            const filled = cell.n <= tierN;
+            const edge = cell.n === tierN;
             return (
               <div
                 key={cell.n}
@@ -255,7 +259,7 @@ function DumpBed({
               >
                 <span
                   className={cn(
-                    "font-display text-xs font-bold tabular-nums sm:text-sm",
+                    "font-display text-[0.65rem] font-bold tabular-nums sm:text-sm",
                     filled ? "text-ink" : "text-cream",
                   )}
                 >
@@ -276,10 +280,10 @@ function DumpBed({
       >
         <div className="mb-1 flex items-center justify-between text-sm">
           <label htmlFor="truck-fill" className="font-medium text-ink">
-            Truck fill
+            Load tier
           </label>
-          <span className="font-display text-lg font-bold tracking-wide text-rust uppercase tabular-nums">
-            {tenths}/10
+          <span className="font-display text-lg font-bold tracking-wide text-rust uppercase">
+            {selected.name}
           </span>
         </div>
         <input
@@ -287,19 +291,19 @@ function DumpBed({
           className="truck-range"
           type="range"
           min={1}
-          max={10}
+          max={TIER_COUNT}
           step={1}
-          value={tenths}
+          value={tierN}
           onChange={(e) => onSelect(Number(e.target.value))}
           aria-valuemin={1}
-          aria-valuemax={10}
-          aria-valuenow={tenths}
-          aria-valuetext={`${tenths} tenths of a truck`}
+          aria-valuemax={TIER_COUNT}
+          aria-valuenow={tierN}
+          aria-valuetext={selected.name}
         />
         <div className="mt-1 flex justify-between font-sans text-xs text-taupe">
-          <span>Small pile</span>
-          <span>Half</span>
-          <span>Packed</span>
+          <span>Tier 1</span>
+          <span>Tier 5</span>
+          <span>Tier 10</span>
         </div>
       </div>
     </div>

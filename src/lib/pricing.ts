@@ -2,6 +2,7 @@ export type ServiceKind = "curbside" | "full";
 
 export type TruckTier = {
   n: number;
+  name: string;
   yards: number;
   lbs: number;
   curbside: number;
@@ -9,9 +10,12 @@ export type TruckTier = {
   fits: string;
 };
 
+export const TIER_COUNT = 10;
+
 export const TRUCK_TIERS: TruckTier[] = [
   {
     n: 1,
+    name: "Tier 1",
     yards: 2,
     lbs: 200,
     curbside: 69,
@@ -20,6 +24,7 @@ export const TRUCK_TIERS: TruckTier[] = [
   },
   {
     n: 2,
+    name: "Tier 2",
     yards: 4,
     lbs: 400,
     curbside: 119,
@@ -28,6 +33,7 @@ export const TRUCK_TIERS: TruckTier[] = [
   },
   {
     n: 3,
+    name: "Tier 3",
     yards: 6,
     lbs: 600,
     curbside: 179,
@@ -36,6 +42,7 @@ export const TRUCK_TIERS: TruckTier[] = [
   },
   {
     n: 4,
+    name: "Tier 4",
     yards: 8,
     lbs: 800,
     curbside: 239,
@@ -44,6 +51,7 @@ export const TRUCK_TIERS: TruckTier[] = [
   },
   {
     n: 5,
+    name: "Tier 5",
     yards: 10,
     lbs: 1000,
     curbside: 299,
@@ -52,6 +60,7 @@ export const TRUCK_TIERS: TruckTier[] = [
   },
   {
     n: 6,
+    name: "Tier 6",
     yards: 12,
     lbs: 1200,
     curbside: 359,
@@ -60,6 +69,7 @@ export const TRUCK_TIERS: TruckTier[] = [
   },
   {
     n: 7,
+    name: "Tier 7",
     yards: 14,
     lbs: 1400,
     curbside: 419,
@@ -68,6 +78,7 @@ export const TRUCK_TIERS: TruckTier[] = [
   },
   {
     n: 8,
+    name: "Tier 8",
     yards: 16,
     lbs: 1600,
     curbside: 479,
@@ -76,6 +87,7 @@ export const TRUCK_TIERS: TruckTier[] = [
   },
   {
     n: 9,
+    name: "Tier 9",
     yards: 18,
     lbs: 1800,
     curbside: 539,
@@ -84,6 +96,7 @@ export const TRUCK_TIERS: TruckTier[] = [
   },
   {
     n: 10,
+    name: "Tier 10",
     yards: 20,
     lbs: 2000,
     curbside: 599,
@@ -93,7 +106,7 @@ export const TRUCK_TIERS: TruckTier[] = [
 ];
 
 export function getTier(n: number): TruckTier {
-  const clamped = Math.min(10, Math.max(1, Math.round(n)));
+  const clamped = Math.min(TIER_COUNT, Math.max(1, Math.round(n)));
   return TRUCK_TIERS[clamped - 1]!;
 }
 
@@ -107,7 +120,7 @@ export const PRICE_EXCLUSION =
 export function quoteSms(tier: TruckTier, service: ServiceKind): string {
   const price = priceFor(tier, service);
   const label = service === "curbside" ? "curbside" : "full-service";
-  return `Hi Fred — junk haul in San Diego. Looks like about a ${tier.n}/10 truck load (${tier.yards} cubic yards / ${tier.lbs.toLocaleString()} lbs), ${label}, around $${price}. Sending pictures to confirm.`;
+  return `Hi Fred — junk haul in San Diego. Looks like about ${tier.name} (${tier.yards} cubic yards / ${tier.lbs.toLocaleString()} lbs), ${label}, around $${price}. Sending pictures to confirm.`;
 }
 
 export const NEIGHBORHOODS = [
