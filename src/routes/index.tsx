@@ -18,8 +18,6 @@ import { PromoGraphic } from "@/components/promo-graphic";
 import { TruckCalculator } from "@/components/truck-calculator";
 import { Button } from "@/components/ui/button";
 import {
-  ADDRESS_CITY,
-  ADDRESS_LINE,
   BUSINESS_NAME,
   HOURS_LINE,
   PARENT_NAME,
@@ -42,10 +40,8 @@ const jsonLd = {
   telephone: "+1-619-245-9957",
   address: {
     "@type": "PostalAddress",
-    streetAddress: ADDRESS_LINE,
     addressLocality: "San Diego",
     addressRegion: "CA",
-    postalCode: "92101",
     addressCountry: "US",
   },
   openingHours: "Mo-Sa 09:00-16:00",

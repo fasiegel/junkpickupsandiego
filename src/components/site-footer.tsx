@@ -3,8 +3,6 @@ import { MessageSquareText, Phone } from "lucide-react";
 import { TruckMark } from "@/components/truck-mark";
 import { Button } from "@/components/ui/button";
 import {
-  ADDRESS_CITY,
-  ADDRESS_LINE,
   BUSINESS_NAME,
   HOURS_LINE,
   HOURS_NOTE,
@@ -57,16 +55,12 @@ export function SiteFooter() {
 
         <div>
           <p className="font-display text-lg font-bold tracking-wide uppercase">
-            Hours & shop
+            Hours
           </p>
           <p className="mt-3 text-sm leading-relaxed text-line">
             {HOURS_LINE}
             <br />
             {HOURS_NOTE}
-            <br />
-            {ADDRESS_LINE}
-            <br />
-            {ADDRESS_CITY}
           </p>
         </div>
 
