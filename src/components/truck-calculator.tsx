@@ -32,7 +32,7 @@ export function TruckCalculator() {
         </p>
         <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <h2 className="max-w-xl font-display text-4xl font-bold tracking-wide text-ink uppercase sm:text-5xl">
-            Slide the dump bed. See the number.
+            Hover over the truck bed to see the price.
           </h2>
           <p className="max-w-md text-base leading-relaxed text-taupe">
             Hover or drag the cargo area — same as the slider. Household junk
