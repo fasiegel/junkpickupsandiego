@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageHero } from "@/components/page-hero";
+import { PromoGraphic } from "@/components/promo-graphic";
 import { SiteShell } from "@/components/site-shell";
-import { DONT_HAUL, HAUL_ITEMS } from "@/lib/items";
+import { DONT_HAUL, HAUL_ITEMS, type HaulItem } from "@/lib/items";
 import { PRICE_EXCLUSION } from "@/lib/pricing";
 
 export const Route = createFileRoute("/what-we-haul/")({
@@ -20,7 +21,40 @@ export const Route = createFileRoute("/what-we-haul/")({
   component: ItemsIndex,
 });
 
+function ItemCard({ item }: { item: HaulItem }) {
+  return (
+    <Link
+      to="/what-we-haul/$slug"
+      params={{ slug: item.slug }}
+      className="group flex h-full flex-col overflow-hidden rounded-xl bg-cream shadow-[var(--shadow-border)] transition-shadow duration-150 hover:shadow-[var(--shadow-border-hover)]"
+    >
+      <img
+        src={item.image}
+        alt={item.imageAlt}
+        className="aspect-[3/2] w-full object-cover"
+      />
+      <div className="flex flex-1 flex-col px-5 py-5">
+        <p className="font-display text-xs font-semibold tracking-[0.16em] text-rust uppercase">
+          {item.kicker}
+        </p>
+        <h2 className="mt-2 font-display text-2xl font-bold tracking-wide uppercase">
+          {item.haulingTitle}
+        </h2>
+        <p className="mt-2 flex-1 text-sm leading-relaxed text-taupe">
+          {item.summary}
+        </p>
+        <span className="mt-4 text-sm font-medium text-ink group-hover:text-rust">
+          {item.haulingTitle} in San Diego
+        </span>
+      </div>
+    </Link>
+  );
+}
+
 function ItemsIndex() {
+  const first = HAUL_ITEMS.slice(0, 6);
+  const rest = HAUL_ITEMS.slice(6);
+
   return (
     <SiteShell>
       <PageHero
@@ -33,39 +67,44 @@ function ItemsIndex() {
         ]}
       />
 
+      <PromoGraphic
+        src="/images/job-carport.jpg"
+        alt="Household junk staged in a San Diego carport for pickup"
+        kicker="Same truck. Same Fred."
+        title="Reliable junk hauling"
+        copy="Furniture, mattresses, appliances, e-waste. Text a picture. The quote you accept is the amount you pay."
+      />
+
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <p className="max-w-2xl text-base leading-relaxed text-taupe">
             {PRICE_EXCLUSION} Hazardous material stays with you.
           </p>
           <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {HAUL_ITEMS.map((item) => (
+            {first.map((item) => (
               <li key={item.slug}>
-                <Link
-                  to="/what-we-haul/$slug"
-                  params={{ slug: item.slug }}
-                  className="group flex h-full flex-col overflow-hidden rounded-xl bg-cream shadow-[var(--shadow-border)] transition-shadow duration-150 hover:shadow-[var(--shadow-border-hover)]"
-                >
-                  <img
-                    src={item.image}
-                    alt={item.imageAlt}
-                    className="aspect-[3/2] w-full object-cover"
-                  />
-                  <div className="flex flex-1 flex-col px-5 py-5">
-                    <p className="font-display text-xs font-semibold tracking-[0.16em] text-rust uppercase">
-                      {item.kicker}
-                    </p>
-                    <h2 className="mt-2 font-display text-2xl font-bold tracking-wide uppercase">
-                      {item.haulingTitle}
-                    </h2>
-                    <p className="mt-2 flex-1 text-sm leading-relaxed text-taupe">
-                      {item.summary}
-                    </p>
-                    <span className="mt-4 text-sm font-medium text-ink group-hover:text-rust">
-                      {item.haulingTitle} in San Diego
-                    </span>
-                  </div>
-                </Link>
+                <ItemCard item={item} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <PromoGraphic
+        src="/images/job-driveway-sofas.jpg"
+        alt="Couches and chairs staged on a San Diego driveway for a cheap haul"
+        kicker="From $69"
+        title="Cheap junk hauling"
+        copy="Posted household rates. Pay for the space you use. Construction debris and yard waste are quoted from a photo."
+        variant="panel"
+      />
+
+      <section className="py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {rest.map((item) => (
+              <li key={item.slug}>
+                <ItemCard item={item} />
               </li>
             ))}
           </ul>
@@ -89,6 +128,16 @@ function ItemsIndex() {
           </p>
         </div>
       </section>
+
+      <PromoGraphic
+        src="/images/job-sectional.jpg"
+        alt="Three-piece leather sectional staged at a San Diego curb"
+        kicker="1,400+ five-star reviews"
+        title="San Diego's favorite hauling service"
+        copy="Locally owned. Veteran owned. Family operated since 2005. Same truck, same Fred."
+        variant="panel"
+        flip
+      />
     </SiteShell>
   );
 }

@@ -1,3 +1,13 @@
+export type HaulSlogan = {
+  title: string;
+  kicker: string;
+  copy: string;
+  src: string;
+  alt: string;
+  variant?: "overlay" | "panel";
+  flip?: boolean;
+};
+
 export type HaulItem = {
   slug: string;
   name: string;
@@ -11,6 +21,7 @@ export type HaulItem = {
   image: string;
   imageAlt: string;
   related: string[];
+  slogan: HaulSlogan;
 };
 
 export function withPlace(text: string, place: string): string {
@@ -40,6 +51,14 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-driveway-sofas.jpg",
     imageAlt: "Couches and chairs staged on a San Diego driveway",
     related: ["couches-and-sectionals", "mattresses", "garage-cleanouts"],
+    slogan: {
+      title: "Cheap junk hauling",
+      kicker: "From $69",
+      copy: "Couches, dressers, dining sets. Posted household rates. Text Fred a picture and the quote you accept is the amount you pay.",
+      src: "/images/job-apartment-lot.jpg",
+      alt: "Furniture pile in a San Diego apartment parking lot ready for a cheap haul",
+      variant: "panel",
+    },
   },
   {
     slug: "couches-and-sectionals",
@@ -63,6 +82,15 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-sectional.jpg",
     imageAlt: "Three-piece leather sectional at a San Diego curb",
     related: ["furniture", "mattresses", "apartment-cleanouts"],
+    slogan: {
+      title: "San Diego's favorite hauling service",
+      kicker: "1,400+ five-star reviews",
+      copy: "Sofas and sectionals, priced by the piece. Locally owned. Veteran owned. Same truck, same Fred.",
+      src: "/images/job-driveway-sofas.jpg",
+      alt: "Couches and chairs staged on a San Diego driveway for pickup",
+      variant: "panel",
+      flip: true,
+    },
   },
   {
     slug: "mattresses",
@@ -86,6 +114,14 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-mattress.jpg",
     imageAlt: "Queen mattress and box spring at a San Diego curb",
     related: ["furniture", "apartment-cleanouts", "household-junk"],
+    slogan: {
+      title: "Easy mattress hauling",
+      kicker: "Any size, including queen",
+      copy: "Mattress, box spring, and frame. Curbside if you stage it. Full-service if we carry it out of the bedroom.",
+      src: "/images/job-curbside-mixed.jpg",
+      alt: "Mattress and mixed household junk staged at a San Diego curb",
+      flip: true,
+    },
   },
   {
     slug: "appliances",
@@ -109,6 +145,14 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-appliances.jpg",
     imageAlt: "Refrigerator, washer, and dryer staged at a San Diego curb",
     related: ["refrigerators", "garage-cleanouts", "household-junk"],
+    slogan: {
+      title: "Appliance hauling",
+      kicker: "Emptied and disconnected",
+      copy: "Fridges, washers, dryers, and water heaters. You unplug and empty first. We take them.",
+      src: "/images/job-full-service.jpg",
+      alt: "Crew carrying bulky household items out to the dump truck",
+      variant: "panel",
+    },
   },
   {
     slug: "refrigerators",
@@ -130,6 +174,13 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-appliances.jpg",
     imageAlt: "Household refrigerator ready for junk hauling",
     related: ["appliances", "apartment-cleanouts", "e-waste"],
+    slogan: {
+      title: "Reliable junk hauling",
+      kicker: "Empty. Unplug. We take it.",
+      copy: "Kitchen fridges, garage beer fridges, mini-fridges. Recycled, not dumped. Text a picture for a firm price.",
+      src: "/images/job-carport.jpg",
+      alt: "Household junk staged in a San Diego carport",
+    },
   },
   {
     slug: "e-waste",
@@ -153,6 +204,14 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-ewaste.jpg",
     imageAlt: "TVs and computers staged for e-waste hauling in San Diego",
     related: ["tvs", "garage-cleanouts", "household-junk"],
+    slogan: {
+      title: "E-waste hauling in San Diego",
+      kicker: "Recycled, not dumped",
+      copy: "TVs, monitors, printers, computers. Recycled. Drives are not wiped. Text a picture for a firm price.",
+      src: "/images/job-apartment-lot.jpg",
+      alt: "Electronics and household junk staged for e-waste hauling in San Diego",
+      flip: true,
+    },
   },
   {
     slug: "tvs",
@@ -169,6 +228,15 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-ewaste.jpg",
     imageAlt: "Old TVs staged for pickup in San Diego",
     related: ["e-waste", "furniture", "apartment-cleanouts"],
+    slogan: {
+      title: "Reliable junk hauling",
+      kicker: "Any size we can lift",
+      copy: "Flat screens and old CRTs. Unplug it. We take it. Recycled as e-waste — not dumped in a landfill.",
+      src: "/images/job-curbside-mixed.jpg",
+      alt: "TVs and mixed household items staged at a San Diego curb",
+      variant: "panel",
+      flip: true,
+    },
   },
   {
     slug: "garage-cleanouts",
@@ -191,6 +259,13 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-carport.jpg",
     imageAlt: "Household junk staged in a San Diego carport",
     related: ["household-junk", "furniture", "appliances"],
+    slogan: {
+      title: "Curbside junk hauling",
+      kicker: "You stage it. We load.",
+      copy: "Driveway, garage, carport, or alley. You do not need to be home. Typically 30% less than full-service.",
+      src: "/images/job-driveway-sofas.jpg",
+      alt: "Household furniture staged on a San Diego driveway for curbside pickup",
+    },
   },
   {
     slug: "apartment-cleanouts",
@@ -213,6 +288,15 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-apartment-lot.jpg",
     imageAlt: "Apartment furniture pile in a San Diego parking lot",
     related: ["furniture", "mattresses", "household-junk"],
+    slogan: {
+      title: "Low cost junk hauling",
+      kicker: "Pay for the space you use",
+      copy: "Move-out piles priced by the dump bed. 1/10 truck from $69. A packed bed is $599 curbside. Household junk only.",
+      src: "/images/job-sectional.jpg",
+      alt: "Sectional sofa staged for a low-cost apartment haul in San Diego",
+      variant: "panel",
+      flip: true,
+    },
   },
   {
     slug: "gym-equipment",
@@ -235,6 +319,14 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-full-service.jpg",
     imageAlt: "Crew carrying bulky household items to the dump truck",
     related: ["garage-cleanouts", "furniture", "household-junk"],
+    slogan: {
+      title: "Full-service junk hauling",
+      kicker: "You point. We carry it out.",
+      copy: "Treadmills, ellipticals, and racks. Inside, upstairs, garage. Labor is in the posted full-service rate.",
+      src: "/images/job-carport.jpg",
+      alt: "Bulky household items ready for full-service hauling in San Diego",
+      variant: "panel",
+    },
   },
   {
     slug: "patio-and-outdoor",
@@ -257,6 +349,14 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-curbside-mixed.jpg",
     imageAlt: "Mixed household items staged at a San Diego curb",
     related: ["furniture", "household-junk", "garage-cleanouts"],
+    slogan: {
+      title: "Curbside junk hauling",
+      kicker: "You stage it. We load.",
+      copy: "Grills, patio sets, lounge chairs. Propane tanks stay with you. Stage it at the driveway and we load.",
+      src: "/images/job-mattress.jpg",
+      alt: "Household items staged at a San Diego curb for pickup",
+      flip: true,
+    },
   },
   {
     slug: "household-junk",
@@ -278,6 +378,14 @@ export const HAUL_ITEMS: HaulItem[] = [
     image: "/images/job-curbside-mixed.jpg",
     imageAlt: "Mixed household junk staged at a San Diego curb",
     related: ["garage-cleanouts", "furniture", "apartment-cleanouts"],
+    slogan: {
+      title: "Cheap junk hauling",
+      kicker: "From $69",
+      copy: "Mixed piles, bags, boxes, broken chairs. Pay for the space you use. Posted household rates from $69 to $599.",
+      src: "/images/job-full-service.jpg",
+      alt: "Crew loading mixed household junk into the dump truck",
+      variant: "panel",
+    },
   },
 ];
 

@@ -1,5 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { PageHero } from "@/components/page-hero";
+import { PromoGraphic } from "@/components/promo-graphic";
 import { SiteShell } from "@/components/site-shell";
 import { AREA_REGIONS, areasInRegion } from "@/lib/areas";
 import { getItem } from "@/lib/items";
@@ -97,6 +98,16 @@ function ItemPage() {
           </aside>
         </div>
       </section>
+
+      <PromoGraphic
+        src={item.slogan.src}
+        alt={item.slogan.alt}
+        kicker={item.slogan.kicker}
+        title={item.slogan.title}
+        copy={item.slogan.copy}
+        variant={item.slogan.variant}
+        flip={item.slogan.flip}
+      />
 
       <section className="border-t border-line bg-cream py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
