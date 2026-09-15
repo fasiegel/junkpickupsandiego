@@ -12,6 +12,4 @@ export function smsHref(body: string = DEFAULT_SMS): string {
   return `sms:${PHONE_TEL}?&body=${encodeURIComponent(body)}`;
 }
 
-export function telHref(): string {
-  return `tel:${PHONE_TEL}`;
-}
+export const BOOK_URL = "https://widget.zenbooker.com/book/fredsjunkremoval";

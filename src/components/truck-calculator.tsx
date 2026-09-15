@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from "react";
 import { ArrowRight, MessageSquareText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { smsHref } from "@/lib/contact";
+import { smsHref, BOOK_URL } from "@/lib/contact";
 import {
   getTier,
   PRICE_EXCLUSION,
@@ -99,6 +99,9 @@ export function TruckCalculator() {
             </p>
 
             <Button asChild variant="primary" size="xl" className="mt-8 w-full">
+              <a href={BOOK_URL}>Book now</a>
+            </Button>
+            <Button asChild variant="cream" size="xl" className="mt-3 w-full">
               <a href={smsHref(sms)}>
                 Text Fred this quote
                 <ArrowRight />
