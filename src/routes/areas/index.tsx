@@ -25,7 +25,7 @@ function AreasIndex() {
     <SiteShell>
       <PageHero
         kicker="Service areas"
-        title="San Diego County, driveway to dump bed."
+        title="San Diego Junk Removal & Hauling - Affordable and reliable junk hauling service"
         lede="Same posted household rates from San Ysidro to Encinitas. No hidden travel charge. Text a picture from your driveway."
         crumbs={[
           { label: "Home", to: "/" },

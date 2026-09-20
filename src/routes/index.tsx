@@ -351,7 +351,7 @@ function Areas() {
           Service area
         </p>
         <h2 className="mt-3 max-w-2xl font-display text-4xl font-bold tracking-wide text-ink uppercase sm:text-5xl">
-          San Diego County, driveway to dump bed.
+          San Diego Junk Removal & Hauling - Affordable and reliable junk hauling service
         </h2>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-taupe">
           From Chula Vista and San Ysidro through Downtown, Pacific Beach, La
