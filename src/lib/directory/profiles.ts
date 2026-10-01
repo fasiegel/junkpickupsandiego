@@ -73,9 +73,11 @@ export const PROFILES: Record<
   },
   "the-wreckin-haul": {
     details: [
-      "The Wreckin’ Haul pairs junk removal with dumpster rental for North County, and the site says same-day service is available.",
-      "Cleanout pages cover garages and attics, estates and foreclosures, offices, and retail or warehouse jobs.",
-      "They also list hot tub and shed removal, yard waste, and both residential and construction dumpsters.",
+      "The Wreckin’ Haul is a veteran-owned, family-run company based in Valley Center. Owner Sean Guerra is a military veteran and former civil servant. Call or text (760) 421-5331, or email info@thewreckinhaul.com.",
+      "They cover North County San Diego, including Escondido, San Marcos, Vista, Oceanside, Carlsbad, Fallbrook, Ramona, Poway, Del Mar, Rancho Santa Fe, and surrounding communities.",
+      "Full-service junk removal includes in-home hauls, garage and attic cleanouts, furniture and appliance disposal, e-waste recycling, and scrap metal. Dumpster rentals are roll-offs for construction, remodels, and large cleanouts. They also clear estates and foreclosures for families, realtors, executors, and property managers, and handle tenant move-outs and abandoned items.",
+      "Construction and yard debris includes drywall, tile, lumber, concrete, and green or storm waste. The site also lists hot tub and shed removal.",
+      "The quote is a firm all-in price on site, based on how much space the load takes in the truck, before any work starts. Same-day or next-day is widely available. After the load, they sort items, donate usable furniture and clothing, and send electronics to e-waste recyclers.",
     ],
     links: [
       { label: "Services", href: "https://www.thewreckinhaul.com/services" },
