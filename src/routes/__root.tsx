@@ -4,9 +4,9 @@ import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { SiteShell } from "@/components/site-shell";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "San Diego Junk Removal and Hauling";
+const APP_NAME = "Junk Pickup San Diego";
 const DESCRIPTION =
-  "San Diego junk removal and hauling from $69. A service of Fred's Junk Removal. Text Fred a picture for a firm price, or use the truck load calculator. Locally owned, veteran owned.";
+  "San Diego’s best information source for junk removal. A local hauler directory powered by Fred’s Junk Removal.";
 
 export const Route = createRootRoute({
   head: () => ({

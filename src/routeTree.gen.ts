@@ -12,6 +12,8 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AreasIndexRouteImport } from './routes/areas/index'
 import { Route as AreasSlugRouteImport } from './routes/areas/$slug'
+import { Route as HaulersIndexRouteImport } from './routes/haulers/index'
+import { Route as HaulersSlugRouteImport } from './routes/haulers/$slug'
 import { Route as WhatWeHaulIndexRouteImport } from './routes/what-we-haul/index'
 import { Route as WhatWeHaulSlugRouteImport } from './routes/what-we-haul/$slug'
 
@@ -30,6 +32,16 @@ const AreasSlugRoute = AreasSlugRouteImport.update({
   path: '/areas/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HaulersIndexRoute = HaulersIndexRouteImport.update({
+  id: '/haulers/',
+  path: '/haulers/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HaulersSlugRoute = HaulersSlugRouteImport.update({
+  id: '/haulers/$slug',
+  path: '/haulers/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const WhatWeHaulIndexRoute = WhatWeHaulIndexRouteImport.update({
   id: '/what-we-haul/',
   path: '/what-we-haul/',
@@ -44,45 +56,68 @@ const WhatWeHaulSlugRoute = WhatWeHaulSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/areas/$slug': typeof AreasSlugRoute
+  '/haulers/$slug': typeof HaulersSlugRoute
   '/what-we-haul/$slug': typeof WhatWeHaulSlugRoute
   '/areas/': typeof AreasIndexRoute
+  '/haulers/': typeof HaulersIndexRoute
   '/what-we-haul/': typeof WhatWeHaulIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/areas/$slug': typeof AreasSlugRoute
+  '/haulers/$slug': typeof HaulersSlugRoute
   '/what-we-haul/$slug': typeof WhatWeHaulSlugRoute
   '/areas': typeof AreasIndexRoute
+  '/haulers': typeof HaulersIndexRoute
   '/what-we-haul': typeof WhatWeHaulIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/areas/$slug': typeof AreasSlugRoute
+  '/haulers/$slug': typeof HaulersSlugRoute
   '/what-we-haul/$slug': typeof WhatWeHaulSlugRoute
   '/areas/': typeof AreasIndexRoute
+  '/haulers/': typeof HaulersIndexRoute
   '/what-we-haul/': typeof WhatWeHaulIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/areas/$slug' | '/what-we-haul/$slug' | '/areas/' | '/what-we-haul/'
+    | '/'
+    | '/areas/$slug'
+    | '/haulers/$slug'
+    | '/what-we-haul/$slug'
+    | '/areas/'
+    | '/haulers/'
+    | '/what-we-haul/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/areas/$slug' | '/what-we-haul/$slug' | '/areas' | '/what-we-haul'
+  to:
+    | '/'
+    | '/areas/$slug'
+    | '/haulers/$slug'
+    | '/what-we-haul/$slug'
+    | '/areas'
+    | '/haulers'
+    | '/what-we-haul'
   id:
     | '__root__'
     | '/'
     | '/areas/$slug'
+    | '/haulers/$slug'
     | '/what-we-haul/$slug'
     | '/areas/'
+    | '/haulers/'
     | '/what-we-haul/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AreasSlugRoute: typeof AreasSlugRoute
+  HaulersSlugRoute: typeof HaulersSlugRoute
   WhatWeHaulSlugRoute: typeof WhatWeHaulSlugRoute
   AreasIndexRoute: typeof AreasIndexRoute
+  HaulersIndexRoute: typeof HaulersIndexRoute
   WhatWeHaulIndexRoute: typeof WhatWeHaulIndexRoute
 }
 
@@ -109,6 +144,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AreasSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/haulers/': {
+      id: '/haulers/'
+      path: '/haulers'
+      fullPath: '/haulers/'
+      preLoaderRoute: typeof HaulersIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/haulers/$slug': {
+      id: '/haulers/$slug'
+      path: '/haulers/$slug'
+      fullPath: '/haulers/$slug'
+      preLoaderRoute: typeof HaulersSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/what-we-haul/': {
       id: '/what-we-haul/'
       path: '/what-we-haul'
@@ -129,8 +178,10 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AreasSlugRoute: AreasSlugRoute,
+  HaulersSlugRoute: HaulersSlugRoute,
   WhatWeHaulSlugRoute: WhatWeHaulSlugRoute,
   AreasIndexRoute: AreasIndexRoute,
+  HaulersIndexRoute: HaulersIndexRoute,
   WhatWeHaulIndexRoute: WhatWeHaulIndexRoute,
 }
 export const routeTree = rootRouteImport

@@ -1,0 +1,154 @@
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { Mail, MapPin, Phone } from "lucide-react";
+import { CompanyPhoto } from "@/components/company-card";
+import { PageHero } from "@/components/page-hero";
+import { SiteShell } from "@/components/site-shell";
+import { Button } from "@/components/ui/button";
+import { BOOK_URL, smsHref } from "@/lib/contact";
+import {
+  communitiesForCompany,
+  coverageLabel,
+  getCompany,
+} from "@/lib/directory/companies";
+
+export const Route = createFileRoute("/haulers/$slug")({
+  loader: ({ params }) => {
+    const company = getCompany(params.slug);
+    if (!company) throw notFound();
+    return { company };
+  },
+  head: ({ loaderData }) => {
+    if (!loaderData) return {};
+    return {
+      meta: [
+        { title: `${loaderData.company.name} | Junk Pickup San Diego` },
+        { name: "description", content: loaderData.company.blurb },
+      ],
+    };
+  },
+  component: HaulerPage,
+});
+
+function HaulerPage() {
+  const { company } = Route.useLoaderData();
+  const places = communitiesForCompany(company);
+  const showPlaces = company.coverage === "county" ? places.slice(0, 12) : places;
+  const photos = company.images.length > 0 ? company.images : ["/images/dump-truck.jpg"];
+
+  return (
+    <SiteShell>
+      <PageHero
+        kicker={company.featured ? "Featured · Powered by Fred’s" : "Local hauler"}
+        title={company.name}
+        lede={company.blurb}
+        crumbs={[
+          { label: "Home", to: "/" },
+          { label: "Haulers", to: "/haulers" },
+          { label: company.name },
+        ]}
+      />
+      <section className="py-12">
+        <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">
+          <div>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {photos.map((src) => (
+                <CompanyPhoto
+                  key={src}
+                  src={src}
+                  alt={`${company.name} photo from their website`}
+                  className="aspect-[4/3] w-full rounded-xl object-cover"
+                />
+              ))}
+            </div>
+            <ul className="mt-6 flex flex-wrap gap-2">
+              {company.specialties.map((tag) => (
+                <li
+                  key={tag}
+                  className="rounded-full bg-cream px-3 py-1 text-sm text-ink-soft"
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <aside className="h-fit rounded-xl bg-ink p-6 text-cream">
+            <p className="font-display text-sm font-semibold tracking-[0.18em] text-fill uppercase">
+              Contact
+            </p>
+            <ul className="mt-4 space-y-3 text-sm">
+              <li className="flex items-start gap-2">
+                <Phone className="mt-0.5 size-4 text-rust" />
+                {company.phone ? (
+                  <a href={`tel:${company.phone.replace(/[^\d+]/g, "")}`}>{company.phone}</a>
+                ) : (
+                  <span>Phone not listed on their site</span>
+                )}
+              </li>
+              <li className="flex items-start gap-2">
+                <Mail className="mt-0.5 size-4 text-rust" />
+                {company.email ? (
+                  <a href={`mailto:${company.email}`}>{company.email}</a>
+                ) : (
+                  <span>Email not listed</span>
+                )}
+              </li>
+              <li className="flex items-start gap-2">
+                <MapPin className="mt-0.5 size-4 text-rust" />
+                <span>{company.address ?? coverageLabel(company)}</span>
+              </li>
+            </ul>
+            {company.hours ? <p className="mt-4 text-sm text-line">{company.hours}</p> : null}
+            <div className="mt-6 flex flex-col gap-2">
+              <Button asChild variant="primary">
+                <a href={company.url}>Visit their website</a>
+              </Button>
+              {company.featured ? (
+                <>
+                  <Button asChild variant="cream">
+                    <a href={smsHref()}>Text Fred a picture</a>
+                  </Button>
+                  <Button asChild variant="cream">
+                    <a href={BOOK_URL}>Book Fred now</a>
+                  </Button>
+                </>
+              ) : null}
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section className="border-t border-line bg-cream py-12">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <h2 className="font-display text-3xl font-bold tracking-wide text-ink uppercase">
+            Where they say they work
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm text-taupe">
+            {company.coverage === "county"
+              ? "Their site describes San Diego County service. These are the communities in this guide."
+              : company.coverage.length === 0
+                ? "Their published service area is not a San Diego community list. Check the website before you book."
+                : "Matched from the cities named on their site."}
+          </p>
+          <ul className="mt-6 flex flex-wrap gap-2">
+            {showPlaces.map((place) => (
+              <li key={place.slug}>
+                <Link
+                  to="/areas/$slug"
+                  params={{ slug: place.slug }}
+                  className="inline-flex min-h-11 items-center rounded-full bg-paper px-4 text-sm font-medium text-ink-soft shadow-[var(--shadow-border)] hover:text-rust"
+                >
+                  {place.name}
+                  <span className="ml-2 text-taupe">{place.zips[0]}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          {company.coverage === "county" ? (
+            <Link to="/areas" className="mt-6 inline-block text-sm font-medium text-rust">
+              See every ZIP and community
+            </Link>
+          ) : null}
+        </div>
+      </section>
+    </SiteShell>
+  );
+}
