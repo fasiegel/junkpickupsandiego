@@ -317,7 +317,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Dumpster rental", "Demolition", "Lakeside"],
     needs: ["construction", "commercial", "cleanout"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/jb-solutions-trailer.jpg",
+      "/haulers/jb-solutions-pile.jpg",
+      "/haulers/jb-solutions-logo.jpg",
+    ],
   },
   {
     slug: "ruiz-junk-removal",
@@ -605,7 +609,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Residential", "Commercial", "Metro San Diego"],
     needs: ["commercial", "cleanout", "north-county"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/fast-pickup-junk-loads.jpg",
+      "/haulers/fast-pickup-junk-job.jpg",
+      "/haulers/fast-pickup-junk-logo.jpg",
+    ],
   },
   {
     slug: "flash-junk-removal",
