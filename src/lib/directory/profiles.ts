@@ -41,9 +41,10 @@ export const PROFILES: Record<
   },
   "junk-be-gone": {
     details: [
-      "Junk Be Gone’s San Diego page lists full trash cleanups, hot tubs, furniture, appliances, mattresses, office and storage cleanouts, construction debris, yard waste, sheds, and pianos.",
-      "Their site says they recycle a large share of each load and offers an online booking discount.",
-      "A cost article on the site explains that price depends on the size and weight of the load. The contact block lists (657) 254-3058 and info@junkbegoneinc.com.",
+      "Junk Be Gone Inc is a full-service junk removal and demolition company based in San Diego. They serve San Diego County from San Ysidro up to Encinitas, including Chula Vista, National City, La Mesa, Lemon Grove, Spring Valley, and Clairemont.",
+      "Work includes residential and commercial junk removal, interior and exterior light demolition, garage, home, office, and yard cleanups, moving assistance, office relocations, hot tub removal, appliance disposal, and furniture hauling. Their site also lists mattresses, sheds, pianos, storage cleanouts, construction debris, and yard waste.",
+      "They say they recycle up to 80% of what they haul. Special discounts are offered for military relocations and major house cleanups.",
+      "Free estimates are by phone at (657) 254-3058, by email at info@junkbegoneinc.com, or on their website. A cost page says the price depends on the size and weight of the load, and the site offers an online booking discount.",
     ],
     links: [
       { label: "San Diego junk removal", href: "https://junkbegoneinc.com/" },

@@ -116,8 +116,8 @@ export const COMPANIES: Company[] = [
     address: null,
     hours: null,
     blurb:
-      "San Diego junk removal and cleanouts. Their site lists furniture, appliances, hot tubs, construction debris, and commercial jobs, and offers online booking.",
-    specialties: ["Furniture", "Appliances", "Hot tubs", "Construction debris", "Commercial"],
+      "Full-service junk removal and demolition company based in San Diego. Homes and businesses, light demolition, cleanouts, moving help, and hot tub, appliance, and furniture hauling. They say they recycle up to 80% of each load.",
+    specialties: ["Light demolition", "Cleanouts", "Moving help", "Hot tubs", "Recycles up to 80%"],
     needs: ["furniture", "appliances", "construction", "commercial", "cleanout"],
     coverage: "county",
     images: ["/haulers/junk-be-gone-logo.jpeg"],
