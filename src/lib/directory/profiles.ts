@@ -25,9 +25,12 @@ export const PROFILES: Record<
   },
   "jdog-junk-removal": {
     details: [
-      "JDog is a veteran-operated franchise. The California pages describe residential cleanouts, furniture, appliances, hot tubs, yard waste, and estate work.",
-      "The Oceanside page names Carlsbad, Encinitas, Mission Bay, Oceanside, Rancho Santa Fe, Solana Beach, and Vista. A separate Escondido page covers inland North County.",
-      "Pricing on their site is an estimate from the volume the load takes in the truck, not a posted item menu.",
+      "JDog is a veteran-owned franchise built to create ownership and jobs for veterans and military families. The company says it runs on Respect, Integrity, and Trust, and that each location is licensed and insured.",
+      "They advertise recycling, repurposing, reselling, and local donations, and say 60% to 80% of a load stays out of the landfill. Donated items can come with a tax-deductible receipt.",
+      "Residential work includes single items such as furniture, mattresses, pianos, and hot tubs, plus whole-house, attic, garage, and estate cleanouts. Commercial work includes offices, warehouses, construction debris, and light demolition. They also list appliances, e-waste, scrap metal, tires, yard waste, household clutter, on-site dumpsters, and heavy hauls.",
+      "Hazardous waste, paints, solvents, and automotive or mercury waste are restricted or need special handling. Electronics and refrigerant appliances can carry a surcharge.",
+      "Pricing is upfront by volume and weight and includes labor, travel, transport, and disposal or recycling. Estimates are free before the work starts. Published ranges: 1/4 truck $175–$250, 1/2 truck $250–$350, 3/4 truck $350–$500, and a full truck $500–$700.",
+      "The San Diego operation is owned by military-family brothers Ryan and Seamus Fitzpatrick. Phones listed are (844) 438-5364 and (760) 291-8917. Named areas include San Diego, La Jolla, Pacific Beach, Chula Vista, El Cajon, La Mesa, Escondido, Oceanside, Carlsbad, Encinitas, Poway, and surrounding communities.",
     ],
     links: [
       { label: "San Diego location", href: "https://www.jdogjunkremoval.com/locations/california/san-diego-junk-removal/" },

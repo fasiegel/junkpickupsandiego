@@ -112,7 +112,13 @@ function HaulerPage() {
               <li className="flex items-start gap-2">
                 <Phone className="mt-0.5 size-4 text-rust" />
                 {company.phone ? (
-                  <a href={`tel:${company.phone.replace(/[^\d+]/g, "")}`}>{company.phone}</a>
+                  <span className="flex flex-col gap-1">
+                    {company.phone.split(" · ").map((number) => (
+                      <a key={number} href={`tel:${number.replace(/[^\d+]/g, "")}`}>
+                        {number}
+                      </a>
+                    ))}
+                  </span>
                 ) : (
                   <span>Phone not listed on their site</span>
                 )}
