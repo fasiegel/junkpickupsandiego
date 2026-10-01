@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { MessageSquareText, Phone } from "lucide-react";
+import { MessageSquareText } from "lucide-react";
 import { useMemo, useState } from "react";
 import { CompanyCard } from "@/components/company-card";
 import { SiteShell } from "@/components/site-shell";
 import { Button } from "@/components/ui/button";
-import { BOOK_URL, PARENT_NAME, PHONE_DISPLAY, smsHref, telHref } from "@/lib/contact";
+import { PARENT_NAME, PHONE_DISPLAY, smsHref } from "@/lib/contact";
 import { COMPANIES, NEEDS } from "@/lib/directory/companies";
 
 export const Route = createFileRoute("/")({
@@ -78,15 +78,6 @@ function Home() {
                   <MessageSquareText />
                   Text a picture
                 </a>
-              </Button>
-              <Button asChild variant="outline">
-                <a href={telHref()}>
-                  <Phone />
-                  Call
-                </a>
-              </Button>
-              <Button asChild variant="outline">
-                <a href={BOOK_URL}>Book now</a>
               </Button>
               <Button asChild variant="outline">
                 <a href={fred.url}>fredsjunkremoval.com</a>
