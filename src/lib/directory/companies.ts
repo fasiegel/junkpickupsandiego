@@ -124,16 +124,16 @@ export const COMPANIES: Company[] = [
   },
   {
     slug: "junk-punch",
-    name: "Junk Punch",
+    name: "Junk Punch Junk Removal",
     url: "https://junk-punch.com/",
     phone: "(619) 219-1503",
     email: "sdjunkpunch@gmail.com",
     address: "San Diego, CA 92102",
     hours: "Mon–Sat 6 AM – 8 PM, Sun 6 AM – 9 PM",
     blurb:
-      "Family-owned hauler based around Chula Vista that also takes bulk trash across most of San Diego County. Same-day or next-day is listed.",
-    specialties: ["Bulk trash", "Furniture", "Cardboard recycling", "Same-day"],
-    needs: ["same-day", "furniture", "commercial"],
+      "Family-owned hauler started in September 2021 by Hector and Lucy Rodriguez. They serve Chula Vista, San Diego, and the rest of the county, with same-day or next-day pickup including weekends.",
+    specialties: ["Family-owned", "Same-day", "Furniture", "Cleanouts", "Recycling"],
+    needs: ["same-day", "furniture", "appliances", "cleanout", "commercial"],
     coverage: "county",
     images: [
       "/haulers/junk-punch-photo-1.jpg",

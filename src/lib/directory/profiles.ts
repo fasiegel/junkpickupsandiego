@@ -53,9 +53,10 @@ export const PROFILES: Record<
   },
   "junk-punch": {
     details: [
-      "Junk Punch is a family-owned crew that posts separate San Diego pages for furniture, couches, appliances, mattresses, e-waste, yard waste, sheds, and rental cleanouts.",
-      "They also list commercial junk removal, attic cleanouts, cardboard recycling, and a how-we-price page.",
-      "Hours posted on the site run early morning through evening, seven days.",
+      "Junk Punch Junk Removal is a local, family-owned hauler founded in September 2021 by Hector and Lucy Rodriguez. They serve Chula Vista, San Diego, and surrounding San Diego County. Phone: (619) 219-1503.",
+      "Services include residential and commercial junk removal, furniture and couch removal, mattress and carpet hauling, appliance and e-waste disposal, yard and green waste, garage and attic cleanouts, rental and hoarder cleanouts, and scrap metal recycling. Their site also lists sheds and cardboard recycling.",
+      "Estimates are free and the price is confirmed on site before work starts. They say their rates are usually lower than the big national franchises. Same-day or next-day service is available, including weekends.",
+      "Usable goods are donated and materials such as metals, appliances, and electronics are recycled so less goes to the landfill. Hours posted on the site run early morning through evening, seven days.",
     ],
     links: [
       { label: "Junk removal services", href: "https://junk-punch.com/junk-removal-services/" },
