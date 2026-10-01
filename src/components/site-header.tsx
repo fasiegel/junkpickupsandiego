@@ -1,8 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { MessageSquareText, Phone } from "lucide-react";
 import { TruckMark } from "@/components/truck-mark";
-import { Button } from "@/components/ui/button";
-import { PARENT_NAME, PHONE_DISPLAY, smsHref, telHref } from "@/lib/contact";
+import { PARENT_NAME } from "@/lib/contact";
 
 export function SiteHeader() {
   return (
@@ -24,7 +22,7 @@ export function SiteHeader() {
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
+          <nav className="flex items-center gap-6" aria-label="Primary">
             <Link
               to="/haulers"
               className="text-sm font-medium text-ink-soft transition-colors duration-150 hover:text-rust"
@@ -37,29 +35,7 @@ export function SiteHeader() {
             >
               Service areas
             </Link>
-            <Link
-              to="/haulers/$slug"
-              params={{ slug: "freds-junk-removal" }}
-              className="text-sm font-medium text-ink-soft transition-colors duration-150 hover:text-rust"
-            >
-              Fred’s
-            </Link>
           </nav>
-
-          <div className="flex items-center gap-2">
-            <Button asChild variant="outline" size="sm" className="hidden sm:inline-flex">
-              <a href={telHref()} aria-label={`Call ${PHONE_DISPLAY}`}>
-                <Phone />
-                <span className="tabular-nums">{PHONE_DISPLAY}</span>
-              </a>
-            </Button>
-            <Button asChild size="sm">
-              <a href={smsHref()}>
-                <MessageSquareText />
-                Text Fred
-              </a>
-            </Button>
-          </div>
         </div>
       </div>
     </header>
