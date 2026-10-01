@@ -296,25 +296,6 @@ export const PROFILES: Record<
       { label: "Pricing", href: "https://www.demodiego.com/pricing" },
     ],
   },
-  "san-diego-trash-pickup": {
-    details: [
-      "This site is a San Diego quote page, not a hauler with its own published truck phone. The (800) 555-1234 number on the page is a placeholder, so it is not listed here.",
-      "The what-we-take page names household junk, furniture, appliances, mattresses, garage loads, yard waste, and construction debris, and says hazardous materials need special handling.",
-      "Separate pages exist for furniture, couches, appliances, mattresses, garage and house cleanouts, estates, move-outs, yard waste, construction debris, and commercial jobs.",
-    ],
-    links: [
-      { label: "What we take", href: "https://sandiegotrashpickup.com/what-we-take" },
-      { label: "Furniture removal", href: "https://sandiegotrashpickup.com/furniture-removal-san-diego" },
-      { label: "Couch removal", href: "https://sandiegotrashpickup.com/couch-removal-san-diego" },
-      { label: "Appliance removal", href: "https://sandiegotrashpickup.com/appliance-removal-san-diego" },
-      { label: "Mattress removal", href: "https://sandiegotrashpickup.com/mattress-removal-san-diego" },
-      { label: "Garage cleanout", href: "https://sandiegotrashpickup.com/garage-cleanout-san-diego" },
-      { label: "Estate cleanout", href: "https://sandiegotrashpickup.com/estate-cleanout-san-diego" },
-      { label: "Yard waste", href: "https://sandiegotrashpickup.com/yard-waste-removal-san-diego" },
-      { label: "Construction debris", href: "https://sandiegotrashpickup.com/construction-debris-removal-san-diego" },
-      { label: "Service areas", href: "https://sandiegotrashpickup.com/service-areas" },
-    ],
-  },
   "the-junk-transporter": {
     details: [
       "The Junk Transporter posts load prices: minimum from $90, mattress from $99, spa removal $350, a quarter truck $220, a half truck $350, and a full dump truck $550.",

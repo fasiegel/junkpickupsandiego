@@ -418,21 +418,6 @@ export const COMPANIES: Company[] = [
     ],
   },
   {
-    slug: "san-diego-trash-pickup",
-    name: "San Diego Trash Pickup",
-    url: "https://sandiegotrashpickup.com/",
-    phone: null,
-    email: null,
-    address: null,
-    hours: null,
-    blurb:
-      "Pickup site for furniture, appliances, mattresses, household junk, and cleanouts in San Diego. Request a quote on their site — a public phone was not listed.",
-    specialties: ["Furniture", "Appliances", "Mattresses", "Cleanouts"],
-    needs: ["furniture", "appliances", "cleanout"],
-    coverage: "county",
-    images: [],
-  },
-  {
     slug: "the-junk-transporter",
     name: "The Junk Transporter",
     url: "https://thejunktransporter.com/",
