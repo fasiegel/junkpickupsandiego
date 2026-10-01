@@ -70,6 +70,39 @@ function HaulerPage() {
                 </li>
               ))}
             </ul>
+            {company.details && company.details.length > 0 ? (
+              <div className="mt-8">
+                <h2 className="font-display text-2xl font-bold tracking-wide text-ink uppercase">
+                  What they haul
+                </h2>
+                <ul className="mt-3 space-y-2 text-sm leading-relaxed text-taupe">
+                  {company.details.map((line) => (
+                    <li key={line}>{line}</li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+            {company.links && company.links.length > 0 ? (
+              <div className="mt-8">
+                <h2 className="font-display text-2xl font-bold tracking-wide text-ink uppercase">
+                  On their website
+                </h2>
+                <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+                  {company.links.map((link) => (
+                    <li key={link.href}>
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex min-h-11 items-center rounded-lg bg-cream px-4 text-sm font-medium text-ink hover:text-rust"
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </div>
           <aside className="h-fit rounded-xl bg-ink p-6 text-cream">
             <p className="font-display text-sm font-semibold tracking-[0.18em] text-fill uppercase">

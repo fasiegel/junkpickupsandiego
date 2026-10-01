@@ -1,4 +1,5 @@
 import { COMMUNITIES, type Community } from "@/lib/directory/communities";
+import { PROFILES } from "@/lib/directory/profiles";
 
 export type Company = {
   slug: string;
@@ -15,6 +16,10 @@ export type Company = {
   coverage: "county" | string[];
   images: string[];
   featured?: boolean;
+  /** Original factual notes from their site. */
+  details?: string[];
+  /** Pages on their own website. */
+  links?: { label: string; href: string }[];
 };
 
 const NORTH = [
@@ -87,8 +92,8 @@ export const COMPANIES: Company[] = [
     slug: "junk-be-gone",
     name: "Junk Be Gone Inc",
     url: "https://junkbegoneinc.com/",
-    phone: null,
-    email: null,
+    phone: "(657) 254-3058",
+    email: "info@junkbegoneinc.com",
     address: null,
     hours: null,
     blurb:
@@ -374,7 +379,7 @@ export const COMPANIES: Company[] = [
     name: "The Junk Transporter",
     url: "https://thejunktransporter.com/",
     phone: "(760) 522-3215",
-    email: null,
+    email: "TheJunkTransporter@gmail.com",
     address: null,
     hours: null,
     blurb:
@@ -466,7 +471,7 @@ export const COMPANIES: Company[] = [
     phone: "(858) 399-1540",
     email: "Junkjunkysmarketing@gmail.com",
     address: null,
-    hours: null,
+    hours: "Mon–Sun, 9 AM – 6 PM",
     blurb:
       "Local San Diego junk hauling and removal company advertising eco-friendly disposal.",
     specialties: ["Eco-friendly", "Local hauling"],
@@ -477,16 +482,28 @@ export const COMPANIES: Company[] = [
   {
     slug: "bay-junk",
     name: "Bay Junk",
-    url: "https://www.bayjunk.com/",
-    phone: "(650) 241-3775",
+    url: "https://www.bayjunk.com/locations/California/junk-removal-san-diego",
+    phone: "(619) 488-6969",
     email: "info@bayjunk.com",
     address: null,
     hours: null,
     blurb:
-      "Included because you asked for this URL. Their site describes Bay Area home and business hauling (San Jose imagery), not a San Diego-only crew — confirm they will come south before you book.",
-    specialties: ["Bay Area", "Residential", "Commercial"],
-    needs: ["commercial", "cleanout"],
-    coverage: [],
+      "Bay Junk publishes a San Diego location page with a local text line, plus furniture, cleanout, and dumpster pages. They also haul in the Bay Area, so use the San Diego page when you book.",
+    specialties: ["San Diego page", "Furniture", "Cleanouts", "Dumpsters"],
+    needs: ["furniture", "cleanout", "commercial"],
+    coverage: [
+      "solana-beach",
+      "encinitas",
+      "cardiff",
+      "carmel-valley",
+      "poway",
+      "la-jolla",
+      "la-mesa",
+      "el-cajon",
+      "del-mar",
+      "carlsbad",
+      "rancho-bernardo",
+    ],
     images: [],
   },
   {
@@ -720,7 +737,10 @@ export const COMPANIES: Company[] = [
 const bySlug = new Map(COMPANIES.map((c) => [c.slug, c]));
 
 export function getCompany(slug: string): Company | undefined {
-  return bySlug.get(slug);
+  const company = bySlug.get(slug);
+  if (!company) return undefined;
+  const extra = PROFILES[slug];
+  return extra ? { ...company, ...extra } : company;
 }
 
 export function companyServes(company: Company, community: Community): boolean {
