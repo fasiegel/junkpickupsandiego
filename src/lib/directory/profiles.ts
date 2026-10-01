@@ -91,9 +91,9 @@ export const PROFILES: Record<
   },
   "junk-guys-san-diego": {
     details: [
-      "Junk Guys lists separate pages for estate, eviction, foreclosure, garage, and hoarding cleanups.",
-      "They also publish a furniture-removal page and an online book-now form.",
-      "Their homepage calls out the greater San Diego area, including Carlsbad, Vista, Oceanside, and Encinitas.",
+      "Junk Guys San Diego does junk and bulky-trash pickup. The number on the site is (760) 415-9811. They name Carlsbad, Vista, Oceanside, Encinitas, San Marcos, Solana Beach, Rancho Santa Fe, Escondido, Del Mar, La Jolla, La Mesa, Lemon Grove, National City, Spring Valley, Imperial Beach, Coronado, and Bonita, plus Fallbrook, Valley Center, and Camp Pendleton.",
+      "Work includes residential junk, furniture, appliances, and electronics, plus garage, estate, hoarding, eviction, and foreclosure cleanouts. Garage cleanouts can start with a free estimate.",
+      "They do not post a price chart. The site says to call for a quote. A recycling page points at San Diego landfills and transfer stations.",
     ],
     links: [
       { label: "Furniture removal", href: "https://www.junkguyssandiego.com/furniture-removal" },
@@ -107,9 +107,10 @@ export const PROFILES: Record<
   },
   "dmd-junk-removal": {
     details: [
-      "DMD rents dump trailers and also hauls junk. Service pages cover furniture, appliances, mattresses, garages, estates, hot tubs, construction debris, yard waste, tenant cleanouts, and hoarding cleanup.",
-      "Area pages name Oceanside, Carlsbad, Encinitas, Cardiff, Solana Beach, Del Mar, and Escondido.",
-      "Quotes can be requested by text to the number on the trailer. Pricing is a separate page from the rental page.",
+      "DMD is an owner-operated North County hauler based in San Marcos. The site says the number rings David’s phone: (951) 401-5933, info@dmdjunkremoval.com. Open 7 days, 7 AM to 7 PM. License #210040677.",
+      "Hauling prices: single item $125, quarter trailer $150–$175, half $350–$375, three-quarter $500–$525, full trailer $700–$750. Labor and dump fees are in the quote. Concrete is priced separately. Trailers rent for 3 days: 12 ft light duty $500 plus fuel, 14 ft heavy duty $550 plus fuel, with 1 ton included and $150 per ton after.",
+      "They haul furniture, mattresses, appliances, yard waste, garage and estate cleanouts, hot tubs, and construction debris. Hazardous materials and medical waste are refused. Concrete, dirt, propane, extra mattresses, tires, paint, batteries, and oil can cost extra.",
+      "Cities named include Oceanside, Carlsbad, Encinitas, Cardiff, Solana Beach, Del Mar, Escondido, San Marcos, Vista, Poway, Rancho Bernardo, and Rancho Santa Fe.",
     ],
     links: [
       { label: "Services", href: "https://www.dmdjunkremoval.com/services" },
@@ -126,9 +127,9 @@ export const PROFILES: Record<
   },
   "the-hauler": {
     details: [
-      "The Hauler publishes separate pages for bulk trash, garage clean-outs, appliances, construction cleanup, and e-waste.",
-      "Hoarder-house and estate clean-out pages are listed on their own.",
-      "Booking is a form on their site, and the truck door lists a North County phone.",
+      "The Hauler is a family-owned North County junk company based in Vista. Call (760) 331-3289 or email thehaulerjunkremoval@gmail.com. Customers often mention Nick. Free estimates. Same-day or next-day service is listed. They say they try to recycle about 75% of each load and donate usable mattresses, furniture, and clothing.",
+      "Pages cover bulk trash, garage clean-outs, appliances, construction cleanup, e-waste, hoarder-house cleanouts, and estate cleanouts.",
+      "Cities named on the site include Oceanside, Carlsbad, Encinitas, Cardiff, San Marcos, Solana Beach, Rancho Santa Fe, Del Mar, Escondido, Vista, Bonsall, Fairbanks Ranch, Fallbrook, and Camp Pendleton.",
     ],
     links: [
       { label: "Bulk trash cleanup", href: "https://www.thehaulerjunkremoval.com/bulk-trash-cleanup-service" },
@@ -143,9 +144,9 @@ export const PROFILES: Record<
   },
   "ace-hauling": {
     details: [
-      "Ace splits work between hauling and demolition. Hauling pages include furniture, spas, brush, dirt, and concrete.",
-      "Demolition pages cover concrete, construction, landscape, residential tear-outs, and swimming pools.",
-      "They also publish a pricing page and a free fill-dirt program.",
+      "Ace Hauling is a family-owned junk removal and demolition company. Owner Nick Marchand grew up in Encinitas and started the company at 21. The site says they have served San Diego County for more than 20 years. Phones are (760) 332-3366 and (800) 720-4285. They advertise $20 off and a free estimate the same day or next day.",
+      "Hauling covers furniture, spas, brush, dirt, and concrete. Demolition covers construction, landscape, residential tear-outs, pools, sheds, and grading. They also rent dumpsters and offer a free fill-dirt program.",
+      "Pricing is based on volume, job access, and a $75-per-ton disposal fee. They will not take hazardous items, oils, liquids, flammables, or asbestos. Licensed, with same-day or next-day service listed.",
     ],
     links: [
       { label: "Junk removal", href: "https://www.acehauling.com/junk-removal/" },
@@ -189,10 +190,10 @@ export const PROFILES: Record<
   },
   "junkmates": {
     details: [
-      "JunkMates is based in Encinitas and says it covers San Diego County with same-day or next-day pickup.",
-      "Service pages cover general junk, furniture, mattresses, appliances, yard and landscape waste, construction debris, construction-site cleanup, office and storage cleanouts, and dumpster rental.",
-      "Their furniture page says pricing starts around $100 and depends on the piece, weight, and location. Dumpster sizes listed are 10, 15, 20, and 40 yard.",
-      "Location pages name Del Mar, Encinitas, La Jolla, Rancho Santa Fe, Carlsbad, and downtown.",
+      "JunkMates is based at 1053 Regal Rd, Encinitas. Phone (858) 740-4750, email contact@junkmatessd.com. Yelp hours are about 7 AM to 7 PM, and Sunday 8 AM to 4 PM.",
+      "They price by how much space the junk takes, how heavy it is, and how hard it is to get out. Free in-person estimates. Same-day is offered, and they suggest booking 48 hours ahead if you need a set time. Their FAQ says coverage runs from Oceanside down to Petco Park.",
+      "They donate clothes, books, and furniture, and recycle paper and thin plastic. They do not take hazardous waste or chemicals. Appliances are accepted if water heaters and dishwashers are already unhooked. A FAQ answer puts some item prices between $100 and $140 depending on size.",
+      "Service pages cover general junk, furniture, mattresses, appliances, yard waste, construction debris, office and storage cleanouts, and dumpster rental in 10, 15, 20, and 40 yard sizes.",
     ],
     links: [
       { label: "General junk removal", href: "https://www.junkmatessd.com/general-junk-removal/" },
@@ -222,9 +223,8 @@ export const PROFILES: Record<
   },
   "jb-solutions": {
     details: [
-      "J&B Solutions is a Lakeside hauler that says it covers Lakeside, El Cajon, Santee, and the rest of San Diego County.",
-      "Their pages cover junk hauling, home clean-outs (including estates), construction debris, and both residential and commercial dumpster rental. A 20-yard and a 30-yard size are described.",
-      "The site says the company is licensed and insured and offers one-time or scheduled pickups.",
+      "J&B Solutions is a licensed Lakeside hauler for Lakeside, El Cajon, Santee, and the rest of San Diego County. Phone (619) 357-9587, email byron@jandbsolutionsca.com.",
+      "Pages cover junk hauling, home and estate cleanouts, construction debris, and residential and commercial dumpster rental. Indexed pages mention 10-yard and 30-yard dumpsters and say they recycle and donate when they can. The live site was blocking automated visits, so dollar prices were not confirmed.",
     ],
     links: [
       { label: "Junk removal", href: "https://jandbsolutionsca.com/best-junk-removal-in-lakeside-el-cajon-santee-and-all-of-san-diego-county/" },
@@ -234,9 +234,8 @@ export const PROFILES: Record<
   },
   "ruiz-junk-removal": {
     details: [
-      "Ruiz is a single-page San Diego site. The page describes junk removal, property cleanouts, trash hauling, and demo debris, and asks you to upload photos for an estimate.",
-      "Keywords on the page also name furniture and appliance hauling. There are no separate service URLs to link.",
-      "The page lists (619) 253-3200 and Ruizjunkremoval.hauling@gmail.com.",
+      "Cole started Ruiz Junk Removal and Hauling in San Diego. Phone (619) 253-3200, email Ruizjunkremoval.hauling@gmail.com. The site is one page and asks for photos.",
+      "Posted ranges: small pickup from $125, trash haul-off $250–$500, small demo loads from $225, full demo loads $550–$650. Property cleanouts include the first hour of labor free, then $85 an hour.",
     ],
     links: [],
   },
@@ -259,9 +258,9 @@ export const PROFILES: Record<
   },
   "severin-hauling": {
     details: [
-      "Severin publishes item-style pricing, a same-day page, and a cost page for San Diego junk removal.",
-      "Dedicated pages cover furniture, couches, appliances, estate cleanouts, commercial jobs, construction debris, hoarding cleanup, and hot tubs.",
-      "The crew is based in La Mesa and lists countywide areas.",
+      "Severin Hauling is a locally owned, licensed crew based in La Mesa. Phone (619) 750-0114. They say they are not a national franchise, and same-day is available across the county if you call before 2 PM.",
+      "Posted prices: small items from $69, standard items such as a couch or appliance from $100, 1/4 load $249, 3/8 $319, 1/2 $349, 5/8 $366, 3/4 $429, 7/8 $462, and a full 12-cubic-yard load $495. Labor, transport, dump fees, donation, and recycling are included.",
+      "Pages cover furniture, couches, appliances, estate cleanouts, commercial jobs, construction debris, hoarding cleanup, and hot tubs. Named areas include El Cajon, Spring Valley, La Mesa, La Jolla, Pacific Beach, Del Mar, Chula Vista, Oceanside, Carlsbad, Encinitas, Poway, Santee, Escondido, and Vista.",
     ],
     links: [
       { label: "Services", href: "https://www.severinhauling.com/services" },
@@ -278,9 +277,9 @@ export const PROFILES: Record<
   },
   "haul-out": {
     details: [
-      "Haul Out splits residential and commercial hauling onto their own pages. The FAQ says they take furniture, appliances, electronics, yard debris, and construction materials, and that they will not take hazardous items such as chemicals, propane, or paint.",
-      "Same-day and next-day pickup is listed when available, including weekends. The crew does the lifting from inside the house.",
-      "The site describes a family- and veteran-owned San Diego crew.",
+      "Haul Out is a veteran- and family-owned San Diego hauler run by Jerry and Michele Scott. Jerry served in the Army, then started the company with Michele. Text photos to (760) 685-9332. Email hauloutjunkremovalsd@gmail.com. Licensed and insured.",
+      "Posted prices: curbside single item $79–$99, small load $149–$299, medium $299–$449, large $449–$599. The price can change with load size, item type, access, urgency, or disposal fees. They do not take chemicals, hazardous waste, propane, or paint.",
+      "Residential and commercial pages cover furniture, appliances, electronics, yard debris, and construction materials. The crew does the lifting from inside the house. Same-day and next-day, including weekends, is listed when available.",
     ],
     links: [
       { label: "Residential hauling", href: "https://www.hauloutjunkremoval.com/residential-hauling-services" },
@@ -319,14 +318,17 @@ export const PROFILES: Record<
     links: [
       { label: "Junk removal services", href: "https://junkmd.com/junk-removal-services" },
       { label: "Our company", href: "https://junkmd.com/our-company" },
-      { label: "Home", href: "https://junkmd.com/" },
+      { label: "Residential", href: "https://junkmd.com/residential-junk-removal" },
+      { label: "Furniture removal", href: "https://junkmd.com/furniture-removal" },
+      { label: "Appliance removal", href: "https://junkmd.com/appliance-removal" },
+      { label: "Pricing", href: "https://junkmd.com/pricing" },
     ],
   },
   "the-junk-transporter": {
     details: [
-      "The Junk Transporter posts load prices: minimum from $90, mattress from $99, spa removal $350, a quarter truck $220, a half truck $350, and a full dump truck $550.",
-      "Their services page lists yard debris, remodeling and construction trash, estate and foreclosure cleanouts, garage and attic cleanouts, storage and office junk, and items such as appliances, furniture, hot tubs, sheds, and yard waste.",
-      "Separate pages cover move-in and move-out junk, home remodeling debris, jacuzzi and spa removal, yard waste, and landscape waste.",
+      "The Junk Transporter is a family-owned county hauler. Call or text (760) 522-3215, email TheJunkTransporter@gmail.com. Hours are 8 AM to 8 PM, seven days.",
+      "Posted prices: minimum load from $90, mattress from $99, spa removal $350 (one line says from $299), quarter dump truck $220, half $350, full dump truck $550.",
+      "They haul furniture, appliances, garage and storage cleanouts, yard waste, small equipment, and renovation debris, plus estate, eviction, foreclosure, and office jobs. The site says disposal is eco-friendly.",
     ],
     links: [
       { label: "Services we provide", href: "https://thejunktransporter.com/services-we-provide-1" },
@@ -339,28 +341,11 @@ export const PROFILES: Record<
       { label: "FAQ", href: "https://thejunktransporter.com/faq" },
     ],
   },
-  junkmd: {
-    details: [
-      "JunkMD says it has been family-owned since 2012 and posts flat-rate pricing with same-day and next-day options.",
-      "Beyond the residential, commercial, and demolition hubs, the site has pages for furniture, appliances, mattresses, hot tubs, estates, hoarder and foreclosure cleanouts, garages, attics, and yard waste.",
-    ],
-    links: [
-      { label: "Junk removal services", href: "https://junkmd.com/junk-removal-services" },
-      { label: "Residential", href: "https://junkmd.com/residential-junk-removal" },
-      { label: "Commercial", href: "https://junkmd.com/commercial-junk-removal" },
-      { label: "Furniture removal", href: "https://junkmd.com/furniture-removal" },
-      { label: "Appliance removal", href: "https://junkmd.com/appliance-removal" },
-      { label: "Mattress disposal", href: "https://junkmd.com/mattress-disposal" },
-      { label: "Hot tub removal", href: "https://junkmd.com/hot-tub-removal" },
-      { label: "Estate cleanout", href: "https://junkmd.com/estate-cleanout" },
-      { label: "Garage cleanout", href: "https://junkmd.com/garage-cleanout" },
-      { label: "Pricing", href: "https://junkmd.com/pricing" },
-    ],
-  },
   "priority-hauling": {
     details: [
-      "Priority Hauling publishes a San Diego pricing page plus pages for furniture and couches, mattresses, appliances, e-waste, carpet, and construction debris.",
-      "Cleanout pages cover storage, garages, apartments, moving, and hoarder houses, aimed at San Diego, Chula Vista, and National City. They also list spa and hot tub removal, shed removal, and dumpster rental.",
+      "Priority Hauling is owned by Austin Jones and serves San Diego County. Call or text (619) 363-2581. Open 7 days, 7:00 AM to 5:00 PM. Licensed and insured. Same-day or next-day, with senior and veteran discounts. He says the texted quote is the price.",
+      "Sample curbside prices: fridge, freezer, washer, or a standard couch from $89. A king mattress is $150. A hot tub starts at $400. Sectionals are $150–$250. Prices include mileage, labor, loading, and disposal. Harder jobs can cost more.",
+      "They also list yard waste, construction debris, sheds, pianos, swing sets, estate cleanouts, and dumpster rental, aimed at San Diego, Chula Vista, National City, La Mesa, El Cajon, and nearby cities.",
     ],
     links: [
       { label: "Pricing", href: "https://www.priorityhaulingsd.com/junkremovalpricinginsandiegochulavistanationalcity" },
@@ -377,8 +362,9 @@ export const PROFILES: Record<
   },
   "pick-and-dump": {
     details: [
-      "Pick and Dump has standalone pages for furniture, patio furniture, appliances, mattresses, yard waste, and water heaters.",
-      "Cleanout pages cover houses, apartments, garages, storage units, hoarder houses, offices, and trash enclosures, plus commercial junk removal.",
+      "Pick and Dump is based at 333 Palm Ave, Chula Vista, CA 91911. Phones on the site are (619) 552-2885 and (619) 257-4827. Email sales@pickanddump.com. Same-day and next-day service is listed.",
+      "They price by volume and say the quote includes labor, travel, and disposal. A single item or a full property cleanout is in range. Free quotes, no surprises.",
+      "Named areas are Chula Vista, National City, Bonita, Imperial Beach, Spring Valley, La Mesa, and Jamul. Pages cover furniture, appliances, mattresses, yard waste, and house, apartment, garage, storage, and commercial cleanouts.",
     ],
     links: [
       { label: "Junk removal", href: "https://www.pickanddump.com/junk-removal-service" },
@@ -395,8 +381,9 @@ export const PROFILES: Record<
   },
   "crisan-junk-removal": {
     details: [
-      "Crisan publishes residential, commercial, and cleanout hubs plus item pages for appliances, furniture, mattresses, yard waste, hot tubs, and RVs.",
-      "Other pages cover garage and attic cleanouts, estate cleanouts, office cleanouts, and a pricing page.",
+      "Crisan Junk Removal is a family-owned company founded in 2021 by Jorge I. Pimentel. Phone (619) 500-9920. They serve San Diego County, including San Diego, La Jolla, Pacific Beach, Mission Beach, Del Mar, Encinitas, Solana Beach, Chula Vista, La Mesa, Mira Mesa, National City, El Cajon, Imperial Beach, and Spring Valley. Licensed and insured. Booking online takes $20 off.",
+      "Services include residential and commercial junk, furniture and appliances, curbside pickup, property and storage cleanouts, construction cleanup, light demolition, and a skid steer. They say they recycle.",
+      "Household prices on their chart, all-in for loading, hauling, disposal, and cleanup: minimum $177, 1/8 $247, 1/4 $367, 1/2 $537, 3/4 $707, full load $827. They note one full truck equals about seven pickup beds. Construction waste is priced a bit higher, starting at a $187 minimum. Free on-site quotes.",
     ],
     links: [
       { label: "Services", href: "https://crisanjunkremoval.com/services/" },
@@ -413,8 +400,9 @@ export const PROFILES: Record<
   },
   "jc-junk-removal": {
     details: [
-      "JC Junk Removal lists furniture, appliances, mattresses, garage cleanouts, yard cleanouts, real-estate cleanouts, sheds, scrap, and hot tub removal.",
-      "An office furniture and equipment page sits alongside the household pages. City pages cover National City, Chula Vista, La Mesa, and nearby South Bay and East County cities.",
+      "JC Junk Removal is a family-owned, licensed company that says it serves all of San Diego County. Phone (619) 805-5104. A listed address is 2917 Morningside St, San Diego, CA 92139. Email Jcjunkremovalservices24@gmail.com.",
+      "They haul furniture, appliances, mattresses, garage and yard cleanouts, real-estate cleanouts, sheds, scrap, hot tubs, and office furniture. Quotes can start from photos.",
+      "City pages cover National City, Chula Vista, La Mesa, and nearby South Bay and East County cities.",
     ],
     links: [
       { label: "Services", href: "https://jcjunkremovalservices.com/services/" },
@@ -431,9 +419,9 @@ export const PROFILES: Record<
   },
   "junk-junkys": {
     details: [
-      "Junk Junkys says it works across San Diego County and lists hours of 9 AM to 6 PM, seven days.",
-      "The about page names furniture, mattresses, TVs, electronics, appliances, hot tubs, and yard waste for homes and offices.",
-      "Service pages split residential waste, commercial cleaning, construction waste, and e-waste and appliances. Booking is a form on the site.",
+      "Junk Junkys is founded by Umaid Shah. The office listed is 10606 Camino Ruiz, Ste 8-218, San Diego, CA 92126. Phone (858) 399-1540. Email Junkjunkysmarketing@gmail.com. The site lists hours of 9 AM to 6 PM, seven days. An FAQ also prints 858-205-5598.",
+      "They haul furniture, appliances, hot tubs, mattresses, TVs, electronics, yard waste, and construction or concrete debris for homes, offices, and cleanouts. Quotes are free and based on how much junk there is. No price chart is posted.",
+      "They sort for recycling and donation and say they are licensed. The locations page covers San Diego County, including Carlsbad, Encinitas, Escondido, Oceanside, Chula Vista, La Jolla, and Poway.",
     ],
     links: [
       { label: "Services", href: "https://junkjunkys.com/services/" },
@@ -447,9 +435,9 @@ export const PROFILES: Record<
   },
   "bay-junk": {
     details: [
-      "Bay Junk’s San Diego page lists Solana Beach, Encinitas, Carmel Valley, Cardiff, Poway, La Jolla, La Mesa, El Cajon, Del Mar, Carlsbad, University City, and Rancho Bernardo.",
-      "They also haul in the Bay Area, so the San Diego page is the one to use. The local text line on that page is (619) 488-6969.",
-      "Shared service pages cover residential hauling, business hauling, cleanouts, furniture, mattresses, and items they take. Pricing is described as an upfront quote based on volume, weight, and access.",
+      "Bay Junk’s San Diego page lists (619) 488-6969 and 1-855-BAY-JUNK, email info@bayjunk.com, and 1812 Chalcedony St, San Diego, CA 92109. Hours are Monday–Saturday 7:30 AM to 7:30 PM, and Sunday 8:00 AM to 5:00 PM. Yelp lists Edgardo B. They also haul in the Bay Area, so use the San Diego page.",
+      "The on-site quote includes labor, transport, taxes, and disposal, based on volume, weight, and access. The site advertises $35 off when you book. They recycle or donate what they can. They do not take paint, chemicals, asbestos, fuel, batteries, or similar hazardous items.",
+      "San Diego areas named include Cardiff, Carlsbad, Del Mar, Encinitas, La Jolla, Rancho Santa Fe, Solana Beach, Carmel Valley, University City, Poway, La Mesa, Rancho Bernardo, El Cajon, and Coronado.",
     ],
     links: [
       { label: "San Diego junk removal", href: "https://www.bayjunk.com/locations/California/junk-removal-san-diego" },
@@ -465,9 +453,9 @@ export const PROFILES: Record<
   },
   "junk-away-san-diego": {
     details: [
-      "Junk Away publishes San Diego pages for apartments, appliances, furniture, offices, hotels, warehouses, property cleanouts, and storage units.",
-      "Item pages cover couches, mattresses and beds, washers and dryers, refrigerators, and spa or hot tub removal. They also list garage cleanouts and dumpster rental.",
-      "The homepage pitches same-day home and business hauling with upfront pricing.",
+      "Junk Away is a family-owned San Diego hauler. Phone (858) 321-5555, email support@junkawaysandiego.com. Addresses printed on the quote page are 1910 Palomar Oaks Way, Carlsbad, CA 92008 and 533 Stevens Ave W, Solana Beach, CA 92075. Same-day and next-day, including after-hours and weekends.",
+      "They haul furniture, mattresses, appliances, yard waste, hot tubs, and cleanouts for homes, apartments, offices, hotels, warehouses, and storage units, plus dumpster rental. Quotes are upfront by volume and item type. They recycle and donate when they can.",
+      "Cities named include Clairemont, Coronado, Encinitas, Escondido, Mira Mesa, Mission Valley, North Park, Rancho Bernardo, Rancho Peñasquitos, San Marcos, Scripps Ranch, Oceanside, Point Loma, and Poway.",
     ],
     links: [
       { label: "Furniture removal", href: "https://junkawaysandiego.com/furniture-removal-san-diego/" },
@@ -484,16 +472,17 @@ export const PROFILES: Record<
   },
   "fast-pickup-junk": {
     details: [
-      "Fast Pickup Junk is a single-page site for the San Diego metro. It lists junk, furniture, appliances, mattresses, dump runs, trash-outs, construction debris, property cleanouts, evictions, estates, hoarder cleanouts, garages, shed demolition, and hot tub demolition.",
-      "The page says price is based on how much of the truck the load fills, and that same-day service is offered. Quotes go through the form on that page. No separate service URLs are published.",
+      "Fast Pickup Junk is a locally owned San Diego metro hauler. The live site blocked a direct visit, so there is still no phone or email on the listing. They advertise $20 off and say they will beat another quote.",
+      "Work includes furniture, appliances, mattresses, dump runs, construction debris, and property, eviction, estate, hoarder, and garage cleanouts, plus shed and hot tub demolition. Price is by how much of the truck you fill. Same-day service is listed.",
+      "Cities named include Chula Vista, Oceanside, Carlsbad, Escondido, El Cajon, Encinitas, and Vista.",
     ],
     links: [],
   },
   "flash-junk-removal": {
     details: [
-      "Flash lists countywide junk removal with a services hub, house cleanouts, hot tub removal, RV and motor-home removal, and dumpster rentals.",
-      "City pages cover San Marcos, Solana Beach, Rancho Bernardo, Encinitas, Rancho Santa Fe, Oceanside, Escondido, Vista, Del Mar, and Fallbrook.",
-      "Hours on the site are seven days, morning through evening, and they price by how full the truck is.",
+      "Flash Junk Removal is locally owned. Call or text (760) 639-8778, email Flashjunkremoval@gmail.com. Hours are 7 AM to 7 PM, seven days, with same-day or next-day service.",
+      "The minimum and a quarter load are both listed at $160, including disposal, transport, and labor. Other loads are priced by volume. They do not take hazardous waste, paint, chemicals, or tires. Loads are sorted to recycle, donate, or dispose.",
+      "Cities named include Fallbrook, San Marcos, Escondido, Vista, Rancho Bernardo, Oceanside, Del Mar, Encinitas, Rancho Santa Fe, and Solana Beach. They also rent dumpsters and list hot tub, house, and RV removal.",
     ],
     links: [
       { label: "Services", href: "https://www.flashjunkremoval.com/services" },
@@ -507,8 +496,9 @@ export const PROFILES: Record<
   },
   "clear-junk-removal": {
     details: [
-      "Clear Junk Removal’s pages cover residential and commercial hauling, furniture disposal, REO cleanouts, property cleanouts, landscaping waste, construction debris, and hot tubs.",
-      "They are based in Scripps Ranch and list North County cities plus same-day appointments.",
+      "Clear Junk Removal is based in North County. Call or text (760) 405-4347, email pmarchand06@gmail.com. A listed address is 11846 Scripps Creek Drive, San Diego, CA 92131. They say 25 years of experience, same-day appointments, and seven days a week. Quotes are upfront.",
+      "Work includes residential and commercial hauling, estate and REO cleanouts, furniture, landscaping waste, construction debris, and hot tubs. They recycle and donate when they can.",
+      "Cities named include Escondido, Poway, Oceanside, Carlsbad, Mira Mesa, Scripps Ranch, Rancho Bernardo, and Rancho Peñasquitos.",
     ],
     links: [
       { label: "Services", href: "https://www.clearjunkremoval.com/junk-removal-services-in-san-diego-residential-commercial" },
@@ -523,8 +513,9 @@ export const PROFILES: Record<
   },
   "junk-rushed": {
     details: [
-      "Junk Rushed lists services, areas served, FAQs, about, and contact as separate pages. There are no item-by-item service URLs beyond the services page.",
-      "The homepage describes same-day hauling for homes, businesses, and job sites, including yard waste, appliances, and furniture.",
+      "Junk Rushed is locally owned. Phone (619) 248-9003, email ray@junkrushsd.com. Hours are Monday–Friday, 8 AM to 8 PM. Quotes are free and based on volume and item type. They recycle and donate when they can.",
+      "Services are junk removal, yard waste, construction debris, appliance recycling, furniture, and property cleanouts for homes, offices, and estates.",
+      "Cities named include San Diego, Pacific Beach, La Jolla, Del Mar, Carlsbad, Chula Vista, and El Cajon.",
     ],
     links: [
       { label: "Services", href: "https://junkrushed.com/services/" },
@@ -536,8 +527,9 @@ export const PROFILES: Record<
   },
   "pacific-rim-junk": {
     details: [
-      "Pacific Rim publishes its own pages for furniture, appliances, e-waste, yard waste, construction debris, and cleanouts.",
-      "The company is based in Encinitas and says it covers San Diego County, including same-day pickup.",
+      "Pacific Rim Junk is a family-owned Encinitas hauler. Phone (760) 613-1111, email info@pacificrimjunk.com. Same-day pickup is offered, including some weekend appliance jobs. Free estimates. Price depends on type and volume.",
+      "They haul furniture, appliances, e-waste, yard waste, construction debris, and cleanouts, and they mention junk vehicles. Appliances with hazardous material or pressurized tanks are refused. Loads are sorted for recycling, donation, or the landfill.",
+      "Cities named run from Oceanside, Vista, and Carlsbad through the beach cities, Clairemont, North Park-adjacent areas, and South Bay cities including National City, Chula Vista, and Imperial Beach.",
     ],
     links: [
       { label: "Furniture removal", href: "https://pacificrimjunk.com/furniture-removal-service/" },
@@ -551,23 +543,24 @@ export const PROFILES: Record<
   },
   "strong-hauling": {
     details: [
-      "Strong Hauling is a one-page site for the whole county, open daily 7 AM to 7 PM, and the page says there is no extra charge after hours.",
-      "The services list on that page includes furniture, mattresses, couches, garage cleanup, hoarder cleanouts, hot tubs and spas, appliances, TVs, exercise equipment, scrap metal, sheds, fences, yard waste, and dirt and concrete.",
-      "They name cities from Chula Vista and National City through North County, East County, and beach towns. There are no separate service URLs.",
+      "Strong Hauling is a family-owned, one-page county hauler. Phone (858) 866-9345. Open daily 7 AM to 7 PM, and the page says there is no extra charge after hours. The price includes gas, labor, and dump fees.",
+      "The list includes furniture, mattresses, couches, garage cleanup, hoarder cleanouts, hot tubs, appliances, TVs, exercise equipment, scrap metal, sheds, fences, yard waste, and dirt and concrete.",
+      "They name cities across the county, from Chula Vista and National City through North County, East County, and the beach towns. There are no separate service URLs.",
     ],
     links: [],
   },
   "the-junkiez": {
     details: [
-      "The Junkiez San Diego site is a single page. It describes same-day pickup for furniture, appliances, and cleanouts, and also names Orange County and Los Angeles.",
-      "The San Diego number on the page is (619) 759-7005. There are no separate service URLs to link.",
+      "The Junkiez San Diego site is a single page. Full-service junk removal starts at $99, with same-day pickup seven days a week. Licensed and insured. They recycle and donate.",
+      "San Diego cities named include downtown, La Jolla, Chula Vista, Oceanside, Escondido, and Carlsbad. They also list Orange County and Los Angeles. Phone (619) 759-7005. No separate service URLs.",
     ],
     links: [],
   },
   "monarch-junk-removal": {
     details: [
-      "Monarch has services, furniture, commercial, service-area, and pricing pages, plus online booking.",
-      "The site says the company is veteran-owned, covers San Diego County, and takes furniture, appliances, yard waste, office junk, and hot tubs.",
+      "Monarch is a locally owned, veteran-owned county hauler. Phones on the site include (844) 619-5865, (888) 996-5865, and (619) 806-2978. Email info@monarchjunkremoval.com. A terms address is 4142 Adams Avenue Ste 103 Box 430, San Diego, CA 92116.",
+      "Pricing page: about $125 for an eighth of a truck, quarter $200–$300, half $350–$450, three-quarter $500–$600, full $650–$800. A dumpster bag pickup is estimated at $215. Heavy material can cost more. Final price is set on site.",
+      "They haul furniture, appliances, electronics, yard waste, construction debris, office junk, hot tubs, sheds, and estate or hoarder cleanouts. They do not take fuel, paints, chemicals, pesticides, or biohazard. Usable items are recycled or donated.",
     ],
     links: [
       { label: "Services", href: "https://monarchjunkremoval.com/services/" },
@@ -581,8 +574,9 @@ export const PROFILES: Record<
   },
   "fetch-junk": {
     details: [
-      "FETCH publishes appliance removal, mattress removal, and a junk-removal pricing page, plus city pages for La Mesa, El Cajon, and Santee.",
-      "They also offer online booking. The La Mesa crew says quotes can be given from texted photos and that hours run early to late, seven days.",
+      "FETCH is a family-owned La Mesa company. Daniel V. is the owner. The office is 9131 Fletcher Pkwy, Suite 122b, La Mesa, CA 91942. Phone (619) 333-8447, email fetchjunkremoval@gmail.com. Hours are 6:30 AM to 9:00 PM, seven days.",
+      "Prices start at $89 for a small pile, $189 for a quarter load, $349 for a half, and $649 for a full load. Examples: small mattress $99, large mattress $109, small sofa from $119, refrigerator $99–$139, hot tub from $389, estate cleanout from $700. Curbside pickups are discounted.",
+      "They haul appliances, furniture, mattresses, e-waste, yard debris, construction debris, and estate or storage cleanouts, and they do light demolition. Hazardous waste is priced separately. They recycle and donate when they can. County coverage, with a focus on La Mesa, El Cajon, and Santee.",
     ],
     links: [
       { label: "Services", href: "https://www.fetchjunk.com/services/" },
@@ -597,8 +591,9 @@ export const PROFILES: Record<
   },
   "you-call-it-we-haul-it": {
     details: [
-      "You Call It We Haul It lists appliance, furniture, residential, and commercial removal, plus construction debris, yard waste, jacuzzi removal, demolition, and truck rentals.",
-      "The Chula Vista company publishes a long city list and a service-area page, and says same-day or next-day service is available.",
+      "You Call It We Haul It is a family- and woman-owned company. Phone (858) 215-5815. Hours are 6:00 AM to 8:00 PM, seven days. A listed address is 488 Emerson St., Chula Vista, CA 91911. Same-day or next-day is available for many jobs.",
+      "Work includes junk removal, kitchen and bathroom demolition, shed removal, carpet, drywall, deep cleaning, truck rentals, and residential and commercial cleanouts. Items include furniture, mattresses, appliances, yard waste, scrap, and renovation debris.",
+      "Cities named include San Diego, Carlsbad, San Marcos, Lakeside, Alpine, Chula Vista, Encinitas, Solana Beach, Del Mar, Poway, La Jolla, Coronado, Ramona, La Mesa, Jamul, and El Cajon.",
     ],
     links: [
       { label: "Waste removal", href: "https://www.youcallitwehaulitca.com/waste-removal-services" },
@@ -615,8 +610,8 @@ export const PROFILES: Record<
   },
   "junk-haul-team": {
     details: [
-      "Junk Haul Team has pages for furniture, appliances, construction cleanup, yard debris, property cleanouts, and storage units.",
-      "The site describes a veteran-owned San Diego crew with same-day service.",
+      "Junk Haul Team is a veteran-owned, licensed San Diego crew at the 92102 ZIP. Phone (619) 851-6426. Same-day service and free estimates are listed. A $99 special is advertised, but the site does not say what that price covers.",
+      "Pages cover furniture, appliances, construction cleanup, yard debris, property cleanouts, and storage units across San Diego County.",
     ],
     links: [
       { label: "Furniture removal", href: "https://junkhaulteam.com/furniture-removal-san-diego/" },
