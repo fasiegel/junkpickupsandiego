@@ -245,12 +245,12 @@ export const COMPANIES: Company[] = [
     url: "https://www.junkfairy.com/",
     phone: "(858) 361-7941",
     email: "info@junkfairy.com",
-    address: null,
+    address: "10884 Sabre Hill Dr, San Diego, CA 92128",
     hours: null,
     blurb:
-      "San Diego hauling crew that brands itself as the city’s pink junk-removal team. They advertise fast residential pickups.",
-    specialties: ["Residential hauling", "Eco-friendly"],
-    needs: ["furniture", "cleanout"],
+      "Family-owned San Diego crew, known for the pink truck. Full-service pickups start at $145, with same-day or next-day service and posted load prices.",
+    specialties: ["Family-owned", "Posted pricing", "Furniture", "Appliances", "Same-day"],
+    needs: ["same-day", "furniture", "appliances", "cleanout", "commercial"],
     coverage: "county",
     images: [
       "/haulers/junk-fairy-photo-4.webp",
@@ -266,10 +266,10 @@ export const COMPANIES: Company[] = [
     phone: "(619) 277-7241",
     email: "info@haulawayanyday.com",
     address: null,
-    hours: null,
+    hours: "7:00 AM – 7:00 PM",
     blurb:
-      "San Diego junk removal for furniture, appliances, garage and yard piles, and tenant cleanouts, with same-day pickup listed.",
-    specialties: ["Same-day", "Tenant cleanouts", "Garage cleanouts"],
+      "Family-owned San Diego hauler run by Francisco and Yadira. Furniture, appliances, yard waste, and construction debris, with same-day or next-day service and upfront pricing.",
+    specialties: ["Family-owned", "Same-day", "Furniture", "Appliances", "Construction debris"],
     needs: ["same-day", "furniture", "appliances", "cleanout"],
     coverage: "county",
     images: [
@@ -304,12 +304,12 @@ export const COMPANIES: Company[] = [
     url: "https://www.thehaulingcrewsd.com/",
     phone: "(619) 490-0223",
     email: "sdhaulingcrew@gmail.com",
-    address: null,
-    hours: null,
+    address: "P.O. Box 16364, San Diego, CA 92176",
+    hours: "7:00 AM – 5:00 PM",
     blurb:
-      "San Diego hauling company for trash, gravel, and dump-truck loads as well as household junk.",
-    specialties: ["Dump truck hauling", "Gravel", "Trash"],
-    needs: ["construction", "commercial"],
+      "Family-owned San Diego crew for appliances, furniture, electronics, construction hauling, and cleanouts. They offer free on-site estimates and a curbside discount.",
+    specialties: ["Family-owned", "Appliances", "Construction", "Cleanouts", "Free estimates"],
+    needs: ["furniture", "appliances", "construction", "commercial", "cleanout"],
     coverage: "county",
     images: [
       "/haulers/the-hauling-crew-photo-1.jpg",
@@ -362,11 +362,11 @@ export const COMPANIES: Company[] = [
     url: "https://sajunkhaul.com/service-area/san-diego-ca/",
     phone: "(760) 708-1965",
     email: "Estimates@SAjunkhaul.com",
-    address: null,
+    address: "San Marcos, CA",
     hours: null,
     blurb:
-      "San Diego page covers home and business cleanouts plus furniture, appliances, mattresses, and trash.",
-    specialties: ["Home cleanouts", "Business cleanouts", "Mattresses"],
+      "North County hauler based in San Marcos. Homes and businesses, furniture, appliances, yard waste, and construction debris, with same-day service listed.",
+    specialties: ["Same-day", "North County", "Furniture", "Appliances", "Cleanouts"],
     needs: ["furniture", "appliances", "cleanout", "commercial"],
     coverage: "county",
     images: [
@@ -424,9 +424,9 @@ export const COMPANIES: Company[] = [
     address: null,
     hours: null,
     blurb:
-      "Residential junk removal across San Diego County, including furniture, appliances, yard waste, and estate cleanouts, with same-day listed.",
-    specialties: ["Estate cleanouts", "Yard waste", "Same-day"],
-    needs: ["same-day", "furniture", "appliances", "cleanout"],
+      "Family-owned demolition and junk removal company with 20-plus years in San Diego County. Same-day household hauling plus pools, concrete, kitchens, and other tear-outs. The quote is flat-rate before work starts.",
+    specialties: ["Demolition", "Same-day", "Estate cleanouts", "Posted pricing", "Family-owned"],
+    needs: ["same-day", "furniture", "appliances", "cleanout", "construction", "commercial"],
     coverage: "county",
     images: [
       "/haulers/demo-diego-photo-3.jpg",
@@ -456,11 +456,11 @@ export const COMPANIES: Company[] = [
     url: "https://junkmd.com/",
     phone: "(858) 869-9448",
     email: "dave@junkmd.com",
-    address: null,
-    hours: null,
+    address: "4901 Morena Blvd #105, San Diego, CA 92117",
+    hours: "Mon–Sat",
     blurb:
-      "Family-owned San Diego hauler since 2012. The site advertises same-day and next-day service with flat-rate pricing.",
-    specialties: ["Flat-rate", "Same-day", "Family-owned"],
+      "Family-owned San Diego hauler since 2012. Flat-rate truck pricing from a $119 minimum to $899 for a full truck, same-day or next-day, with donation and recycling first.",
+    specialties: ["Family-owned", "Flat-rate", "Same-day", "Since 2012"],
     needs: ["same-day", "cleanout", "furniture"],
     coverage: "county",
     images: [

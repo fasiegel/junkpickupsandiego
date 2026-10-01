@@ -161,8 +161,10 @@ export const PROFILES: Record<
   },
   "junk-fairy": {
     details: [
-      "Junk Fairy publishes San Diego pages for furniture removal, appliance disposal, and commercial waste. Those are the service pages on the site.",
-      "The truck advertises a starting price, and the site has an about page plus an on-page pricing section.",
+      "Junk Fairy is a family-owned, full-service San Diego hauler. Yelp lists Arman as the owner, at 10884 Sabre Hill Dr, San Diego 92128. Call (858) 361-7941.",
+      "They haul appliances, furniture, hot tubs, office equipment, scrap metal, mattresses, electronics, bicycles, carpet, and bulky items, plus home and commercial cleanouts. Same-day or next-day is offered.",
+      "Posted load prices start at $145. Small loads are $145–$365, medium $365–$565, large $565–$765, and extra-large $765–$965. The quote is given before they load. They recycle and donate usable items.",
+      "A business listing describes county coverage from Oceanside through Poway, Mira Mesa, Clairemont, Rancho Peñasquitos, Rancho Bernardo, North Park, and La Mesa.",
     ],
     links: [
       { label: "Furniture removal", href: "https://www.junkfairy.com/furniture-removal-san-diego" },
@@ -174,8 +176,9 @@ export const PROFILES: Record<
   },
   "haul-away-any-day": {
     details: [
-      "Haul Away Any Day lists furniture, appliances, garage and yard piles, and tenant cleanouts, with same-day pickup called out.",
-      "The site is a short set of pages: services, about, a no-obligation estimate form, and contact. There are no separate item URLs beyond the services page.",
+      "Haul Away Any Day is a family-owned San Diego hauler. Yelp lists Francisco and Yadira as the owners. Phone (619) 277-7241. Hours listed are 7:00 AM to 7:00 PM.",
+      "Services include furniture and appliance disposal, yard waste, construction debris such as wood, drywall, tile, brick, concrete, and dirt, plus garage, attic, and shed cleanouts and property-manager jobs. Same-day or next-day service is listed.",
+      "They post prices on the site and say the quote is the price, with no hidden fees. Usable items are donated and the rest is recycled when they can.",
     ],
     links: [
       { label: "Services", href: "https://haulawayanyday.com/services/" },
@@ -205,8 +208,9 @@ export const PROFILES: Record<
   },
   "the-hauling-crew": {
     details: [
-      "The Hauling Crew’s junk-removal page covers appliances, furniture, electronics, hot tubs and jacuzzis, and mattresses, and says they try to donate or recycle before landfilling.",
-      "They also publish dumpster rental and storage pages.",
+      "The Hauling Crew is a family-owned San Diego hauler. Phone and text (619) 490-0223, email sdhaulingcrew@gmail.com, mailing address P.O. Box 16364, San Diego, CA 92176. The site lists hours of 7:00 AM to 5:00 PM.",
+      "They haul appliances, furniture, electronics, hot tubs, and mattresses, and take construction loads. Appliances are donated or recycled when possible. They also rent dumpsters.",
+      "Estimates are free on site. They say they will match another quote, and they list a 20% discount for curbside pickups.",
     ],
     links: [
       { label: "Junk removal", href: "https://www.thehaulingcrewsd.com/junk-removal" },
@@ -238,8 +242,9 @@ export const PROFILES: Record<
   },
   "sa-junk-haul": {
     details: [
-      "SA Junk Haul’s San Diego page sits next to residential, commercial, apartment, and office cleanout pages.",
-      "They also publish furniture disposal, appliance removal, and mattress disposal pages.",
+      "SA Junk Haul is based in San Marcos and serves North County plus a San Diego service-area page. Phone (760) 708-1965. Email Estimates@SAjunkhaul.com. Same-day service is listed.",
+      "Their services page names Rancho Bernardo, Carmel Valley, Hidden Meadows, Fairbanks Ranch, and Bonsall, and covers furniture, appliances, yard waste, and construction debris for homes and businesses.",
+      "Separate pages cover residential, commercial, apartment, and office cleanouts, plus furniture, appliance, and mattress disposal. They say salvageable items are recycled or donated.",
     ],
     links: [
       { label: "San Diego service area", href: "https://sajunkhaul.com/service-area/san-diego-ca/" },
@@ -288,8 +293,10 @@ export const PROFILES: Record<
   },
   "demo-diego": {
     details: [
-      "Demo Diego’s junk pages cover furniture, appliances, estate cleanouts, yard waste, hot tubs, foreclosure cleanouts, construction debris, and same-day pickup.",
-      "Separate demolition pages cover pools, concrete, kitchens, bathrooms, decks, and commercial tear-outs. Commercial pages also list daily junk, weekly waste, and construction-site cleanup.",
+      "Demo Diego is a family-owned demolition and junk removal company with more than 20 years in business. They serve San Diego County, including Carlsbad, Oceanside, Encinitas, Escondido, La Jolla, and Del Mar, and also name Temecula. Call or text (760) 860-8080.",
+      "Junk removal includes furniture, appliances, e-waste, yard waste, hot tubs, estates, foreclosures, construction debris, and same-day pickup. Demolition includes pools, concrete, kitchens, bathrooms, garages, and commercial tear-outs.",
+      "Junk prices on their site: same-day $150–$600, furniture $100–$500, appliances $100–$400, construction debris $250–$1,200, estate cleanouts $500–$3,000, yard waste $150–$500, hot tubs $350–$800. By volume they list about $100–$200 for a few items up to $650–$900 for a full load. The quote covers labor, loading, hauling, and disposal.",
+      "They do not take paint, chemicals, asbestos, or biological waste.",
     ],
     links: [
       { label: "Junk removal", href: "https://www.demodiego.com/junk-removal" },
@@ -301,6 +308,18 @@ export const PROFILES: Record<
       { label: "Same-day junk removal", href: "https://www.demodiego.com/junk-removal/same-day-junk-removal" },
       { label: "Pool demolition", href: "https://www.demodiego.com/demolition/pool-demolition" },
       { label: "Pricing", href: "https://www.demodiego.com/pricing" },
+    ],
+  },
+  "junkmd": {
+    details: [
+      "JunkMD is a family-owned San Diego hauler started in 2012. The office listed is 4901 Morena Blvd #105, San Diego, CA 92117. Phone (858) 869-9448, email dave@junkmd.com. Hours are Monday through Saturday, with two-hour arrival windows.",
+      "They do residential and commercial house calls: furniture, appliances, mattresses, electronics, garage and estate cleanouts, yard waste, and office junk. They do not take chemicals, paint, or asbestos. Same-day or next-day is listed, and the first online booking is $20 off.",
+      "Flat rates posted on the site: minimum $119, 1/8 truck $217, 1/6 $272, 1/4 $362, 1/3 $467, 1/2 $579, 5/8 $697, 7/8 $787, and a full truck $899. Labor and disposal are included. They say less than 15% of a typical haul goes to the landfill.",
+    ],
+    links: [
+      { label: "Junk removal services", href: "https://junkmd.com/junk-removal-services" },
+      { label: "Our company", href: "https://junkmd.com/our-company" },
+      { label: "Home", href: "https://junkmd.com/" },
     ],
   },
   "the-junk-transporter": {
