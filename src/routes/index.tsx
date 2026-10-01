@@ -50,17 +50,6 @@ function Home() {
             Find a local hauler by the load you have and the neighborhood you live in.
             Fred’s Junk Removal is the service this guide is built around.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button asChild variant="primary" size="xl">
-              <a href={smsHref()}>
-                <MessageSquareText />
-                Text Fred a picture
-              </a>
-            </Button>
-            <Button asChild variant="cream" size="xl">
-              <Link to="/areas">Browse ZIP codes</Link>
-            </Button>
-          </div>
         </div>
       </section>
 
