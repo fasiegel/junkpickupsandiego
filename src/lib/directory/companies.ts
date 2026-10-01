@@ -66,7 +66,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Furniture", "Appliances", "Garage cleanouts", "Same-day", "Posted pricing"],
     needs: ["same-day", "furniture", "appliances", "cleanout"],
     coverage: "county",
-    images: ["/images/dump-truck.jpg", "/images/driveway-load.jpg", "/images/job-driveway-sofas.jpg"],
+    images: [
+      "/haulers/freds-junk-removal-photo-1.jpg",
+      "/haulers/freds-junk-removal-photo-2.jpg",
+      "/haulers/freds-junk-removal-photo-3.jpg",
+      "/haulers/freds-junk-removal-photo-4.jpg",
+    ],
     featured: true,
   },
   {
@@ -117,9 +122,9 @@ export const COMPANIES: Company[] = [
     needs: ["same-day", "furniture", "commercial"],
     coverage: "county",
     images: [
+      "/haulers/junk-punch-photo-1.jpg",
       "/haulers/junk-punch-load.jpeg",
       "/haulers/junk-punch-crew.jpeg",
-      "/haulers/junk-punch-logo.jpeg",
     ],
   },
   {
@@ -136,9 +141,10 @@ export const COMPANIES: Company[] = [
     needs: ["same-day", "cleanout", "north-county", "construction"],
     coverage: NORTH,
     images: [
-      "/haulers/wreckin-haul-truck.jpeg",
-      "/haulers/wreckin-haul-crew.jpeg",
-      "/haulers/wreckin-haul-logo.jpeg",
+      "/haulers/the-wreckin-haul-photo-2.webp",
+      "/haulers/the-wreckin-haul-photo-3.webp",
+      "/haulers/the-wreckin-haul-photo-4.webp",
+      "/haulers/the-wreckin-haul-photo-1.jpg",
     ],
   },
   {
@@ -154,7 +160,10 @@ export const COMPANIES: Company[] = [
     specialties: ["Trash pickup", "Greater San Diego"],
     needs: ["north-county", "cleanout"],
     coverage: "county",
-    images: ["/haulers/junk-guys-flyer.jpeg", "/haulers/junk-guys-logo.jpeg"],
+    images: [
+      "/haulers/junk-guys-flyer.jpg",
+      "/haulers/junk-guys-logo.jpeg",
+    ],
   },
   {
     slug: "dmd-junk-removal",
@@ -169,7 +178,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Dump trailer rental", "Junk removal", "North County"],
     needs: ["north-county", "construction"],
     coverage: NORTH,
-    images: ["/haulers/dmd-crew.jpeg", "/haulers/dmd-trailer.jpeg"],
+    images: [
+      "/haulers/dmd-junk-removal-photo-3.jpg",
+      "/haulers/dmd-junk-removal-photo-4.jpg",
+      "/haulers/dmd-junk-removal-photo-1.jpg",
+      "/haulers/dmd-crew.jpeg",
+    ],
   },
   {
     slug: "the-hauler",
@@ -185,9 +199,10 @@ export const COMPANIES: Company[] = [
     needs: ["north-county", "cleanout"],
     coverage: "county",
     images: [
-      "/haulers/the-hauler-truck.jpeg",
-      "/haulers/the-hauler-owner.jpeg",
-      "/haulers/the-hauler-logo.jpeg",
+      "/haulers/the-hauler-extra-4.jpg",
+      "/haulers/the-hauler-extra-3.jpg",
+      "/haulers/the-hauler-truck.jpg",
+      "/haulers/the-hauler-extra-2.jpg",
     ],
   },
   {
@@ -203,7 +218,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Demolition", "Residential", "Commercial"],
     needs: ["construction", "commercial", "cleanout"],
     coverage: "county",
-    images: ["/haulers/ace-job.jpeg", "/haulers/ace-sign.jpeg", "/haulers/ace-logo.jpeg"],
+    images: [
+      "/haulers/ace-hauling-photo-1.jpg",
+      "/haulers/ace-hauling-photo-2.jpg",
+      "/haulers/ace-hauling-photo-3.jpg",
+      "/haulers/ace-hauling-photo-4.jpg",
+    ],
   },
   {
     slug: "junk-fairy",
@@ -219,9 +239,10 @@ export const COMPANIES: Company[] = [
     needs: ["furniture", "cleanout"],
     coverage: "county",
     images: [
-      "/haulers/junk-fairy-truck.jpeg",
-      "/haulers/junk-fairy-street.jpeg",
-      "/haulers/junk-fairy-logo.jpeg",
+      "/haulers/junk-fairy-photo-4.webp",
+      "/haulers/junk-fairy-photo-1.webp",
+      "/haulers/junk-fairy-photo-2.webp",
+      "/haulers/junk-fairy-photo-3.webp",
     ],
   },
   {
@@ -237,7 +258,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Same-day", "Tenant cleanouts", "Garage cleanouts"],
     needs: ["same-day", "furniture", "appliances", "cleanout"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/haul-away-any-day-photo-1.jpg",
+      "/haulers/haul-away-any-day-photo-2.jpg",
+      "/haulers/haul-away-any-day-photo-4.jpg",
+    ],
   },
   {
     slug: "junkmates",
@@ -252,7 +277,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Dumpster rental", "Hot tubs", "Commercial", "Countywide"],
     needs: ["furniture", "appliances", "commercial", "cleanout", "north-county"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/junkmates-photo-1.jpg",
+      "/haulers/junkmates-photo-2.jpg",
+      "/haulers/junkmates-photo-4.webp",
+      "/haulers/junkmates-photo-3.webp",
+    ],
   },
   {
     slug: "the-hauling-crew",
@@ -267,7 +297,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Dump truck hauling", "Gravel", "Trash"],
     needs: ["construction", "commercial"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/the-hauling-crew-photo-1.jpg",
+      "/haulers/the-hauling-crew-photo-2.jpg",
+      "/haulers/the-hauling-crew-photo-3.jpg",
+      "/haulers/the-hauling-crew-photo-4.jpg",
+    ],
   },
   {
     slug: "jb-solutions",
@@ -297,7 +332,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Cleanouts", "Demo debris", "Photo estimates"],
     needs: ["cleanout", "construction"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/ruiz-junk-removal-photo-2.jpg",
+      "/haulers/ruiz-junk-removal-photo-3.jpg",
+      "/haulers/ruiz-junk-removal-photo-4.jpg",
+    ],
   },
   {
     slug: "sa-junk-haul",
@@ -312,7 +351,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Home cleanouts", "Business cleanouts", "Mattresses"],
     needs: ["furniture", "appliances", "cleanout", "commercial"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/sa-junk-haul-photo-1.jpg",
+      "/haulers/sa-junk-haul-photo-2.jpg",
+      "/haulers/sa-junk-haul-photo-3.jpg",
+      "/haulers/sa-junk-haul-photo-4.jpg",
+    ],
   },
   {
     slug: "severin-hauling",
@@ -327,7 +371,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Posted item prices", "Same-day", "La Mesa"],
     needs: ["same-day", "furniture", "cleanout"],
     coverage: "county",
-    images: ["https://www.severinhauling.com/og-image.jpg"],
+    images: [
+      "/haulers/severin-hauling-photo-1.jpg",
+      "/haulers/severin-hauling-photo-2.jpg",
+      "/haulers/severin-hauling-photo-3.jpg",
+      "/haulers/severin-hauling-photo-4.jpg",
+    ],
   },
   {
     slug: "haul-out",
@@ -342,7 +391,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Residential", "Commercial", "Veteran-owned"],
     needs: ["commercial", "cleanout", "furniture"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/haul-out-photo-1.jpg",
+      "/haulers/haul-out-photo-3.jpg",
+      "/haulers/haul-out-photo-2.jpg",
+    ],
   },
   {
     slug: "demo-diego",
@@ -357,7 +410,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Estate cleanouts", "Yard waste", "Same-day"],
     needs: ["same-day", "furniture", "appliances", "cleanout"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/demo-diego-photo-3.jpg",
+      "/haulers/demo-diego-photo-1.jpg",
+      "/haulers/demo-diego-photo-2.jpg",
+      "/haulers/demo-diego-photo-4.jpg",
+    ],
   },
   {
     slug: "san-diego-trash-pickup",
@@ -387,7 +445,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Same-day", "Hot tubs", "Countywide"],
     needs: ["same-day", "cleanout", "furniture"],
     coverage: "county",
-    images: [],
+    images: ["/haulers/the-junk-transporter-photo-1.jpg"],
   },
   {
     slug: "junkmd",
@@ -402,7 +460,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Flat-rate", "Same-day", "Family-owned"],
     needs: ["same-day", "cleanout", "furniture"],
     coverage: "county",
-    images: ["https://junkmd.com/images/photos/truck/junkmd-truck-san-diego-banner-01.jpg"],
+    images: [
+      "/haulers/junkmd-photo-3.jpg",
+      "/haulers/junkmd-photo-1.jpg",
+      "/haulers/junkmd-photo-4.jpg",
+      "/haulers/junkmd-photo-5.jpg",
+    ],
   },
   {
     slug: "priority-hauling",
@@ -417,7 +480,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Trash", "Rubbish", "City of San Diego"],
     needs: ["cleanout"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/priority-hauling-extra-5.jpg",
+      "/haulers/priority-hauling-photo-3.jpg",
+      "/haulers/priority-hauling-extra-2.jpg",
+    ],
   },
   {
     slug: "pick-and-dump",
@@ -432,7 +499,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Estate cleanouts", "Hauling"],
     needs: ["cleanout", "furniture"],
     coverage: "county",
-    images: ["https://lirp.cdn-website.com/d17626e3/dms3rep/multi/opt/Estate2-1920w.jpg"],
+    images: [
+      "/haulers/pick-and-dump-photo-1.jpg",
+      "/haulers/pick-and-dump-photo-2.jpg",
+      "/haulers/pick-and-dump-photo-3.jpg",
+      "/haulers/pick-and-dump-photo-4.jpg",
+    ],
   },
   {
     slug: "crisan-junk-removal",
@@ -447,7 +519,10 @@ export const COMPANIES: Company[] = [
     specialties: ["Residential", "Countywide"],
     needs: ["cleanout", "furniture"],
     coverage: "county",
-    images: ["https://crisanjunkremoval.com/wp-content/uploads/2024/11/homepage-hero-banner-image.webp"],
+    images: [
+      "/haulers/crisan-junk-removal-photo-1.webp",
+      "/haulers/crisan-junk-removal-photo-4.webp",
+    ],
   },
   {
     slug: "jc-junk-removal",
@@ -462,7 +537,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Local hauling"],
     needs: ["cleanout"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/jc-junk-removal-photo-2.jpg",
+      "/haulers/jc-junk-removal-photo-4.jpg",
+      "/haulers/jc-junk-removal-photo-3.jpg",
+    ],
   },
   {
     slug: "junk-junkys",
@@ -477,7 +556,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Eco-friendly", "Local hauling"],
     needs: ["cleanout", "furniture"],
     coverage: "county",
-    images: [],
+    images: ["/haulers/junk-junkys-photo-3.jpg"],
   },
   {
     slug: "bay-junk",
@@ -504,7 +583,10 @@ export const COMPANIES: Company[] = [
       "carlsbad",
       "rancho-bernardo",
     ],
-    images: [],
+    images: [
+      "/haulers/bay-junk-photo-3.jpg",
+      "/haulers/bay-junk-photo-1.jpg",
+    ],
   },
   {
     slug: "junk-away-san-diego",
@@ -519,7 +601,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Same-day", "Cleanouts", "Upfront pricing"],
     needs: ["same-day", "cleanout", "commercial"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/junk-away-san-diego-photo-2.jpg",
+      "/haulers/junk-away-san-diego-photo-4.jpg",
+      "/haulers/junk-away-san-diego-photo-3.jpg",
+    ],
   },
   {
     slug: "fast-pickup-junk",
@@ -550,7 +636,9 @@ export const COMPANIES: Company[] = [
     needs: ["same-day", "furniture", "appliances", "cleanout", "construction"],
     coverage: "county",
     images: [
-      "https://lirp.cdn-website.com/05cdf63a/dms3rep/multi/opt/Flash+Junk+Removal+Banner-1920w.jpg",
+      "/haulers/flash-junk-removal-photo-1.jpg",
+      "/haulers/flash-junk-removal-photo-2.jpg",
+      "/haulers/flash-junk-removal-photo-3.jpg",
     ],
   },
   {
@@ -579,7 +667,10 @@ export const COMPANIES: Company[] = [
       "mira-mesa",
       "escondido",
     ],
-    images: ["https://lirp.cdn-website.com/f529bd37/dms3rep/multi/opt/rollback+dumpster+rental-1920w.jpg"],
+    images: [
+      "/haulers/clear-junk-removal-photo-1.jpg",
+      "/haulers/clear-junk-removal-photo-4.jpg",
+    ],
   },
   {
     slug: "junk-rushed",
@@ -595,7 +686,10 @@ export const COMPANIES: Company[] = [
     needs: ["same-day", "furniture", "appliances", "commercial"],
     coverage: "county",
     images: [
-      "https://junkrushed.com/wp-content/uploads/2025/12/564593591_122161471538766855_7711458496143472890_n.jpg",
+      "/haulers/junk-rushed-photo-1.jpg",
+      "/haulers/junk-rushed-photo-2.jpg",
+      "/haulers/junk-rushed-photo-3.jpg",
+      "/haulers/junk-rushed-photo-4.jpg",
     ],
   },
   {
@@ -611,7 +705,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Same-day", "E-waste", "Construction debris", "Encinitas"],
     needs: ["same-day", "furniture", "appliances", "construction", "north-county"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/pacific-rim-junk-photo-1.jpg",
+      "/haulers/pacific-rim-junk-photo-4.jpg",
+      "/haulers/pacific-rim-junk-photo-3.jpg",
+    ],
   },
   {
     slug: "strong-hauling",
@@ -626,7 +724,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Hoarder cleanouts", "Hot tubs", "Daily hours"],
     needs: ["same-day", "furniture", "appliances", "cleanout"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/strong-hauling-photo-1.jpg",
+      "/haulers/strong-hauling-photo-2.jpg",
+      "/haulers/strong-hauling-photo-4.webp",
+      "/haulers/strong-hauling-photo-3.webp",
+    ],
   },
   {
     slug: "the-junkiez",
@@ -641,7 +744,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Same-day", "Furniture", "Exercise equipment"],
     needs: ["same-day", "furniture", "appliances", "cleanout"],
     coverage: "county",
-    images: ["https://sd.thejunkiez.com/assets/team-carrying-furniture-COZIhuGu.jpg"],
+    images: [
+      "/haulers/the-junkiez-photo-2.jpg",
+      "/haulers/the-junkiez-photo-1.jpg",
+      "/haulers/the-junkiez-photo-3.jpg",
+      "/haulers/the-junkiez-photo-4.jpg",
+    ],
   },
   {
     slug: "monarch-junk-removal",
@@ -656,7 +764,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Veteran-owned", "Office junk", "Hot tubs", "Same-day"],
     needs: ["same-day", "furniture", "appliances", "commercial", "cleanout"],
     coverage: "county",
-    images: ["https://monarchjunkremoval.com/wp-content/uploads/2026/06/mjr-truck.jpg"],
+    images: [
+      "/haulers/monarch-junk-removal-photo-3.jpg",
+      "/haulers/monarch-junk-removal-photo-1.jpg",
+      "/haulers/monarch-junk-removal-photo-4.jpg",
+    ],
   },
   {
     slug: "fetch-junk",
@@ -672,7 +784,9 @@ export const COMPANIES: Company[] = [
     needs: ["same-day", "construction", "furniture", "appliances", "cleanout"],
     coverage: "county",
     images: [
-      "https://www.fetchjunk.com/wp-content/uploads/2022/03/old-tvs-on-a-pallet-bound-for-recycling-san-diego.jpg",
+      "/haulers/fetch-junk-photo-2.jpg",
+      "/haulers/fetch-junk-photo-1.jpg",
+      "/haulers/fetch-junk-photo-3.jpg",
     ],
   },
   {
@@ -715,7 +829,11 @@ export const COMPANIES: Company[] = [
       "spring-valley",
       "vista",
     ],
-    images: [],
+    images: [
+      "/haulers/you-call-it-we-haul-it-photo-3.jpg",
+      "/haulers/you-call-it-we-haul-it-photo-4.jpg",
+      "/haulers/you-call-it-we-haul-it-photo-1.jpg",
+    ],
   },
   {
     slug: "junk-haul-team",
@@ -730,7 +848,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Veteran-owned", "Same-day", "Storage units"],
     needs: ["same-day", "furniture", "appliances", "construction", "cleanout"],
     coverage: "county",
-    images: ["https://junkhaulteam.com/wp-content/uploads/2025/08/o-1.jpg"],
+    images: ["/haulers/junk-haul-team-photo-1.jpg"],
   },
 ];
 
