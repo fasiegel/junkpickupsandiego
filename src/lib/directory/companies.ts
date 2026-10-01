@@ -77,7 +77,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Furniture", "Hot tubs", "Garage cleanouts", "Veteran-operated"],
     needs: ["furniture", "cleanout", "north-county"],
     coverage: ["carlsbad", "encinitas", "oceanside", "rancho-santa-fe", "solana-beach", "vista"],
-    images: [],
+    images: [
+      "/haulers/jdog-trucks.jpeg",
+      "/haulers/jdog-trailer.jpeg",
+      "/haulers/jdog-logo.jpeg",
+    ],
   },
   {
     slug: "junk-be-gone",
@@ -92,7 +96,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Furniture", "Appliances", "Hot tubs", "Construction debris", "Commercial"],
     needs: ["furniture", "appliances", "construction", "commercial", "cleanout"],
     coverage: "county",
-    images: [],
+    images: ["/haulers/junk-be-gone-logo.jpeg"],
   },
   {
     slug: "junk-punch",
@@ -107,7 +111,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Bulk trash", "Furniture", "Cardboard recycling", "Same-day"],
     needs: ["same-day", "furniture", "commercial"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/junk-punch-load.jpeg",
+      "/haulers/junk-punch-crew.jpeg",
+      "/haulers/junk-punch-logo.jpeg",
+    ],
   },
   {
     slug: "the-wreckin-haul",
@@ -122,7 +130,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Dumpster rental", "Property cleanouts", "Veteran-owned", "Same-day"],
     needs: ["same-day", "cleanout", "north-county", "construction"],
     coverage: NORTH,
-    images: [],
+    images: [
+      "/haulers/wreckin-haul-truck.jpeg",
+      "/haulers/wreckin-haul-crew.jpeg",
+      "/haulers/wreckin-haul-logo.jpeg",
+    ],
   },
   {
     slug: "junk-guys-san-diego",
@@ -137,7 +149,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Trash pickup", "Greater San Diego"],
     needs: ["north-county", "cleanout"],
     coverage: "county",
-    images: [],
+    images: ["/haulers/junk-guys-flyer.jpeg", "/haulers/junk-guys-logo.jpeg"],
   },
   {
     slug: "dmd-junk-removal",
@@ -152,7 +164,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Dump trailer rental", "Junk removal", "North County"],
     needs: ["north-county", "construction"],
     coverage: NORTH,
-    images: ["https://www.dmdjunkremoval.com/assets/img/og-trailer-blue.jpg"],
+    images: ["/haulers/dmd-crew.jpeg", "/haulers/dmd-trailer.jpeg"],
   },
   {
     slug: "the-hauler",
@@ -167,7 +179,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Family-owned", "Eco-friendly disposal"],
     needs: ["north-county", "cleanout"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/the-hauler-truck.jpeg",
+      "/haulers/the-hauler-owner.jpeg",
+      "/haulers/the-hauler-logo.jpeg",
+    ],
   },
   {
     slug: "ace-hauling",
@@ -182,7 +198,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Demolition", "Residential", "Commercial"],
     needs: ["construction", "commercial", "cleanout"],
     coverage: "county",
-    images: [],
+    images: ["/haulers/ace-job.jpeg", "/haulers/ace-sign.jpeg", "/haulers/ace-logo.jpeg"],
   },
   {
     slug: "junk-fairy",
@@ -197,7 +213,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Residential hauling", "Eco-friendly"],
     needs: ["furniture", "cleanout"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/junk-fairy-truck.jpeg",
+      "/haulers/junk-fairy-street.jpeg",
+      "/haulers/junk-fairy-logo.jpeg",
+    ],
   },
   {
     slug: "haul-away-any-day",
