@@ -488,8 +488,8 @@ export const COMPANIES: Company[] = [
     address: null,
     hours: null,
     blurb:
-      "Bay Junk publishes a San Diego location page with a local text line, plus furniture, cleanout, and dumpster pages. They also haul in the Bay Area, so use the San Diego page when you book.",
-    specialties: ["San Diego page", "Furniture", "Cleanouts", "Dumpsters"],
+      "Bay Junk publishes a San Diego location page with a local text line, plus furniture, mattress, and cleanout pages. They also haul in the Bay Area, so use the San Diego page when you book.",
+    specialties: ["San Diego page", "Furniture", "Cleanouts"],
     needs: ["furniture", "cleanout", "commercial"],
     coverage: [
       "solana-beach",
