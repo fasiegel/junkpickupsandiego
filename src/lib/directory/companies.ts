@@ -1,4 +1,5 @@
 import { COMMUNITIES, type Community } from "@/lib/directory/communities";
+import { FACTS, type ListingFacts } from "@/lib/directory/facts";
 import { PROFILES } from "@/lib/directory/profiles";
 
 export type Company = {
@@ -20,6 +21,7 @@ export type Company = {
   details?: string[];
   /** Pages on their own website. */
   links?: { label: string; href: string }[];
+  facts?: ListingFacts;
 };
 
 const NORTH = [
@@ -865,7 +867,8 @@ export function getCompany(slug: string): Company | undefined {
   const company = bySlug.get(slug);
   if (!company) return undefined;
   const extra = PROFILES[slug];
-  return extra ? { ...company, ...extra } : company;
+  const facts = FACTS[slug];
+  return { ...company, ...extra, ...(facts ? { facts } : {}) };
 }
 
 export function companyServes(company: Company, community: Community): boolean {

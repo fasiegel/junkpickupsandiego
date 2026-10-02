@@ -9,6 +9,7 @@ import {
   communitiesForCompany,
   coverageLabel,
   getCompany,
+  type Company,
 } from "@/lib/directory/companies";
 
 export const Route = createFileRoute("/haulers/$slug")({
@@ -28,6 +29,70 @@ export const Route = createFileRoute("/haulers/$slug")({
   },
   component: HaulerPage,
 });
+
+function ListingFacts({ company, places }: { company: Company; places: string[] }) {
+  const facts = company.facts;
+  const area =
+    company.coverage === "county"
+      ? `San Diego County. Communities in this guide include ${places.slice(0, 8).join(", ")}.`
+      : places.length > 0
+        ? places.join(", ")
+        : "Not listed on their site";
+  const rows: { label: string; value: string; href?: string }[] = [
+    { label: "Website", value: company.url.replace(/^https?:\/\//, "").replace(/\/$/, ""), href: company.url },
+    { label: "Phone", value: company.phone ?? "Not listed" },
+    { label: "Years in business", value: facts?.years ?? "Not listed" },
+    {
+      label: "Google Business Profile",
+      value: facts?.googleUrl ? "Open profile" : "Not listed",
+      href: facts?.googleUrl ?? undefined,
+    },
+    { label: "Google star rating", value: facts?.googleRating ?? "Not listed" },
+    { label: "Google reviews", value: facts?.googleReviews ?? "Not listed" },
+    {
+      label: "Yelp reviews",
+      value: facts?.yelpReviews ?? (facts?.yelpUrl ? "Open Yelp" : "Not listed"),
+      href: facts?.yelpUrl ?? undefined,
+    },
+    {
+      label: "BBB profile",
+      value: facts?.bbbUrl ? "Open BBB profile" : "Not listed",
+      href: facts?.bbbUrl ?? undefined,
+    },
+    { label: "Service areas", value: area },
+    { label: "Services offered", value: company.specialties.join(", ") },
+    { label: "Online booking", value: facts?.onlineBooking ?? "Not listed" },
+    { label: "Curbside pickup", value: facts?.curbside ?? "Not listed" },
+    { label: "Prices published online", value: facts?.publishedPrices ?? "Not listed" },
+  ];
+
+  return (
+    <div className="mt-8">
+      <h2 className="font-display text-2xl font-bold tracking-wide text-ink uppercase">
+        Listing facts
+      </h2>
+      <p className="mt-2 text-sm text-taupe">
+        Ratings and review counts are shown only when a public page states them. Blank fields are not a score.
+      </p>
+      <dl className="mt-4 divide-y divide-line rounded-xl bg-cream">
+        {rows.map((row) => (
+          <div key={row.label} className="grid gap-1 px-4 py-3 sm:grid-cols-[11rem_1fr] sm:gap-4">
+            <dt className="text-xs font-semibold tracking-wide text-ink uppercase">{row.label}</dt>
+            <dd className="text-sm text-ink-soft">
+              {row.href && row.value !== "Not listed" ? (
+                <a href={row.href} target="_blank" rel="noopener noreferrer" className="text-rust hover:underline">
+                  {row.value}
+                </a>
+              ) : (
+                row.value
+              )}
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  );
+}
 
 function HaulerPage() {
   const { company } = Route.useLoaderData();
@@ -70,6 +135,7 @@ function HaulerPage() {
                 </li>
               ))}
             </ul>
+            <ListingFacts company={company} places={showPlaces.map((place) => place.name)} />
             {company.details && company.details.length > 0 ? (
               <div className="mt-8">
                 <h2 className="font-display text-2xl font-bold tracking-wide text-ink uppercase">
