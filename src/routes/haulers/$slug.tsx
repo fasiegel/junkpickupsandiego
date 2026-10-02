@@ -4,7 +4,7 @@ import { CompanyPhoto } from "@/components/company-card";
 import { PageHero } from "@/components/page-hero";
 import { SiteShell } from "@/components/site-shell";
 import { Button } from "@/components/ui/button";
-import { BOOK_URL, smsHref } from "@/lib/contact";
+import { BOOK_URL } from "@/lib/contact";
 import {
   communitiesForCompany,
   coverageLabel,
@@ -164,6 +164,7 @@ function HaulerPage() {
           { label: "Haulers", to: "/haulers" },
           { label: company.name },
         ]}
+        actions={false}
       />
       <section className="py-12">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">
@@ -266,14 +267,9 @@ function HaulerPage() {
               </Button>
             ) : null}
               {company.featured ? (
-                <>
-                  <Button asChild variant="cream">
-                    <a href={smsHref()}>Text Fred a picture</a>
-                  </Button>
-                  <Button asChild variant="cream">
-                    <a href={BOOK_URL}>Book Fred now</a>
-                  </Button>
-                </>
+                <Button asChild variant="cream">
+                  <a href={BOOK_URL}>Book Fred now</a>
+                </Button>
               ) : null}
             </div>
           </aside>

@@ -28,6 +28,7 @@ function HaulersIndex() {
         title="Every hauler in this guide."
         lede="Each page has the phone, email, and photos we could read on that company’s own site, plus where they say they work."
         crumbs={[{ label: "Home", to: "/" }, { label: "Haulers" }]}
+        actions={false}
       />
       <section className="py-14">
         <ul className="mx-auto grid max-w-6xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">

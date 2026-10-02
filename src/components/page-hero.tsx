@@ -10,11 +10,13 @@ export function PageHero({
   title,
   lede,
   crumbs,
+  actions = true,
 }: {
   kicker: string;
   title: string;
   lede: string;
   crumbs: Crumb[];
+  actions?: boolean;
 }) {
   return (
     <section className="border-b border-line bg-cream">
@@ -42,6 +44,7 @@ export function PageHero({
           {title}
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-taupe">{lede}</p>
+        {actions ? (
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild size="lg">
             <a href={smsHref()}>
@@ -55,6 +58,7 @@ export function PageHero({
             </Link>
           </Button>
         </div>
+        ) : null}
       </div>
     </section>
   );
