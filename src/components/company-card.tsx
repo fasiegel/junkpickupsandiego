@@ -13,10 +13,12 @@ export function CompanyPhoto({
   className?: string;
 }) {
   const [failed, setFailed] = useState(false);
-  const photo = !src || failed ? "/images/dump-truck.jpg" : src;
+  if (!src || failed) {
+    return <div className={`bg-cream ${className ?? ""}`} aria-hidden />;
+  }
   return (
     <img
-      src={photo}
+      src={src}
       alt={alt}
       className={className}
       onError={() => setFailed(true)}

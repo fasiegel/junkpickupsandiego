@@ -79,9 +79,11 @@ function Home() {
                   Text a picture
                 </a>
               </Button>
-              <Button asChild variant="outline">
-                <a href={fred.url}>fredsjunkremoval.com</a>
-              </Button>
+              {fred.url ? (
+                <Button asChild variant="outline">
+                  <a href={fred.url}>fredsjunkremoval.com</a>
+                </Button>
+              ) : null}
             </div>
           </div>
         </div>

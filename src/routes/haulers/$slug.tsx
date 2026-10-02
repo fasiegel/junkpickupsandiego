@@ -39,7 +39,15 @@ function ListingFacts({ company, places }: { company: Company; places: string[] 
         ? places.join(", ")
         : "Not listed on their site";
   const rows: { label: string; value: string; href?: string }[] = [
-    { label: "Website", value: company.url.replace(/^https?:\/\//, "").replace(/\/$/, ""), href: company.url },
+    ...(company.url
+      ? [
+          {
+            label: "Website",
+            value: company.url.replace(/^https?:\/\//, "").replace(/\/$/, ""),
+            href: company.url,
+          },
+        ]
+      : [{ label: "Website", value: "Not listed" }]),
     { label: "Phone", value: company.phone ?? "Not listed" },
     { label: "Years in business", value: facts?.years ?? "Not listed" },
     {
@@ -143,7 +151,7 @@ function HaulerPage() {
   const { company } = Route.useLoaderData();
   const places = communitiesForCompany(company);
   const showPlaces = company.coverage === "county" ? places.slice(0, 12) : places;
-  const photos = company.images.length > 0 ? company.images : ["/images/dump-truck.jpg"];
+  const photos = company.images;
 
   return (
     <SiteShell>
@@ -160,6 +168,7 @@ function HaulerPage() {
       <section className="py-12">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
+            {photos.length > 0 ? (
             <div className="grid gap-3 sm:grid-cols-2">
               {photos.map((src) => (
                 <CompanyPhoto
@@ -170,6 +179,7 @@ function HaulerPage() {
                 />
               ))}
             </div>
+            ) : null}
             <ul className="mt-6 flex flex-wrap gap-2">
               {company.specialties.map((tag) => (
                 <li
@@ -250,9 +260,11 @@ function HaulerPage() {
             </ul>
             {company.hours ? <p className="mt-4 text-sm text-line">{company.hours}</p> : null}
             <div className="mt-6 flex flex-col gap-2">
+            {company.url ? (
               <Button asChild variant="primary">
                 <a href={company.url}>Visit their website</a>
               </Button>
+            ) : null}
               {company.featured ? (
                 <>
                   <Button asChild variant="cream">
@@ -276,7 +288,7 @@ function HaulerPage() {
             {company.coverage === "county"
               ? "Their site describes San Diego County service. These are the communities in this guide."
               : company.coverage.length === 0
-                ? "Their published service area is not a San Diego community list. Check the website before you book."
+                ? "No service area was listed for this company. Call and confirm they cover your address."
                 : "Matched from the cities named on their site."}
           </p>
           <ul className="mt-6 flex flex-wrap gap-2">
