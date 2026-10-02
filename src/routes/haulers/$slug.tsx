@@ -94,6 +94,51 @@ function ListingFacts({ company, places }: { company: Company; places: string[] 
   );
 }
 
+function GoogleReviews({ company }: { company: Company }) {
+  const facts = company.facts;
+  const quotes = facts?.googleQuotes ?? [];
+  const rating = [facts?.googleRating, facts?.googleReviews].filter(Boolean).join(" · ");
+
+  return (
+    <div className="mt-8">
+      <h2 className="font-display text-2xl font-bold tracking-wide text-ink uppercase">
+        Google reviews
+      </h2>
+      <p className="mt-2 text-sm text-taupe">
+        {rating
+          ? rating
+          : "A separate Google star rating was not published on a page we can cite."}{" "}
+        Quotes appear only when a public page labels them as Google reviews.
+      </p>
+      {quotes.length > 0 ? (
+        <ul className="mt-4 space-y-3">
+          {quotes.map((quote) => (
+            <li key={`${quote.author}-${quote.text.slice(0, 24)}`} className="rounded-xl bg-cream px-4 py-4">
+              <p className="text-sm leading-relaxed text-ink-soft">“{quote.text}”</p>
+              <p className="mt-2 text-xs font-semibold tracking-wide text-ink uppercase">
+                {quote.author}
+                {quote.place ? ` · ${quote.place}` : ""}
+              </p>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="mt-3 text-sm text-taupe">No Google review text is published for this listing yet.</p>
+      )}
+      {facts?.googleUrl ? (
+        <a
+          href={facts.googleUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex min-h-11 items-center text-sm font-medium text-rust"
+        >
+          Read them on Google
+        </a>
+      ) : null}
+    </div>
+  );
+}
+
 function HaulerPage() {
   const { company } = Route.useLoaderData();
   const places = communitiesForCompany(company);
@@ -136,6 +181,7 @@ function HaulerPage() {
               ))}
             </ul>
             <ListingFacts company={company} places={showPlaces.map((place) => place.name)} />
+            <GoogleReviews company={company} />
             {company.details && company.details.length > 0 ? (
               <div className="mt-8">
                 <h2 className="font-display text-2xl font-bold tracking-wide text-ink uppercase">

@@ -11,6 +11,8 @@ export type ListingFacts = {
   onlineBooking: string;
   curbside: string;
   publishedPrices: string;
+  /** Quotes a public page labels as Google reviews. */
+  googleQuotes?: { author: string; text: string; place?: string }[];
 };
 
 const blank: ListingFacts = {
@@ -71,6 +73,23 @@ export const FACTS: Record<string, ListingFacts> = {
     onlineBooking: "No",
     curbside: "No — their site says they do not offer curb service",
     publishedPrices: "No",
+    googleQuotes: [
+      {
+        author: "Mark D.",
+        place: "Escondido",
+        text: "These guys were incredible. Called on a Tuesday, they were at my house in Escondido by Thursday morning. Cleared out a full two-car garage worth of stuff — old furniture, shelving, boxes, you name it. Quoted me a fair price before they touched anything and stuck to it. Left the space spotless. Highly recommend.",
+      },
+      {
+        author: "Sandra K.",
+        place: "Valley Center",
+        text: "We had to clear my mom's house in Valley Center after she passed. It was an emotional job and the team handled it with so much respect and professionalism. They were careful, kind and worked quickly without making us feel rushed. Everything was donated or responsibly disposed of. I can't say enough good things.",
+      },
+      {
+        author: "Rob T.",
+        place: "San Marcos",
+        text: "Rented a dumpster for a full kitchen remodel in San Marcos. Drop-off was on time, pickup was when they said it would be, and the price was exactly what they quoted. No surprise fees. I manage multiple properties and I've already used The Wreckin' Haul on three jobs. These are my guys now.",
+      },
+    ],
   }),
   "junk-guys-san-diego": fact({
     years: "Their site says 13 years",
@@ -119,6 +138,20 @@ export const FACTS: Record<string, ListingFacts> = {
     onlineBooking: "No — estimate request, not a scheduler",
     curbside: "No",
     publishedPrices: "No",
+    googleQuotes: [
+      {
+        author: "Victor V.",
+        text: "Super communicative and competitive pricing. Highly recommended. I needed some junk hauled away and they came through pretty quick. They left our yard looking brand new. No more ugly trash to look at.",
+      },
+      {
+        author: "Joana V.",
+        text: "Great overall experience with Haul Away Any Day! They answered my first call almost immediately. I sent them pictures of what I needed removed and they were able to give me a very affordable quote (best price I received)... Highly recommend and will absolutely use them again for any future junk removal needs.",
+      },
+      {
+        author: "Chris R.",
+        text: "We have used Haul Away Any Day three times at this point and it won’t be the last! Super friendly, understanding team and the process is so easy. I have done the full service as well as curbside. They are super responsive and dependable.",
+      },
+    ],
   }),
   junkmates: fact({
     years: "BBB start date January 5, 2022",
@@ -165,6 +198,13 @@ export const FACTS: Record<string, ListingFacts> = {
     onlineBooking: "No",
     curbside: "No",
     publishedPrices: "Yes",
+    googleQuotes: [
+      {
+        author: "Maria Rodriguez",
+        place: "El Cajon",
+        text: "Severin Hauling made a difficult time so much easier. They handled my mother's estate cleanout with compassion and professionalism. Everything was sorted, donated, or disposed of properly. Highly recommend!",
+      },
+    ],
   }),
   "haul-out": fact({
     yelpUrl: "https://www.yelp.com/biz/haul-out-junk-removal-carlsbad",
@@ -196,6 +236,38 @@ export const FACTS: Record<string, ListingFacts> = {
     onlineBooking: "Yes",
     curbside: "Yes",
     publishedPrices: "Yes",
+    googleQuotes: [
+      {
+        author: "Hillary Hebert",
+        place: "La Jolla",
+        text: "Showed up on time, gave a flat price, and had my entire garage cleared in under an hour. The crew was friendly, careful with the walls, and even swept up after. Best $20 I ever saved with that first-appointment discount.",
+      },
+      {
+        author: "Jackie Teague",
+        place: "Pacific Beach",
+        text: "We had a hot tub that nobody else would touch. David and his team came out, broke it down, and hauled it away in a single afternoon. No damage to the patio. Easiest project we've ever booked.",
+      },
+      {
+        author: "p bono",
+        place: "Clairemont",
+        text: "Booked an appliance pickup the same day after my old fridge died. Two pros showed up exactly in the two-hour window, hauled the unit down a flight of stairs, and were gone in 15 minutes. Worth every dollar.",
+      },
+      {
+        author: "Emily Brandt",
+        place: "North Park",
+        text: "Clemencia made the booking process so smooth. The crew followed up the next morning, gave me a flat price, and donated most of the furniture to a local charity. Highly recommend JunkMD+.",
+      },
+      {
+        author: "Sean Yao",
+        place: "Sorrento Valley",
+        text: "Office cleanout for our small business — they worked after hours so we didn't lose a workday. Professional, COI on file with our landlord, and the price beat the other quote we got.",
+      },
+      {
+        author: "Sharon Minor",
+        place: "Carmel Valley",
+        text: "Estate cleanout after my mom passed. The team was kind, respectful, and went room by room with us. They donated everything they could. I cried a little because they made what felt impossible actually doable.",
+      },
+    ],
   }),
   "priority-hauling": fact({
     yelpUrl: "https://www.yelp.com/biz/priority-hauling-san-diego-san-diego",
