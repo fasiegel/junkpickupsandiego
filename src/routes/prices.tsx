@@ -45,14 +45,14 @@ function PricesPage() {
             The average is those middles, rounded to the dollar. Stairs, weight, concrete, and yard
             waste can cost more. Most haulers in this guide do not publish prices.
           </p>
-          <PriceTable title="Individual items" groups={ITEM_PRICES} />
+          <ItemAverages groups={ITEM_PRICES} />
           <PriceTable title="Truck loads" groups={LOAD_PRICES} />
           <div>
             <h2 className="font-display text-3xl font-bold tracking-wide text-ink uppercase">
               Where the numbers come from
             </h2>
             <div className="mt-6 space-y-8">
-              {[...ITEM_PRICES, ...LOAD_PRICES].map((group) => (
+              {LOAD_PRICES.map((group) => (
                 <QuoteList key={group.id} group={group} />
               ))}
             </div>
@@ -67,6 +67,26 @@ function PricesPage() {
         </div>
       </section>
     </SiteShell>
+  );
+}
+
+function ItemAverages({ groups }: { groups: PriceGroup[] }) {
+  return (
+    <div>
+      <h2 className="font-display text-3xl font-bold tracking-wide text-ink uppercase">
+        Individual items
+      </h2>
+      <ul className="mt-4 divide-y divide-line rounded-xl bg-cream">
+        {groups.map((group) => {
+          const summary = summarize(group.quotes);
+          return (
+            <li key={group.id} className="px-4 py-3 text-sm text-ink">
+              {group.title} Average price {money(summary.avg)} from {summary.count} published prices.
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
 
