@@ -85,7 +85,90 @@ function Home() {
       </section>
 
       <Directory />
+      <ServicesGuide />
     </SiteShell>
+  );
+}
+
+function ServicesGuide() {
+  const services = [
+    {
+      title: "Heavy lifting and loading",
+      body: "Crews come directly to your home, office, or high-rise unit, handle all the physical labor, load the items into trucks, and sweep up the area afterward.",
+    },
+    {
+      title: "Furniture and appliance hauling",
+      body: "Removal of bulky items like couches, mattresses, dressers, dining sets, refrigerators, washers, dryers, and old TVs.",
+    },
+    {
+      title: "Specialty item removal",
+      body: "Disassembly and hauling of heavy or awkward objects such as hot tubs, pianos, pool tables, heavy exercise equipment, and large outdoor grills.",
+    },
+    {
+      title: "Property and cleanout services",
+      body: "Complete cleanouts for garages, yards, construction and remodel debris, estate sales, foreclosure properties, and hoarding situations.",
+    },
+    {
+      title: "Demolition and light debris removal",
+      body: "Small-scale teardowns, like sheds or old structures, and yard waste or brush hauling.",
+    },
+    {
+      title: "Donation and recycling",
+      body: "Many local operators sort items to donate gently used furniture and goods to charities, or recycle e-waste and scrap metal, so a large share of the load stays out of the landfill, often 60% to 70%.",
+    },
+  ];
+
+  return (
+    <section className="border-t border-line bg-sand py-12 sm:py-16">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <p className="font-display text-sm font-semibold tracking-[0.18em] text-rust uppercase">
+          What the work includes
+        </p>
+        <h2 className="mt-2 max-w-3xl font-display text-4xl font-bold tracking-wide text-ink uppercase">
+          San Diego junk removal services
+        </h2>
+        <p className="mt-4 max-w-3xl text-base leading-relaxed text-taupe">
+          San Diego junk removal services provide full-service hauling, heavy lifting, loading, and
+          eco-friendly disposal or donation for residential and commercial properties.
+        </p>
+        <h3 className="mt-10 font-display text-2xl font-bold tracking-wide text-ink uppercase">
+          Core services offered
+        </h3>
+        <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service) => (
+            <li key={service.title} className="rounded-xl bg-cream px-5 py-5">
+              <h4 className="font-display text-lg font-bold tracking-wide text-ink uppercase">
+                {service.title}
+              </h4>
+              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{service.body}</p>
+            </li>
+          ))}
+        </ul>
+        <h3 className="mt-10 font-display text-2xl font-bold tracking-wide text-ink uppercase">
+          How pricing and booking work
+        </h3>
+        <ul className="mt-5 grid gap-4 lg:grid-cols-2">
+          <li className="rounded-xl bg-cream px-5 py-5">
+            <h4 className="font-display text-lg font-bold tracking-wide text-ink uppercase">
+              Volume-based pricing
+            </h4>
+            <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+              Most companies charge based on how much space your items take up in their truck,
+              from a minimum load up to a full truckload, with upfront, free on-site or online
+              estimates before any work begins.
+            </p>
+          </li>
+          <li className="rounded-xl bg-cream px-5 py-5">
+            <h4 className="font-display text-lg font-bold tracking-wide text-ink uppercase">
+              Scheduling
+            </h4>
+            <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+              Same-day and next-day service are widely available across San Diego County.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
   );
 }
 
