@@ -1,9 +1,8 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { CompanyCard } from "@/components/company-card";
-import { useVotes } from "@/components/vote-provider";
 import { PageHero } from "@/components/page-hero";
 import { SiteShell } from "@/components/site-shell";
-import { getCommunity, type Community } from "@/lib/directory/communities";
+import { getCommunity } from "@/lib/directory/communities";
 import { companiesForCommunity } from "@/lib/directory/companies";
 
 export const Route = createFileRoute("/areas/$slug")({
@@ -32,18 +31,12 @@ export const Route = createFileRoute("/areas/$slug")({
 
 function AreaPage() {
   const { area } = Route.useLoaderData();
-  return (
-    <SiteShell>
-      <AreaList area={area} />
-    </SiteShell>
-  );
-}
-function AreaList({ area }: { area: Community }) {
-  const { rank } = useVotes();
-  const companies = rank(companiesForCommunity(area));
+  const companies = companiesForCommunity(area);
+  const featured = companies.filter((c) => c.featured);
+  const rest = companies.filter((c) => !c.featured);
 
   return (
-    <>
+    <SiteShell>
       <PageHero
         kicker={area.region}
         title={`${area.name} junk removal`}
@@ -58,7 +51,7 @@ function AreaList({ area }: { area: Community }) {
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <p className="text-sm text-taupe">{companies.length} haulers listed</p>
           <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {companies.map((company) => (
+            {[...featured, ...rest].map((company) => (
               <li key={company.slug}>
                 <CompanyCard company={company} />
               </li>
@@ -69,6 +62,6 @@ function AreaList({ area }: { area: Community }) {
           </Link>
         </div>
       </section>
-    </>
+    </SiteShell>
   );
 }

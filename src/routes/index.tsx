@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { MessageSquareText } from "lucide-react";
 import { useMemo, useState } from "react";
 import { CompanyCard } from "@/components/company-card";
-import { useVotes } from "@/components/vote-provider";
 import { SiteShell } from "@/components/site-shell";
 import { Button } from "@/components/ui/button";
 import { PARENT_NAME, PHONE_DISPLAY, smsHref } from "@/lib/contact";
@@ -91,12 +90,10 @@ function Home() {
 
 function Directory() {
   const [need, setNeed] = useState<string | null>(null);
-  const { rank } = useVotes();
   const list = useMemo(() => {
     const rest = COMPANIES.filter((c) => !c.featured);
-    const filtered = need ? rest.filter((c) => c.needs.includes(need)) : rest;
-    return rank(filtered);
-  }, [need, rank]);
+    return need ? rest.filter((c) => c.needs.includes(need)) : rest;
+  }, [need]);
 
   return (
     <section className="py-14 sm:py-18">
