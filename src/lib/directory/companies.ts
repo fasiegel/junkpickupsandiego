@@ -307,7 +307,7 @@ export const COMPANIES: Company[] = [
     address: "1053 Regal Rd, Encinitas, CA 92024",
     hours: "Mon–Sat 7 AM – 7 PM, Sun 8 AM – 4 PM",
     blurb:
-      "Encinitas hauler for homes and businesses. Same-day pickup, free on-site estimates, and donated or recycled items. Their FAQ says they cover from Oceanside down to Petco Park.",
+      "Encinitas hauler for homes and businesses. Google is 5.0 from 304 reviews. Same-day pickup, free on-site estimates, and donated or recycled items. Their FAQ says they cover from Oceanside down to Petco Park.",
     specialties: ["Dumpster rental", "Hot tubs", "Commercial", "Countywide"],
     needs: ["furniture", "appliances", "commercial", "cleanout", "north-county"],
     coverage: "county",

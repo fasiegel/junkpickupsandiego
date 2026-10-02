@@ -191,7 +191,7 @@ export const PROFILES: Record<
   },
   "junkmates": {
     details: [
-      "JunkMates is based at 1053 Regal Rd, Encinitas. Phone (858) 740-4750, email contact@junkmatessd.com. Yelp hours are about 7 AM to 7 PM, and Sunday 8 AM to 4 PM.",
+      "JunkMates is based at 1053 Regal Rd, Encinitas. Phone (858) 740-4750, email contact@junkmatessd.com. Yelp hours are about 7 AM to 7 PM, and Sunday 8 AM to 4 PM. A Google listing titled JunkMates - Junk Removal Downtown San Diego uses that same phone and junkmatessd.com, and shows 5.0 from 304 reviews. That profile’s address is 424 15th St, San Diego 92101.",
       "They price by how much space the junk takes, how heavy it is, and how hard it is to get out. Free in-person estimates. Same-day is offered, and they suggest booking 48 hours ahead if you need a set time. Their FAQ says coverage runs from Oceanside down to Petco Park.",
       "They donate clothes, books, and furniture, and recycle paper and thin plastic. They do not take hazardous waste or chemicals. Appliances are accepted if water heaters and dishwashers are already unhooked. A FAQ answer puts some item prices between $100 and $140 depending on size.",
       "Service pages cover general junk, furniture, mattresses, appliances, yard waste, construction debris, office and storage cleanouts, and dumpster rental in 10, 15, 20, and 40 yard sizes.",

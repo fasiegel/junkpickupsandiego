@@ -178,6 +178,7 @@ export const FACTS: Record<string, ListingFacts> = {
   junkmates: fact({
     googleUrl: "https://www.google.com/maps?cid=1321580647690588962&hl=en",
     googleRating: "5.0",
+    googleReviews: "304 on Google",
     years: "BBB start date January 5, 2022",
     yelpUrl: "https://www.yelp.com/biz/junkmates-encinitas",
     yelpReviews: "25 (4.9 on Yelp)",
