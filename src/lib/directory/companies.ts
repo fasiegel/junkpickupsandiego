@@ -140,7 +140,7 @@ export const COMPANIES: Company[] = [
     images: [
       "/haulers/freds-junk-removal-photo-1.jpg",
       "/haulers/freds-junk-removal-photo-2.jpg",
-      "/haulers/freds-junk-removal-photo-3.jpg",
+      "/haulers/freds-junk-removal-photo-3.png",
       "/haulers/freds-junk-removal-photo-4.jpg",
     ],
     featured: true,
