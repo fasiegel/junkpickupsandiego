@@ -1281,9 +1281,9 @@ export const COMPANIES: Company[] = [
     phone: "(619) 715-0958",
     email: "ageevictor@hotmail.com",
     address: "9957 Caminito Tomatillo, San Diego, CA 92131",
-    hours: null,
+    hours: "Yelp: daily 7:00 AM – 9:00 PM",
     blurb:
-      "The site lists this Scripps Ranch address and says they have worked for over two decades, with a 10% discount for new customers. Services named there include furniture and appliance removal, demolition, spa debris, tree removal, and cleanup. The dump truck in their photos is lettered Acosta.",
+      "Owner Victor A. The site lists a Scripps Ranch address and says they have worked for over two decades, with a 10% discount for new customers. Yelp for this phone is 5.0 from 136 reviews. Services include furniture, appliances, demolition, spa debris, and tree removal.",
     specialties: ["Furniture", "Appliances", "Demolition", "Tree removal"],
     needs: ["furniture", "appliances", "construction", "cleanout"],
     coverage: ["scripps-ranch"],
@@ -1298,10 +1298,10 @@ export const COMPANIES: Company[] = [
     address: "San Diego, CA 92014",
     hours: "7 days, 7:00 AM – 7:00 PM",
     blurb:
-      "The site and the box truck both show (619) 468-4888 and NoLimitHauling.com. The truck advertises mattress removal and appliance removal at $30, plus curbside pickup, full-service junk removal, and light demolition. Hours on the site are 7 AM–7 PM, seven days.",
+      "Family-owned. The site, the box truck, and Yelp hours all match (619) 468-4888, 7 AM–7 PM, seven days. Yelp is 4.9 from 27 reviews, owner Lewis. The truck advertises mattress and appliance removal at $30, plus curbside pickup and light demolition.",
     specialties: ["Mattresses", "Appliances", "Curbside", "Light demolition"],
     needs: ["furniture", "appliances", "construction", "cleanout"],
-    coverage: ["del-mar"],
+    coverage: ["del-mar", "north-park"],
     images: [
       "/haulers/no-limit-hauling-photo-1.jpg",
       "/haulers/no-limit-hauling-photo-2.jpg",

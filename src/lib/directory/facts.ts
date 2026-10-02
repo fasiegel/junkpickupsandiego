@@ -652,12 +652,16 @@ export const FACTS: Record<string, ListingFacts> = {
   }),
   "acosta-services": fact({
     years: "Their site says over two decades",
+    yelpUrl: "https://www.yelp.com/biz/acosta-services-san-diego-5",
+    yelpReviews: "136 (5.0 on Yelp)",
     onlineBooking: "A contact form is on the site",
     curbside: "Not listed",
     publishedPrices: "No — 10% off for new customers",
   }),
   "no-limit-hauling": fact({
-    onlineBooking: "Not listed",
+    yelpUrl: "https://www.yelp.com/biz/no-limit-hauling-san-diego",
+    yelpReviews: "27 (4.9 on Yelp)",
+    onlineBooking: "Yes — a quote form is on the site",
     curbside: "Yes — the truck says curbside pickup",
     publishedPrices: "The truck advertises mattress removal $30 and appliance removal $30",
   }),

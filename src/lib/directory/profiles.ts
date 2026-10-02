@@ -822,22 +822,28 @@ export const PROFILES: Record<
     details: [
       "acostaservicejunkremoval.com lists (619) 715-0958, ageevictor@hotmail.com, and 9957 Caminito Tomatillo, San Diego 92131. The page says the company has worked for over two decades and offers 10% off for new customers.",
       "Services named on the site are spa debris removal, demolition, transportation, cleaning, tree removal, appliance removal and recycling, and furniture removal. The page also says they serve projects throughout California.",
-      "Their dump truck is lettered Acosta. A second photo shows the crew in maroon shirts in front of the truck.",
+      "Yelp lists Acosta Service’s at this phone, owner Victor A., 5.0 from 136 reviews. Hours there are 7 AM–9 PM every day. The owner’s answer on that page gives the same number, 619-715-0958. A Google Maps star rating for this phone was not found.",
     ],
-    links: [{ label: "Website", href: "https://acostaservicejunkremoval.com/" }],
+    links: [
+      { label: "Website", href: "https://acostaservicejunkremoval.com/" },
+      { label: "Yelp", href: "https://www.yelp.com/biz/acosta-services-san-diego-5" },
+    ],
   },
   "no-limit-hauling": {
     details: [
       "nolimithauling.com lists (619) 468-4888, support@nolimithauling.com, and San Diego 92014. Hours are 7:00 AM–7:00 PM, seven days. The site says junk removal, light demolition, curbside pickup, and full-service hauling in San Diego and the surrounding area.",
-      "The box truck prints the same phone and NoLimitHauling.com, and advertises mattress removal $30 and appliance removal $30, plus curbside pickup, full-service junk removal, and light demolition.",
+      "Yelp lists No Limit Hauling at 4.9 from 27 reviews, in North Park, 92104, with the same 7 AM–7 PM hours. Reviews name Lewis. Nextdoor lists 3821 Cherokee Ave with (619) 468-4888 and nolimithauling.com. A Google Maps star rating for this phone was not found. A Fairfield company with a similar name uses a different phone and is not this listing.",
     ],
-    links: [{ label: "Website", href: "https://nolimithauling.com/" }],
+    links: [
+      { label: "Website", href: "https://nolimithauling.com/" },
+      { label: "Yelp", href: "https://www.yelp.com/biz/no-limit-hauling-san-diego" },
+    ],
   },
   "rancho-removal": {
     details: [
       "ranchoremoval.com lists (858) 325-5220 and names owner Joe. Small curbside starts at $99. A half load is $350–$450+ and a full load is $499–$699+. The page says to text photos for a faster quote, and that same-day or next-day openings are available.",
       "Services named include garage and property cleanouts, furniture and appliance removal, yard debris, construction debris, and move-out or rental cleanouts.",
-      "The site’s strongest coverage is Rancho Peñasquitos, Rancho Bernardo, Carmel Mountain Ranch, Scripps Ranch, 4S Ranch, Sabre Springs, Poway, and Mira Mesa, with more neighborhoods across San Diego County.",
+      "No Yelp page and no Google Maps rating were found for (858) 325-5220. Rancho Junk Removal in Murrieta is a different company.",
     ],
     links: [{ label: "Website", href: "https://ranchoremoval.com/" }],
   },
