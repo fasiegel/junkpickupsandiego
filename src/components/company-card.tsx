@@ -32,7 +32,7 @@ export function CompanyPhoto({
   );
 }
 
-export function CompanyCard({ company }: { company: Company }) {
+export function CompanyCard({ company, note }: { company: Company; note?: string | null }) {
   return (
     <Link
       to="/haulers/$slug"
@@ -63,6 +63,7 @@ export function CompanyCard({ company }: { company: Company }) {
         </div>
         <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-taupe">{company.blurb}</p>
         <div className="mt-auto border-t border-line pt-3">
+          {note ? <p className="mb-2 text-sm font-semibold text-rust">{note}</p> : null}
           <p className="text-sm text-ink-soft">{coverageLabel(company)}</p>
           {company.phone ? <p className="mt-1 text-sm font-medium text-ink">{company.phone}</p> : null}
         </div>

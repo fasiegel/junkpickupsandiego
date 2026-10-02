@@ -1,8 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useMemo, useState } from "react";
 import { CompanyCard } from "@/components/company-card";
+import { DirectoryFilters } from "@/components/directory-filters";
 import { PageHero } from "@/components/page-hero";
 import { SiteShell } from "@/components/site-shell";
 import { COMPANIES } from "@/lib/directory/companies";
+import { directoryNote, orderCompanies, type DirectoryMode } from "@/lib/directory/order";
 
 export const Route = createFileRoute("/haulers/")({
   head: () => ({
@@ -19,8 +22,12 @@ export const Route = createFileRoute("/haulers/")({
 });
 
 function HaulersIndex() {
-  const featured = COMPANIES.filter((c) => c.featured);
-  const rest = COMPANIES.filter((c) => !c.featured).sort((a, b) => a.name.localeCompare(b.name));
+  const [mode, setMode] = useState<DirectoryMode>("default");
+  const companies = useMemo(() => {
+    const featured = COMPANIES.filter((c) => c.featured);
+    const rest = COMPANIES.filter((c) => !c.featured).sort((a, b) => a.name.localeCompare(b.name));
+    return orderCompanies([...featured, ...rest], mode);
+  }, [mode]);
   return (
     <SiteShell>
       <PageHero
@@ -31,13 +38,21 @@ function HaulersIndex() {
         actions={false}
       />
       <section className="py-14">
-        <ul className="mx-auto grid max-w-6xl items-stretch gap-5 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
-          {[...featured, ...rest].map((company) => (
-            <li key={company.slug} className="min-w-0">
-              <CompanyCard company={company} />
-            </li>
-          ))}
-        </ul>
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <DirectoryFilters mode={mode} onChange={setMode} />
+          <p className="mt-4 text-sm text-taupe">{companies.length} companies</p>
+          {companies.length === 0 ? (
+            <p className="mt-8 text-sm text-taupe">No companies in this list have that published.</p>
+          ) : (
+            <ul className="mt-6 grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {companies.map((company) => (
+                <li key={company.slug} className="min-w-0">
+                  <CompanyCard company={company} note={directoryNote(company, mode)} />
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </section>
     </SiteShell>
   );

@@ -2,10 +2,12 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { MessageSquareText } from "lucide-react";
 import { useMemo, useState } from "react";
 import { CompanyCard } from "@/components/company-card";
+import { DirectoryFilters } from "@/components/directory-filters";
 import { SiteShell } from "@/components/site-shell";
 import { Button } from "@/components/ui/button";
 import { PARENT_NAME, PHONE_DISPLAY, smsHref } from "@/lib/contact";
 import { COMPANIES, NEEDS } from "@/lib/directory/companies";
+import { directoryNote, orderCompanies, type DirectoryMode } from "@/lib/directory/order";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -90,10 +92,12 @@ function Home() {
 
 function Directory() {
   const [need, setNeed] = useState<string | null>(null);
+  const [mode, setMode] = useState<DirectoryMode>("default");
   const list = useMemo(() => {
     const rest = COMPANIES.filter((c) => !c.featured);
-    return need ? rest.filter((c) => c.needs.includes(need)) : rest;
-  }, [need]);
+    const filtered = need ? rest.filter((c) => c.needs.includes(need)) : rest;
+    return orderCompanies(filtered, mode);
+  }, [need, mode]);
 
   return (
     <section className="py-12 sm:py-16">
@@ -112,7 +116,10 @@ function Directory() {
             All {COMPANIES.length} companies
           </Link>
         </div>
-        <div className="mt-6 flex flex-wrap gap-2">
+        <div className="mt-6">
+          <DirectoryFilters mode={mode} onChange={setMode} />
+        </div>
+        <div className="mt-5 flex flex-wrap gap-2">
           <FilterChip active={need === null} onClick={() => setNeed(null)} label="All needs" />
           {NEEDS.map((item) => (
             <FilterChip
@@ -123,13 +130,17 @@ function Directory() {
             />
           ))}
         </div>
-        <ul className="mt-8 grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {list.map((company) => (
-            <li key={company.slug} className="min-w-0">
-              <CompanyCard company={company} />
-            </li>
-          ))}
-        </ul>
+        {list.length === 0 ? (
+          <p className="mt-8 text-sm text-taupe">No companies in this list have that published.</p>
+        ) : (
+          <ul className="mt-8 grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {list.map((company) => (
+              <li key={company.slug} className="min-w-0">
+                <CompanyCard company={company} note={directoryNote(company, mode)} />
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </section>
   );
