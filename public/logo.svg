@@ -1,12 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 32" role="img" aria-label="Local junk only">
   <rect width="32" height="32" rx="8" fill="#1A0DAB"/>
-  <rect x="6" y="14" width="9" height="8" rx="1" fill="#FFFFFF"/>
-  <rect x="15" y="11" width="11" height="11" rx="1.25" fill="#FFFFFF"/>
-  <rect x="17.2" y="13.1" width="4.6" height="3.4" rx="0.5" fill="#1A0DAB"/>
-  <circle cx="10" cy="23.4" r="2.15" fill="#FFFFFF"/>
-  <circle cx="21.2" cy="23.4" r="2.15" fill="#FFFFFF"/>
-  <circle cx="10" cy="23.4" r="0.85" fill="#1A0DAB"/>
-  <circle cx="21.2" cy="23.4" r="0.85" fill="#1A0DAB"/>
+  <path fill="#FFFFFF" d="M7.2 17.6V12.4h9.2l2.2-2.4h6.8v7.6H7.2z"/>
+  <path fill="#1A0DAB" d="M18.5 12.2h4.2v2.6h-5.2l1-2.6z"/>
+  <circle cx="10.8" cy="20.6" r="2.15" fill="#FFFFFF"/>
+  <circle cx="21.4" cy="20.6" r="2.15" fill="#FFFFFF"/>
+  <circle cx="10.8" cy="20.6" r="0.9" fill="#1A0DAB"/>
+  <circle cx="21.4" cy="20.6" r="0.9" fill="#1A0DAB"/>
   <text x="42" y="15" fill="#202124" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" letter-spacing="1.6">LOCAL JUNK ONLY</text>
   <line x1="42" y1="22" x2="236" y2="22" stroke="#1A0DAB" stroke-width="1"/>
 </svg>
