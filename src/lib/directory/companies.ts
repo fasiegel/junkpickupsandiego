@@ -1296,7 +1296,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Dumpster rental", "Junk removal", "Concrete", "Dirt", "Published pricing"],
     needs: ["construction", "furniture", "appliances", "cleanout"],
     coverage: "county",
-    images: [],
+    images: [
+      "/haulers/clean-green-hauling-photo-1.jpg",
+      "/haulers/clean-green-hauling-photo-2.jpg",
+      "/haulers/clean-green-hauling-photo-3.jpg",
+      "/haulers/clean-green-hauling-photo-4.jpg",
+    ],
   },
   {
     slug: "a-and-n-coastal-hauling",

@@ -840,6 +840,7 @@ export const PROFILES: Record<
       "That junk page says pricing starts at $99 for a full-size pickup and that they cannot haul chemicals or paint. Named items include furniture, appliances, couches, concrete, fencing, construction debris, and hot tubs. Curbside residential junk removal is listed as available.",
       "Dumpster pages list rentals starting at $625 on the main dumpster page, with extra tons at $185, plus flat rates for clean dirt and clean concrete. Other city pages on the same site show lower dumpster starting prices, so confirm the current number when you book. They offer online scheduling and LEED recycling certificates.",
       "Yelp lists this phone and cghauling.com, owner Matt B., at 4.8 from 53 reviews. Hours on that page are 7 AM–9 PM every day, which does not match the site, so the Monday–Friday site hours stay.",
+      "A Yelp photo shows two roll-off trucks with a green recycle mark on the doors. Another photo is a black trailer lettered Clean Green Hauling. A crew photo in front of that trailer shows ghauling.com and (858) 999-5477.",
     ],
     links: [
       { label: "Dumpsters", href: "https://www.cghauling.com/" },
