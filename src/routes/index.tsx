@@ -94,7 +94,7 @@ function Directory() {
   const [need, setNeed] = useState<string | null>(null);
   const [mode, setMode] = useState<DirectoryMode>("default");
   const list = useMemo(() => {
-    const rest = COMPANIES.filter((c) => !c.featured);
+    const rest = mode === "default" ? COMPANIES.filter((c) => !c.featured) : COMPANIES;
     const filtered = need ? rest.filter((c) => c.needs.includes(need)) : rest;
     return orderCompanies(filtered, mode);
   }, [need, mode]);
