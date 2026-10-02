@@ -759,13 +759,6 @@ export const PROFILES: Record<
     ],
     links: [],
   },
-  "sd-haul-and-dump": {
-    details: [
-      "A Yahoo listing for SD Haul & Dump at (619) 977-1272 says the company is veteran-owned, serves San Diego County, and does furniture pickups through full property clearouts, with same-day service. Email on that listing is info@sdhaulanddump.com.",
-      "Do not confuse this number with SD Hauling in Poway, (619) 348-5865. No working website was confirmed for 977-1272.",
-    ],
-    links: [],
-  },
   "american-haul-away": {
     details: [
       "americanhaulaway.com lists (858) 551-9376 along with (619) 543-0375 and (760) 233-2033. The site says the company is family-owned, has served San Diego County since 1993, and holds CSLB license 821997.",

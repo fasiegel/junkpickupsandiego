@@ -12,6 +12,7 @@ import { PROFILES } from "@/lib/directory/profiles";
  * - Javier Junk Removal & Concrete Work, (619) 886-8970. Owner said it has closed.
  * - North Park Haulers, (619) 808-4405. Owner asked it removed.
  * - Green Earth USA, (805) 490-1298. Owner asked it removed.
+ * - SD Haul & Dump LLC, (619) 977-1272. Owner asked it removed.
  * Only list a hauler when the phone or address matches a public page.
  */
 
@@ -1146,21 +1147,6 @@ export const COMPANIES: Company[] = [
     specialties: ["North County", "Cleanouts", "Light demolition"],
     needs: ["cleanout", "construction", "north-county"],
     coverage: ["oceanside"],
-    images: [],
-  },
-  {
-    slug: "sd-haul-and-dump",
-    name: "SD Haul & Dump LLC",
-    url: null,
-    phone: "(619) 977-1272",
-    email: "info@sdhaulanddump.com",
-    address: null,
-    hours: null,
-    blurb:
-      "Yahoo listing for this phone says veteran-owned junk removal across San Diego County, from furniture pickups to property clearouts, with same-day service. This is not SD Hauling in Poway, which uses (619) 348-5865.",
-    specialties: ["Veteran-owned", "Same-day", "Cleanouts", "Furniture"],
-    needs: ["same-day", "furniture", "cleanout"],
-    coverage: "county",
     images: [],
   },
   {

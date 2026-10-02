@@ -597,11 +597,6 @@ export const FACTS: Record<string, ListingFacts> = {
     curbside: "Not listed",
     publishedPrices: "A Thumbtack answer says basic hauling starts at $160 with the dump fee",
   }),
-  "sd-haul-and-dump": fact({
-    onlineBooking: "Not listed",
-    curbside: "Not listed",
-    publishedPrices: "No",
-  }),
   "american-haul-away": fact({
     years: "Their site says serving San Diego County since 1993",
     googleUrl: "https://www.google.com/maps?cid=17347670256953588175&hl=en",
