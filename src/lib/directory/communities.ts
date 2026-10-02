@@ -88,6 +88,8 @@ export const COMMUNITIES: Community[] = [
   { slug: "jamul", name: "Jamul", region: "East County", zips: ["91935"] },
   { slug: "pine-valley", name: "Pine Valley", region: "East County", zips: ["91962"] },
   { slug: "ramona", name: "Ramona", region: "East County", zips: ["92065"] },
+  { slug: "julian", name: "Julian", region: "East County", zips: ["92036"] },
+  { slug: "san-diego-country-estates", name: "San Diego Country Estates", region: "East County", zips: ["92065"] },
 
   { slug: "del-mar", name: "Del Mar", region: "North County", zips: ["92014"] },
   { slug: "solana-beach", name: "Solana Beach", region: "North County", zips: ["92075"] },

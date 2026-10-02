@@ -167,7 +167,7 @@ export const PROFILES: Record<
       "Junk Fairy is a family-owned, full-service San Diego hauler. Yelp lists Arman as the owner, at 10884 Sabre Hill Dr, San Diego 92128. Call (858) 361-7941.",
       "They haul appliances, furniture, hot tubs, office equipment, scrap metal, mattresses, electronics, bicycles, carpet, and bulky items, plus home and commercial cleanouts. Same-day or next-day is offered.",
       "Posted load prices start at $145. Small loads are $145–$365, medium $365–$565, large $565–$765, and extra-large $765–$965. The quote is given before they load. They recycle and donate usable items.",
-      "A business listing describes county coverage from Oceanside through Poway, Mira Mesa, Clairemont, Rancho Peñasquitos, Rancho Bernardo, North Park, and La Mesa.",
+      "Cities named are Poway, La Jolla, Del Mar, Encinitas, Carlsbad, Coronado, Oceanside, El Cajon, La Mesa, Escondido, San Marcos, Vista, Santee, Imperial Beach, Spring Valley, Lemon Grove, Julian, Fallbrook, National City, Solana Beach, Lakeside, Rancho Santa Fe, Bonita, Chula Vista, Alpine, Valley Center, Camp Pendleton North, Rancho San Diego, Jamul, and San Diego Country Estates.",
     ],
     links: [
       { label: "Furniture removal", href: "https://www.junkfairy.com/furniture-removal-san-diego" },
