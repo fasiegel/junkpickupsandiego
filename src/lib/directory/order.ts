@@ -1,14 +1,13 @@
 import { FACTS } from "@/lib/directory/facts";
-import { ITEM_PRICES, LOAD_PRICES, YARD_PRICES, moneyRange } from "@/lib/directory/prices";
+import { ITEM_PRICES, YARD_PRICES, moneyRange } from "@/lib/directory/prices";
 import type { Company } from "@/lib/directory/companies";
 
-export type DirectoryMode = "default" | "google" | "yelp" | "item" | "truck" | "yard" | "published" | "years" | "north";
+export type DirectoryMode = "default" | "google" | "yelp" | "item" | "yard" | "published" | "years" | "north";
 
 export const DIRECTORY_MODES: { id: Exclude<DirectoryMode, "default">; label: string; hint: string }[] = [
   { id: "google", label: "Google reviews", hint: "Highest Google rating first. Most reviews break a tie." },
   { id: "yelp", label: "Yelp reviews", hint: "Highest Yelp rating first. Most reviews break a tie." },
   { id: "item", label: "Single item price", hint: "Lowest published single-item or minimum price first." },
-  { id: "truck", label: "Full truck price", hint: "Lowest published full-truck price first." },
   { id: "yard", label: "Price per cubic yard", hint: "Lowest price per cubic yard first. Only trucks with a stated size." },
   { id: "published", label: "Published prices", hint: "Only companies that publish prices." },
   { id: "years", label: "Years in business", hint: "Longest published history first." },
@@ -86,7 +85,6 @@ function scoreFor(slug: string, mode: DirectoryMode): number | null {
   if (mode === "google") return googleScore(slug);
   if (mode === "yelp") return yelpScore(slug);
   if (mode === "item") return priceLow(ITEM_PRICES, "starting", slug);
-  if (mode === "truck") return priceLow(LOAD_PRICES, "full", slug);
   if (mode === "yard") return yardQuote(slug)?.low ?? null;
   if (mode === "published") return factsFor(slug)?.publishedPrices.startsWith("Yes") ? 1 : null;
   if (mode === "years") return yearsInBusiness(factsFor(slug)?.years);
@@ -115,10 +113,6 @@ export function directoryNote(company: Company, mode: DirectoryMode): string | n
     const price = priceLow(ITEM_PRICES, "starting", company.slug);
     return price === null ? null : `Single item from $${price}`;
   }
-  if (mode === "truck") {
-    const price = priceLow(LOAD_PRICES, "full", company.slug);
-    return price === null ? null : `Full truck from $${price}`;
-  }
   if (mode === "yard") {
     const quote = yardQuote(company.slug);
     return quote ? `Per cubic yard ${moneyRange(quote.low, quote.high)}` : null;
@@ -136,7 +130,7 @@ export function orderCompanies(companies: Company[], mode: DirectoryMode): Compa
     .sort((a, b) => {
       const left = scoreFor(a.slug, mode) ?? 0;
       const right = scoreFor(b.slug, mode) ?? 0;
-      const diff = mode === "item" || mode === "truck" || mode === "yard" ? left - right : right - left;
+      const diff = mode === "item" || mode === "yard" ? left - right : right - left;
       if (diff !== 0) return diff;
       return a.name.localeCompare(b.name);
     });
