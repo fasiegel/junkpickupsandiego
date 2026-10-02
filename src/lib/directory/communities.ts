@@ -86,6 +86,7 @@ export const COMMUNITIES: Community[] = [
   { slug: "rancho-san-diego", name: "Rancho San Diego", region: "East County", zips: ["91978"] },
   { slug: "alpine", name: "Alpine", region: "East County", zips: ["91901"] },
   { slug: "jamul", name: "Jamul", region: "East County", zips: ["91935"] },
+  { slug: "pine-valley", name: "Pine Valley", region: "East County", zips: ["91962"] },
   { slug: "ramona", name: "Ramona", region: "East County", zips: ["92065"] },
 
   { slug: "del-mar", name: "Del Mar", region: "North County", zips: ["92014"] },
@@ -101,6 +102,9 @@ export const COMMUNITIES: Community[] = [
   { slug: "poway", name: "Poway", region: "North County", zips: ["92064"] },
   { slug: "rancho-santa-fe", name: "Rancho Santa Fe", region: "North County", zips: ["92067"] },
   { slug: "fairbanks-ranch", name: "Fairbanks Ranch", region: "North County", zips: ["92067"] },
+  { slug: "bonsall", name: "Bonsall", region: "North County", zips: ["92003"] },
+  { slug: "valley-center", name: "Valley Center", region: "North County", zips: ["92082"] },
+  { slug: "camp-pendleton", name: "Camp Pendleton", region: "North County", zips: ["92055"] },
 ];
 
 const bySlug = new Map(COMMUNITIES.map((c) => [c.slug, c]));
