@@ -655,11 +655,6 @@ export const FACTS: Record<string, ListingFacts> = {
     curbside: "Not listed",
     publishedPrices: "No",
   }),
-  "time-to-junk-it": fact({
-    onlineBooking: "Not listed",
-    curbside: "Not listed",
-    publishedPrices: "No",
-  }),
   "clean-green-hauling": fact({
     googleUrl: "https://www.google.com/maps?cid=11431313967923745788&hl=en",
     googleRating: "4.3",

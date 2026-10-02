@@ -1259,21 +1259,6 @@ export const COMPANIES: Company[] = [
     images: ["/haulers/johans-junk-removal-photo-1.png"],
   },
   {
-    slug: "time-to-junk-it",
-    name: "Time to Junk It",
-    url: null,
-    phone: "(619) 354-1042",
-    email: null,
-    address: "16855 Ralphs Ranch Rd, San Diego, CA 92127",
-    hours: "Mon–Sat 8:00 AM – 8:00 PM. Sunday closed.",
-    blurb:
-      "Family-owned company run by Matt and Rose Spurr. Their Poway Chamber page says residential and commercial junk removal across San Diego County, including household items, greenery, construction debris, and appliances. They note they speak Spanish.",
-    specialties: ["Family-owned", "Appliances", "Construction debris", "Yard waste"],
-    needs: ["furniture", "appliances", "construction", "commercial"],
-    coverage: "county",
-    images: [],
-  },
-  {
     slug: "pugs-junk-removal",
     name: "Pug's Junk Removal",
     url: null,

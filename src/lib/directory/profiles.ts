@@ -828,13 +828,6 @@ export const PROFILES: Record<
       { label: "Yelp", href: "https://www.yelp.com/biz/johans-junk-removal-and-hauling-san-diego" },
     ],
   },
-  "time-to-junk-it": {
-    details: [
-      "Time to Junk It at (619) 354-1042 is owned by Matt and Rose Spurr. A Yahoo listing gives 16855 Ralphs Ranch Rd, San Diego 92127, and hours Monday–Saturday 8 AM–8 PM, Sunday closed. The listing says they are licensed and speak Spanish.",
-      "The Poway Chamber page says they haul unwanted household items, greenery, construction debris, and appliances for homes and businesses across San Diego County. A 15% returning-customer discount appears only in a generated MapQuest summary, so it is not listed as a published price.",
-    ],
-    links: [{ label: "Poway Chamber", href: "https://business.poway.com/list/member/time-to-junk-it-14152" }],
-  },
   "pugs-junk-removal": {
     details: [
       "The only confirmed detail is the phone on file, (858) 504-3745. Public listings for a company named Pug’s Junk Removal use (858) 276-1722, so those sites are not attached.",
