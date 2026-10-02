@@ -11,6 +11,7 @@ import { PROFILES } from "@/lib/directory/profiles";
  * - Matt's Hauling and Removal, (619) 226-9747. A Yelp page for this name was closed.
  * - Javier Junk Removal & Concrete Work, (619) 886-8970. Owner said it has closed.
  * - North Park Haulers, (619) 808-4405. Owner asked it removed.
+ * - Green Earth USA, (805) 490-1298. Owner asked it removed.
  * Only list a hauler when the phone or address matches a public page.
  */
 
@@ -1207,21 +1208,6 @@ export const COMPANIES: Company[] = [
       "Only this phone is on file. fullyloadedjunkremoval.com publishes a different number, (619) 566-1983, so that site is not linked.",
     specialties: ["Junk removal"],
     needs: [],
-    coverage: [],
-    images: [],
-  },
-  {
-    slug: "green-earth-usa",
-    name: "Green Earth USA",
-    url: null,
-    phone: "(805) 490-1298",
-    email: null,
-    address: "7850 North Ave, Lemon Grove, CA 91945",
-    hours: null,
-    blurb:
-      "Nextdoor lists Green Earth San Diego at this phone and address, owner Dylon. The page says they recycle, repurpose, and donate. A Thumbtack profile for Green Earth USA Inc in Santee lists junk removal, demolition, packing, and handyman work. Their own site was not confirmed.",
-    specialties: ["Recycling", "Junk removal", "Demolition"],
-    needs: ["furniture", "construction"],
     coverage: [],
     images: [],
   },

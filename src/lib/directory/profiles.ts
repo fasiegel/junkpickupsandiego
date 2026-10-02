@@ -797,13 +797,6 @@ export const PROFILES: Record<
     ],
     links: [],
   },
-  "green-earth-usa": {
-    details: [
-      "Nextdoor lists Green Earth San Diego at (805) 490-1298 and 7850 North Ave, Lemon Grove 91945. Neighbors on that page name owner Dylon. The business story says they recycle, repurpose, and donate.",
-      "A Thumbtack profile titled Green Earth USA Inc, based in Santee, lists junk removal, demolition, packing, and handyman work, with a 5.0 from 10 reviews on Thumbtack. That is not a Google rating. Their own website did not load cleanly, so it is not linked.",
-    ],
-    links: [],
-  },
   "johans-junk-removal": {
     details: [
       "johansjunkremoval.com prints (619) 942-8978 and hello@johansjunkremoval.com. Hours are Monday–Saturday 6 AM–8 PM and Sunday 2 PM–8 PM. The site says they serve all of San Diego and will not take hazardous items.",
