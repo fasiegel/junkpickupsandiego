@@ -1527,8 +1527,8 @@ export const COMPANIES: Company[] = [
     address: "North Pacific Beach, San Diego, CA",
     hours: "Mon–Fri, 6:00 AM – 5:00 PM",
     blurb:
-      "Locally owned dumpster rental and junk removal. Their junk page says pricing starts at $99 for a full-size pickup and that they cover San Diego County. The dumpster page lists rentals from $625, extra tons at $185, and says they cannot take chemicals or paint.",
-    specialties: ["Dumpster rental", "Junk removal", "Concrete", "Dirt", "Published pricing"],
+      "Locally owned, veteran-owned dumpster rental and junk removal. Their junk page says pricing starts at $99 for a full-size pickup and that they cover San Diego County. The dumpster page lists rentals from $625, extra tons at $185, and says they cannot take chemicals or paint.",
+    specialties: ["Veteran-owned", "Dumpster rental", "Junk removal", "Concrete", "Dirt", "Published pricing"],
     needs: ["construction", "furniture", "appliances", "cleanout"],
     coverage: "county",
     images: [
