@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { FredBlogGraphic } from "@/components/fred-blog-graphic";
 import { PageHero } from "@/components/page-hero";
 import { SiteShell } from "@/components/site-shell";
 import { getPost } from "@/lib/blog";
@@ -33,6 +34,7 @@ function BlogPostPage() {
         ]}
         actions={false}
       />
+      <FredBlogGraphic />
       <article className="py-12">
         <div className="mx-auto max-w-3xl space-y-5 px-4 text-base leading-relaxed text-ink-soft sm:px-6">
           {post.paragraphs.map((paragraph) => (

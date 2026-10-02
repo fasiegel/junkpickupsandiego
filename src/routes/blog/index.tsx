@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { FredBlogGraphic } from "@/components/fred-blog-graphic";
 import { PageHero } from "@/components/page-hero";
 import { SiteShell } from "@/components/site-shell";
 import { POSTS } from "@/lib/blog";
@@ -27,6 +28,7 @@ function BlogIndex() {
         crumbs={[{ label: "Home", to: "/" }, { label: "Blog" }]}
         actions={false}
       />
+      <FredBlogGraphic />
       <section className="py-12">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <ul className="space-y-8">
