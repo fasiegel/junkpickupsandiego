@@ -9,6 +9,7 @@ import { PROFILES } from "@/lib/directory/profiles";
  * - Time to Junk It, (619) 354-1042.
  * - JFD Hauling, (619) 581-1246.
  * - Matt's Hauling and Removal, (619) 226-9747. A Yelp page for this name was closed.
+ * - Javier Junk Removal & Concrete Work, (619) 886-8970. Owner said it has closed.
  * Only list a hauler when the phone or address matches a public page.
  */
 
@@ -1236,21 +1237,6 @@ export const COMPANIES: Company[] = [
     specialties: ["North Park", "Construction debris", "Same-day"],
     needs: ["construction", "same-day", "furniture", "appliances"],
     coverage: ["north-park"],
-    images: [],
-  },
-  {
-    slug: "javier-junk-removal",
-    name: "Javier Junk Removal & Concrete Work",
-    url: null,
-    phone: "(619) 886-8970",
-    email: null,
-    address: "4930 Genesee Ave, San Diego, CA 92117",
-    hours: null,
-    blurb:
-      "Clairemont directory listings for this phone put the business at 4930 Genesee Ave. Hours on those pages do not match (7 AM–5 PM versus 6 AM–9 PM), so hours are left blank. The listed website was not confirmed.",
-    specialties: ["Junk removal", "Concrete"],
-    needs: ["construction"],
-    coverage: [],
     images: [],
   },
   {

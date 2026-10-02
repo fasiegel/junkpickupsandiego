@@ -681,12 +681,4 @@ export const FACTS: Record<string, ListingFacts> = {
     curbside: "Not listed",
     publishedPrices: "No",
   }),
-  "javier-junk-removal": fact({
-    googleUrl: "https://www.google.com/maps?cid=45906082793917983&hl=en",
-    googleRating: "5.0",
-    googleReviews: "6 on Google Maps",
-    onlineBooking: "Not listed",
-    curbside: "Not listed",
-    publishedPrices: "No",
-  }),
 };

@@ -811,12 +811,6 @@ export const PROFILES: Record<
     ],
     links: [{ label: "Yelp", href: "https://www.yelp.com/biz/north-park-haulers-san-diego" }],
   },
-  "javier-junk-removal": {
-    details: [
-      "EZlocal and a city directory both list Javier Junk Removal & Concrete Work at (619) 886-8970, 4930 Genesee Ave, San Diego 92117. One page shows hours of 7 AM–5 PM and another shows 6 AM–9 PM, so hours are not displayed. No reviews were found. The website named on the directory was not confirmed.",
-    ],
-    links: [],
-  },
   "johans-junk-removal": {
     details: [
       "johansjunkremoval.com prints (619) 942-8978 and hello@johansjunkremoval.com. Hours are Monday–Saturday 6 AM–8 PM and Sunday 2 PM–8 PM. The site says they serve all of San Diego and will not take hazardous items.",
