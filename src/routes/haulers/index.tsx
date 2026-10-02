@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CompanyCard } from "@/components/company-card";
+import { useVotes } from "@/components/vote-provider";
 import { PageHero } from "@/components/page-hero";
 import { SiteShell } from "@/components/site-shell";
 import { COMPANIES } from "@/lib/directory/companies";
@@ -19,8 +20,8 @@ export const Route = createFileRoute("/haulers/")({
 });
 
 function HaulersIndex() {
-  const featured = COMPANIES.filter((c) => c.featured);
-  const rest = COMPANIES.filter((c) => !c.featured).sort((a, b) => a.name.localeCompare(b.name));
+  const { rank } = useVotes();
+  const companies = rank(COMPANIES);
   return (
     <SiteShell>
       <PageHero
@@ -32,7 +33,7 @@ function HaulersIndex() {
       />
       <section className="py-14">
         <ul className="mx-auto grid max-w-6xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
-          {[...featured, ...rest].map((company) => (
+          {companies.map((company) => (
             <li key={company.slug}>
               <CompanyCard company={company} />
             </li>

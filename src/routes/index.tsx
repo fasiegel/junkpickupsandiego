@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { MessageSquareText } from "lucide-react";
 import { useMemo, useState } from "react";
 import { CompanyCard } from "@/components/company-card";
+import { useVotes } from "@/components/vote-provider";
 import { SiteShell } from "@/components/site-shell";
 import { Button } from "@/components/ui/button";
 import { PARENT_NAME, PHONE_DISPLAY, smsHref } from "@/lib/contact";
@@ -23,12 +24,13 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   const [need, setNeed] = useState<string | null>(null);
+  const { rank } = useVotes();
   const fred = COMPANIES.find((c) => c.featured)!;
   const list = useMemo(() => {
     const rest = COMPANIES.filter((c) => !c.featured);
     const filtered = need ? rest.filter((c) => c.needs.includes(need)) : rest;
-    return filtered;
-  }, [need]);
+    return rank(filtered);
+  }, [need, rank]);
 
   return (
     <SiteShell>

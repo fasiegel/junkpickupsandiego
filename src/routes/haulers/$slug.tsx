@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { CompanyPhoto } from "@/components/company-card";
+import { VoteButton } from "@/components/vote-button";
 import { PageHero } from "@/components/page-hero";
 import { SiteShell } from "@/components/site-shell";
 import { Button } from "@/components/ui/button";
@@ -169,6 +170,7 @@ function HaulerPage() {
       <section className="py-12">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
+            <VoteButton slug={company.slug} />
             {photos.length > 0 ? (
             <div className="grid gap-3 sm:grid-cols-2">
               {photos.map((src) => (
