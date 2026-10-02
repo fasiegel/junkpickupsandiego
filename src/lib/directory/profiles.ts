@@ -751,14 +751,6 @@ export const PROFILES: Record<
     ],
     links: [],
   },
-  "clear-space-junk": {
-    details: [
-      "Yahoo lists Clear Space Junk Solutions at (760) 871-3279, 456 Blue Sage Way, Oceanside 92057, email Csjsolutions1@gmail.com, owner Alberto “Beto” Lozada. The description says residential and commercial junk removal, property cleanouts, light demolition, and hauling in North County, and that they are insured.",
-      "A Thumbtack answer on a profile using this phone says basic junk removal starts at $160 including the dump fee. That page also says about one year in business. The Yahoo hours say open 24 hours.",
-      "Yahoo mirrors 3 Yelp reviews at 5.0 for this phone and owner Beto. The only Yelp business page found under the name Clear Space Junk Removal is Newport Beach, 1.0 from 1 review, a different company. No Oceanside Yelp URL was confirmed.",
-    ],
-    links: [],
-  },
   "american-haul-away": {
     details: [
       "americanhaulaway.com lists (858) 551-9376 along with (619) 543-0375 and (760) 233-2033. The site says the company is family-owned, has served San Diego County since 1993, and holds CSLB license 821997.",

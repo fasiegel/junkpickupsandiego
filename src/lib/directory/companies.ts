@@ -13,6 +13,7 @@ import { PROFILES } from "@/lib/directory/profiles";
  * - North Park Haulers, (619) 808-4405. Owner asked it removed.
  * - Green Earth USA, (805) 490-1298. Owner asked it removed.
  * - SD Haul & Dump LLC, (619) 977-1272. Owner asked it removed.
+ * - Clear Space Junk Solutions, (760) 871-3279. Owner asked it removed.
  * Only list a hauler when the phone or address matches a public page.
  */
 
@@ -1132,21 +1133,6 @@ export const COMPANIES: Company[] = [
     specialties: ["Junk removal"],
     needs: [],
     coverage: [],
-    images: [],
-  },
-  {
-    slug: "clear-space-junk",
-    name: "Clear Space Junk Solutions",
-    url: null,
-    phone: "(760) 871-3279",
-    email: "Csjsolutions1@gmail.com",
-    address: "456 Blue Sage Way, Oceanside, CA 92057",
-    hours: "A Yahoo listing says open 24 hours",
-    blurb:
-      "Oceanside hauler at this phone, owner Alberto “Beto” Lozada. Residential and commercial junk removal, property cleanouts, and light demolition in North County. A Thumbtack answer says basic hauling starts at $160 including the dump fee.",
-    specialties: ["North County", "Cleanouts", "Light demolition"],
-    needs: ["cleanout", "construction", "north-county"],
-    coverage: ["oceanside"],
     images: [],
   },
   {
