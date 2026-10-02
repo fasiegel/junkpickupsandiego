@@ -157,10 +157,14 @@ export const YARD_PRICES: PriceGroup[] = [
   {
     id: "per-yard",
     title: "Per cubic yard",
-    detail: "Published load price divided by the cubic yards that company states.",
+    detail: "Full-load price divided by the cubic yards the company states for that truck. A bed measured in feet is length times width times height, divided by 27.",
     quotes: [
-      { slug: "freds-junk-removal", note: "Posted chart, 2 to 20 yards", low: 119 / 4, high: 130 / 2 },
-      { slug: "severin-hauling", note: "Full 12-cubic-yard load", low: 495 / 12, high: 495 / 12 },
+      { slug: "the-junk-transporter", note: "16 by 8 by 4 foot dump bed, full load $550", low: (550 * 27) / (16 * 8 * 4), high: (550 * 27) / (16 * 8 * 4) },
+      { slug: "freds-junk-removal", note: "Full 20-cubic-yard truck, curbside to full-service", low: 599 / 20, high: 899 / 20 },
+      { slug: "dan-the-man-haul-away", note: "Full truck, about 15 cubic yards, $450–$550", low: 450 / 15, high: 550 / 15 },
+      { slug: "severin-hauling", note: "Full 12-cubic-yard load, $495", low: 495 / 12, high: 495 / 12 },
+      { slug: "impact-environmental", note: "14 by 8 by 5 foot bed, full household load $949", low: (949 * 27) / (14 * 8 * 5), high: (949 * 27) / (14 * 8 * 5) },
+      { slug: "junkmd", note: "Full truck, about 15 cubic yards, $899", low: 899 / 15, high: 899 / 15 },
     ],
   },
 ];
