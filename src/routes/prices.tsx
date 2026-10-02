@@ -76,16 +76,29 @@ function ItemAverages({ groups }: { groups: PriceGroup[] }) {
       <h2 className="font-display text-3xl font-bold tracking-wide text-ink uppercase">
         Individual items
       </h2>
-      <ul className="mt-4 divide-y divide-line rounded-xl bg-cream">
+      <div className="mt-6 space-y-8">
         {groups.map((group) => {
           const summary = summarize(group.quotes);
           return (
-            <li key={group.id} className="px-4 py-3 text-sm text-ink">
-              {group.title} Average price {money(summary.avg)} from {summary.count} published prices.
-            </li>
+            <div key={group.id}>
+              <h3 className="text-sm font-medium text-ink">
+                {group.title} Average price {money(summary.avg)} from {summary.count} published prices.
+              </h3>
+              <ul className="mt-3 divide-y divide-line rounded-xl bg-cream">
+                {group.quotes.map((quote) => (
+                  <li
+                    key={`${group.id}-${quote.slug}`}
+                    className="grid gap-1 px-4 py-3 sm:grid-cols-[14rem_1fr] sm:items-baseline sm:gap-4"
+                  >
+                    <CompanyLink quote={quote} />
+                    <p className="text-sm text-ink-soft">{moneyRange(quote.low, quote.high)}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           );
         })}
-      </ul>
+      </div>
     </div>
   );
 }
