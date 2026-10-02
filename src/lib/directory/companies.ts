@@ -2,6 +2,16 @@ import { COMMUNITIES, type Community } from "@/lib/directory/communities";
 import { FACTS, type ListingFacts } from "@/lib/directory/facts";
 import { PROFILES } from "@/lib/directory/profiles";
 
+/**
+ * Owner asked these off the directory. Do not add them back.
+ * - Getridofit.com San Diego, (619) 780-2279. Not a junk hauler. getridofit.com
+ *   buys valuables; that site's phone is 877-405-3165.
+ * - Time to Junk It, (619) 354-1042.
+ * - JFD Hauling, (619) 581-1246.
+ * - Matt's Hauling and Removal, (619) 226-9747. A Yelp page for this name was closed.
+ * Only list a hauler when the phone or address matches a public page.
+ */
+
 export type Company = {
   slug: string;
   name: string;
