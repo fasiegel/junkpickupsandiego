@@ -24,7 +24,7 @@ function BlogIndex() {
       <PageHero
         kicker="Blog"
         title="Local notes on junk removal."
-        lede="How to find a San Diego hauler and how to read junk removal service prices before you book."
+        lede="Dedicated to transparent up front pricing and service that makes you say wow!"
         crumbs={[{ label: "Home", to: "/" }, { label: "Blog" }]}
         actions={false}
       />
