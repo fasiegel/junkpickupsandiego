@@ -19,6 +19,7 @@ export const ITEM_PRICES: PriceGroup[] = [
     detail: "The lowest household price each company prints. A minimum is not the bill for a large pile.",
     quotes: [
       { slug: "american-haul-away", note: "Full-service starts at", low: 65, high: 65 },
+      { slug: "freds-junk-removal", note: "One item, curbside to full-service", low: 69, high: 130 },
       { slug: "severin-hauling", note: "Small items from", low: 69, high: 69 },
       { slug: "haul-out", note: "Curbside single item", low: 79, high: 99 },
       { slug: "fetch-junk", note: "Small pile from", low: 89, high: 89 },
@@ -40,6 +41,7 @@ export const ITEM_PRICES: PriceGroup[] = [
     title: "Couch",
     detail: "Posted couch or sofa prices. Severin groups a couch with a standard appliance.",
     quotes: [
+      { slug: "freds-junk-removal", note: "One sofa, curbside to full-service", low: 69, high: 130 },
       { slug: "priority-hauling", note: "Standard couch from", low: 89, high: 89 },
       { slug: "severin-hauling", note: "Couch or appliance from", low: 100, high: 100 },
       { slug: "fetch-junk", note: "Small sofa from", low: 119, high: 119 },
@@ -51,6 +53,7 @@ export const ITEM_PRICES: PriceGroup[] = [
     title: "Mattress",
     detail: "Posted mattress prices. Sizes are not the same: Priority’s figure is a king.",
     quotes: [
+      { slug: "freds-junk-removal", note: "One mattress, curbside to full-service", low: 69, high: 130 },
       { slug: "the-junk-transporter", note: "Mattress from", low: 99, high: 99 },
       { slug: "fetch-junk", note: "Small mattress $99, large mattress $109", low: 99, high: 109 },
       { slug: "priority-hauling", note: "King mattress", low: 150, high: 150 },
@@ -61,6 +64,7 @@ export const ITEM_PRICES: PriceGroup[] = [
     title: "Refrigerator or appliance",
     detail: "Posted fridge and appliance prices. A wide appliance range that is not one fridge is left out.",
     quotes: [
+      { slug: "freds-junk-removal", note: "One fridge, curbside to full-service", low: 69, high: 130 },
       { slug: "priority-hauling", note: "Fridge, freezer, or washer from", low: 89, high: 89 },
       { slug: "severin-hauling", note: "Couch or appliance from", low: 100, high: 100 },
       { slug: "fetch-junk", note: "Refrigerator", low: 99, high: 139 },
@@ -102,6 +106,7 @@ export const LOAD_PRICES: PriceGroup[] = [
     title: "Half truck",
     detail: "About half the truck. Rancho’s page adds a plus after the top of the range.",
     quotes: [
+      { slug: "freds-junk-removal", note: "Half of a 20-yard truck, curbside to full-service", low: 299, high: 450 },
       { slug: "pick-ur-junk", note: "Half load", low: 200, high: 280 },
       { slug: "jdog-junk-removal", note: "1/2 truck", low: 250, high: 350 },
       { slug: "fetch-junk", note: "Half load", low: 349, high: 349 },
@@ -131,6 +136,7 @@ export const LOAD_PRICES: PriceGroup[] = [
     title: "Full truck",
     detail: "A full truck or trailer of household junk. Trucks are not the same size. Rancho’s page adds a plus after the top of the range.",
     quotes: [
+      { slug: "freds-junk-removal", note: "Full 20-yard truck, curbside to full-service", low: 599, high: 899 },
       { slug: "pick-ur-junk", note: "Full haul", low: 450, high: 500 },
       { slug: "severin-hauling", note: "Full 12-cubic-yard load", low: 495, high: 495 },
       { slug: "the-junk-transporter", note: "Full dump truck", low: 550, high: 550 },

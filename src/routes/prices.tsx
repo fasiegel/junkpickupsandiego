@@ -11,7 +11,6 @@ import {
   type PriceGroup,
   type PriceQuote,
 } from "@/lib/directory/prices";
-import { TRUCK_TIERS } from "@/lib/pricing";
 
 const NAMES = new Map(COMPANIES.map((company) => [company.slug, company.name]));
 
@@ -30,9 +29,6 @@ export const Route = createFileRoute("/prices")({
 });
 
 function PricesPage() {
-  const oneItem = TRUCK_TIERS[0]!;
-  const fullTruck = TRUCK_TIERS[TRUCK_TIERS.length - 1]!;
-
   return (
     <SiteShell>
       <PageHero
@@ -62,9 +58,7 @@ function PricesPage() {
             </div>
           </div>
           <p className="max-w-3xl text-sm leading-relaxed text-taupe">
-            Fred’s posted household prices are not in the averages. One item is {money(oneItem.curbside)}{" "}
-            curbside or {money(oneItem.full)} full-service. A packed truck is {money(fullTruck.curbside)}{" "}
-            curbside or {money(fullTruck.full)} full-service.{" "}
+            Fred’s rows run from the curbside price to the full-service price. The average uses the middle of that range. A quarter or three-quarter truck is not listed for Fred’s because those sizes are not on the posted chart.{" "}
             <Link to="/" hash="calculator" className="font-medium text-rust">
               Open the truck load calculator
             </Link>
