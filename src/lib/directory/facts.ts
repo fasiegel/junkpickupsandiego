@@ -420,6 +420,9 @@ export const FACTS: Record<string, ListingFacts> = {
     publishedPrices: "No",
   }),
   "strong-hauling": fact({
+    googleUrl: "https://www.google.com/maps?cid=8460930047476013504&hl=en",
+    googleRating: "4.9",
+    googleReviews: "371 on Google Maps",
     onlineBooking: "No",
     curbside: "No",
     publishedPrices: "No",
