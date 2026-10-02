@@ -18,7 +18,7 @@ const NAMES = new Map(COMPANIES.map((company) => [company.slug, company.name]));
 export const Route = createFileRoute("/prices")({
   head: () => ({
     meta: [
-      { title: "Average Junk Removal Prices in San Diego" },
+      { title: "Average Junk Removal Costs in San Diego" },
       {
         name: "description",
         content:
@@ -34,7 +34,7 @@ function PricesPage() {
     <SiteShell>
       <PageHero
         kicker="Prices"
-        title="Average junk removal prices."
+        title="Average junk removal costs in San Diego."
         lede="Averages of the household prices already printed by haulers in this directory. A company with no price on its site is not included. This is not a quote."
         crumbs={[{ label: "Home", to: "/" }, { label: "Prices" }]}
         actions={false}
