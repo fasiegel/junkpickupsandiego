@@ -153,6 +153,18 @@ export const LOAD_PRICES: PriceGroup[] = [
   },
 ];
 
+export const YARD_PRICES: PriceGroup[] = [
+  {
+    id: "per-yard",
+    title: "Per cubic yard",
+    detail: "Published load price divided by the cubic yards that company states.",
+    quotes: [
+      { slug: "freds-junk-removal", note: "Posted chart, 2 to 20 yards", low: 119 / 4, high: 130 / 2 },
+      { slug: "severin-hauling", note: "Full 12-cubic-yard load", low: 495 / 12, high: 495 / 12 },
+    ],
+  },
+];
+
 export function quoteMid(quote: PriceQuote): number {
   return (quote.low + quote.high) / 2;
 }

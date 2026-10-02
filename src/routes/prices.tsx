@@ -5,6 +5,7 @@ import { COMPANIES } from "@/lib/directory/companies";
 import {
   ITEM_PRICES,
   LOAD_PRICES,
+  YARD_PRICES,
   money,
   moneyRange,
   summarize,
@@ -21,7 +22,7 @@ export const Route = createFileRoute("/prices")({
       {
         name: "description",
         content:
-          "Average San Diego junk removal prices from the numbers local haulers print: single items, couches, mattresses, appliances, hot tubs, and quarter, half, and full truck loads.",
+          "Average San Diego junk removal prices from the numbers local haulers print: single items, couches, mattresses, appliances, hot tubs, price per cubic yard, and quarter, half, and full truck loads.",
       },
     ],
   }),
@@ -45,7 +46,8 @@ function PricesPage() {
             The average is those middles, rounded to the dollar. Stairs, weight, concrete, and yard
             waste can cost more. Most haulers in this guide do not publish prices.
           </p>
-          <ItemAverages groups={ITEM_PRICES} />
+          <ItemAverages heading="Individual items" groups={ITEM_PRICES} />
+          <ItemAverages heading="Price per cubic yard" groups={YARD_PRICES} />
           <PriceTable title="Truck loads" groups={LOAD_PRICES} />
           <div>
             <h2 className="font-display text-3xl font-bold tracking-wide text-ink uppercase">
@@ -70,12 +72,10 @@ function PricesPage() {
   );
 }
 
-function ItemAverages({ groups }: { groups: PriceGroup[] }) {
+function ItemAverages({ heading, groups }: { heading: string; groups: PriceGroup[] }) {
   return (
     <div>
-      <h2 className="font-display text-3xl font-bold tracking-wide text-ink uppercase">
-        Individual items
-      </h2>
+      <h2 className="font-display text-3xl font-bold tracking-wide text-ink uppercase">{heading}</h2>
       <div className="mt-6 space-y-8">
         {groups.map((group) => {
           const summary = summarize(group.quotes);
