@@ -14,6 +14,7 @@ import { PROFILES } from "@/lib/directory/profiles";
  * - Green Earth USA, (805) 490-1298. Owner asked it removed.
  * - SD Haul & Dump LLC, (619) 977-1272. Owner asked it removed.
  * - Clear Space Junk Solutions, (760) 871-3279. Owner asked it removed.
+ * - Junk and Trash Hauling San Diego, (619) 908-0333. Owner asked it removed.
  * Only list a hauler when the phone or address matches a public page.
  */
 
@@ -1004,21 +1005,6 @@ export const COMPANIES: Company[] = [
       "rancho-san-diego",
     ],
     images: ["/haulers/impact-environmental-photo-1.webp"],
-  },
-  {
-    slug: "junk-and-trash-hauling",
-    name: "Junk and Trash Hauling San Diego",
-    url: null,
-    phone: "(619) 908-0333",
-    email: null,
-    address: "1041 Market St Unit 219, San Diego, CA 92101",
-    hours: null,
-    blurb:
-      "Downtown listing matched to this phone. A website was not confirmed. One domain that came up in search redirected to an unrelated roofer and is not linked.",
-    specialties: ["Junk removal"],
-    needs: [],
-    coverage: [],
-    images: [],
   },
   {
     slug: "top-tier-junk-removal",

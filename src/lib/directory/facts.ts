@@ -482,14 +482,6 @@ export const FACTS: Record<string, ListingFacts> = {
     curbside: "Not listed",
     publishedPrices: "No",
   }),
-  "junk-and-trash-hauling": fact({
-    googleUrl: "https://www.google.com/maps?cid=10198458293645128813&hl=en",
-    googleRating: "5.0",
-    googleReviews: "101 on Google Maps",
-    onlineBooking: "Not listed",
-    curbside: "Not listed",
-    publishedPrices: "Not listed",
-  }),
   "jakes-junk-removal": fact({
     years: "Their site says serving San Diego since 2017",
     googleUrl: "https://www.google.com/maps?cid=8127751241517804226&hl=en",
