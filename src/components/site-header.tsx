@@ -35,6 +35,12 @@ export function SiteHeader() {
             >
               Service areas
             </Link>
+            <Link
+              to="/prices"
+              className="text-sm font-medium text-ink-soft transition-colors duration-150 hover:text-rust"
+            >
+              Prices
+            </Link>
           </nav>
         </div>
       </div>

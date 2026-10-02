@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PricesRouteImport } from './routes/prices'
 import { Route as AreasIndexRouteImport } from './routes/areas/index'
 import { Route as AreasSlugRouteImport } from './routes/areas/$slug'
 import { Route as HaulersIndexRouteImport } from './routes/haulers/index'
@@ -20,6 +21,11 @@ import { Route as WhatWeHaulSlugRouteImport } from './routes/what-we-haul/$slug'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricesRoute = PricesRouteImport.update({
+  id: '/prices',
+  path: '/prices',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AreasIndexRoute = AreasIndexRouteImport.update({
@@ -55,6 +61,7 @@ const WhatWeHaulSlugRoute = WhatWeHaulSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/prices': typeof PricesRoute
   '/areas/$slug': typeof AreasSlugRoute
   '/haulers/$slug': typeof HaulersSlugRoute
   '/what-we-haul/$slug': typeof WhatWeHaulSlugRoute
@@ -64,6 +71,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/prices': typeof PricesRoute
   '/areas/$slug': typeof AreasSlugRoute
   '/haulers/$slug': typeof HaulersSlugRoute
   '/what-we-haul/$slug': typeof WhatWeHaulSlugRoute
@@ -74,6 +82,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/prices': typeof PricesRoute
   '/areas/$slug': typeof AreasSlugRoute
   '/haulers/$slug': typeof HaulersSlugRoute
   '/what-we-haul/$slug': typeof WhatWeHaulSlugRoute
@@ -85,6 +94,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/prices'
     | '/areas/$slug'
     | '/haulers/$slug'
     | '/what-we-haul/$slug'
@@ -94,6 +104,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/prices'
     | '/areas/$slug'
     | '/haulers/$slug'
     | '/what-we-haul/$slug'
@@ -103,6 +114,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/prices'
     | '/areas/$slug'
     | '/haulers/$slug'
     | '/what-we-haul/$slug'
@@ -113,6 +125,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  PricesRoute: typeof PricesRoute
   AreasSlugRoute: typeof AreasSlugRoute
   HaulersSlugRoute: typeof HaulersSlugRoute
   WhatWeHaulSlugRoute: typeof WhatWeHaulSlugRoute
@@ -128,6 +141,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prices': {
+      id: '/prices'
+      path: '/prices'
+      fullPath: '/prices'
+      preLoaderRoute: typeof PricesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/areas/': {
@@ -177,6 +197,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  PricesRoute: PricesRoute,
   AreasSlugRoute: AreasSlugRoute,
   HaulersSlugRoute: HaulersSlugRoute,
   WhatWeHaulSlugRoute: WhatWeHaulSlugRoute,

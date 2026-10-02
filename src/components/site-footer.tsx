@@ -35,6 +35,11 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link to="/prices" className="hover:text-cream">
+                Average prices
+              </Link>
+            </li>
+            <li>
               <Link to="/haulers/$slug" params={{ slug: "freds-junk-removal" }} className="hover:text-cream">
                 Fred’s Junk Removal
               </Link>
