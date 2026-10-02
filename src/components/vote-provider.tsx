@@ -57,8 +57,14 @@ export function VoteProvider({ children }: { children: ReactNode }) {
   return <VoteContext.Provider value={value}>{children}</VoteContext.Provider>;
 }
 
+const fallback: VoteContextValue = {
+  counts: {},
+  mine: null,
+  pending: null,
+  vote: () => undefined,
+  rank: (companies) => companies,
+};
+
 export function useVotes() {
-  const value = useContext(VoteContext);
-  if (!value) throw new Error("VoteProvider is missing");
-  return value;
+  return useContext(VoteContext) ?? fallback;
 }

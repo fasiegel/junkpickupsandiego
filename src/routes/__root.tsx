@@ -1,6 +1,7 @@
 import { createRootRoute, HeadContent, Link, Outlet, Scripts } from "@tanstack/react-router";
 import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
+import { VoteProvider } from "@/components/vote-provider";
 import { SiteShell } from "@/components/site-shell";
 import appCss from "../styles.css?url";
 
@@ -77,7 +78,9 @@ function RootDocument() {
       <body className="min-h-dvh bg-sand font-sans text-ink">
         <PreviewHostBridge />
         <AuthProvider>
-          <Outlet />
+          <VoteProvider>
+            <Outlet />
+          </VoteProvider>
         </AuthProvider>
         <Scripts />
       </body>
