@@ -10,6 +10,7 @@ import { PROFILES } from "@/lib/directory/profiles";
  * - JFD Hauling, (619) 581-1246.
  * - Matt's Hauling and Removal, (619) 226-9747. A Yelp page for this name was closed.
  * - Javier Junk Removal & Concrete Work, (619) 886-8970. Owner said it has closed.
+ * - North Park Haulers, (619) 808-4405. Owner asked it removed.
  * Only list a hauler when the phone or address matches a public page.
  */
 
@@ -1222,21 +1223,6 @@ export const COMPANIES: Company[] = [
     specialties: ["Recycling", "Junk removal", "Demolition"],
     needs: ["furniture", "construction"],
     coverage: [],
-    images: [],
-  },
-  {
-    slug: "north-park-haulers",
-    name: "North Park Haulers",
-    url: null,
-    phone: "(619) 808-4405",
-    email: null,
-    address: null,
-    hours: "Yelp: Mon–Sat 8:00 AM – 6:00 PM; Sunday 9:00 AM – 5:00 PM",
-    blurb:
-      "Yelp listing for this phone: junk removal, construction debris cleanup, and material delivery, with same-day service available. A separate directory page uses different hours, so those hours are not shown.",
-    specialties: ["North Park", "Construction debris", "Same-day"],
-    needs: ["construction", "same-day", "furniture", "appliances"],
-    coverage: ["north-park"],
     images: [],
   },
   {

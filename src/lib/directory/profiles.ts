@@ -804,13 +804,6 @@ export const PROFILES: Record<
     ],
     links: [],
   },
-  "north-park-haulers": {
-    details: [
-      "Yelp lists North Park Haulers at (619) 808-4405, 5.0 from 2 reviews. The description says junk removal, construction debris cleanup, and material delivery, with same-day service available. Hours on Yelp are Monday–Saturday 8 AM–6 PM and Sunday 9 AM–5 PM.",
-      "northparkhaulers.online is a thin directory page with different hours, so it is not used as the company site.",
-    ],
-    links: [{ label: "Yelp", href: "https://www.yelp.com/biz/north-park-haulers-san-diego" }],
-  },
   "johans-junk-removal": {
     details: [
       "johansjunkremoval.com prints (619) 942-8978 and hello@johansjunkremoval.com. Hours are Monday–Saturday 6 AM–8 PM and Sunday 2 PM–8 PM. The site says they serve all of San Diego and will not take hazardous items.",

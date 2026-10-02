@@ -645,16 +645,6 @@ export const FACTS: Record<string, ListingFacts> = {
     curbside: "Not listed",
     publishedPrices: "No",
   }),
-  "north-park-haulers": fact({
-    googleUrl: "https://www.google.com/maps?cid=13576570617657769751&hl=en",
-    googleRating: "5.0",
-    googleReviews: "3 on Google Maps",
-    yelpUrl: "https://www.yelp.com/biz/north-park-haulers-san-diego",
-    yelpReviews: "2 (5.0 on Yelp)",
-    onlineBooking: "Not listed",
-    curbside: "Not listed",
-    publishedPrices: "No",
-  }),
   "clean-green-hauling": fact({
     googleUrl: "https://www.google.com/maps?cid=11431313967923745788&hl=en",
     googleRating: "4.3",
