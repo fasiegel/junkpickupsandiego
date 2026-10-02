@@ -20,10 +20,18 @@ export const Route = createFileRoute("/haulers/")({
 });
 
 function HaulersIndex() {
+  return (
+    <SiteShell>
+      <HaulerList />
+    </SiteShell>
+  );
+}
+
+function HaulerList() {
   const { rank } = useVotes();
   const companies = rank(COMPANIES);
   return (
-    <SiteShell>
+    <>
       <PageHero
         kicker="Directory"
         title="Every hauler in this guide."
@@ -40,6 +48,6 @@ function HaulersIndex() {
           ))}
         </ul>
       </section>
-    </SiteShell>
+    </>
   );
 }

@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { MessageSquareText, Phone } from "lucide-react";
 import { CostBanner } from "@/components/cost-banner";
-import { SiteFooter } from "@/components/site-footer";
+import { VoteProvider } from "@/components/vote-provider";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { Button } from "@/components/ui/button";
@@ -9,13 +9,15 @@ import { smsHref, telHref } from "@/lib/contact";
 
 export function SiteShell({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-dvh flex-col">
-      <SiteHeader />
-      <main className="flex-1">{children}</main>
-      <CostBanner />
-      <SiteFooter />
-      <MobileDock />
-    </div>
+    <VoteProvider>
+      <div className="flex min-h-dvh flex-col">
+        <SiteHeader />
+        <main className="flex-1">{children}</main>
+        <CostBanner />
+        <SiteFooter />
+        <MobileDock />
+      </div>
+    </VoteProvider>
   );
 }
 

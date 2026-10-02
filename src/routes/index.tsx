@@ -23,14 +23,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
-  const [need, setNeed] = useState<string | null>(null);
-  const { rank } = useVotes();
   const fred = COMPANIES.find((c) => c.featured)!;
-  const list = useMemo(() => {
-    const rest = COMPANIES.filter((c) => !c.featured);
-    const filtered = need ? rest.filter((c) => c.needs.includes(need)) : rest;
-    return rank(filtered);
-  }, [need, rank]);
 
   return (
     <SiteShell>
@@ -91,7 +84,22 @@ function Home() {
         </div>
       </section>
 
-      <section className="py-14 sm:py-18">
+      <Directory />
+    </SiteShell>
+  );
+}
+
+function Directory() {
+  const [need, setNeed] = useState<string | null>(null);
+  const { rank } = useVotes();
+  const list = useMemo(() => {
+    const rest = COMPANIES.filter((c) => !c.featured);
+    const filtered = need ? rest.filter((c) => c.needs.includes(need)) : rest;
+    return rank(filtered);
+  }, [need, rank]);
+
+  return (
+    <section className="py-14 sm:py-18">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -126,7 +134,6 @@ function Home() {
           </ul>
         </div>
       </section>
-    </SiteShell>
   );
 }
 

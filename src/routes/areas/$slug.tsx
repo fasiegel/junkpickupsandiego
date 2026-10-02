@@ -3,7 +3,7 @@ import { CompanyCard } from "@/components/company-card";
 import { useVotes } from "@/components/vote-provider";
 import { PageHero } from "@/components/page-hero";
 import { SiteShell } from "@/components/site-shell";
-import { getCommunity } from "@/lib/directory/communities";
+import { getCommunity, type Community } from "@/lib/directory/communities";
 import { companiesForCommunity } from "@/lib/directory/companies";
 
 export const Route = createFileRoute("/areas/$slug")({
@@ -32,11 +32,18 @@ export const Route = createFileRoute("/areas/$slug")({
 
 function AreaPage() {
   const { area } = Route.useLoaderData();
+  return (
+    <SiteShell>
+      <AreaList area={area} />
+    </SiteShell>
+  );
+}
+function AreaList({ area }: { area: Community }) {
   const { rank } = useVotes();
   const companies = rank(companiesForCommunity(area));
 
   return (
-    <SiteShell>
+    <>
       <PageHero
         kicker={area.region}
         title={`${area.name} junk removal`}
@@ -62,6 +69,6 @@ function AreaPage() {
           </Link>
         </div>
       </section>
-    </SiteShell>
+    </>
   );
 }
