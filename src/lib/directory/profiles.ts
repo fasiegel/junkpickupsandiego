@@ -629,6 +629,7 @@ export const PROFILES: Record<
       "Yelp lists Gti Hauling at (619) 560-6753, 1455 Frazee Rd Ste 500, San Diego 92108, in Mission Valley. Hours on that page are 6:00 AM to 9:00 PM every day. Services the business marked there include junk pickup, appliances, electronics, mattresses, furniture, landscaping waste, and property cleanouts.",
       "The BBB profile names owner George Loyd, says the file opened September 13, 2022, and describes hauling, junk removal, post-construction, and apartment cleanouts. BBB rates the accredited profile A+.",
       "Nextdoor lists the same phone at 14260 Garden Road, Poway 92064. No dedicated website was confirmed.",
+      "A business card for this phone names George Loyd, gtihauling@gmail.com, and lists junk removal, construction debris, junk site cleanup, and sand and gravel.",
     ],
     links: [
       { label: "Yelp", href: "https://www.yelp.com/biz/gti-hauling-san-diego-3" },
@@ -778,7 +779,7 @@ export const PROFILES: Record<
   },
   "fully-loaded-junk-removal": {
     details: [
-      "The only confirmed detail is the phone on file, (619) 920-5303. fullyloadedjunkremoval.com publishes (619) 566-1983, so that website is not attached.",
+      "A sign for (619) 920-5303 reads Fully Loaded Junk Removal. It lists residential and commercial cleanouts, construction and demolition debris, furniture removal, appliance removal, recycling and green waste, single-item pickup, large-item pickup, and light demolition. fullyloadedjunkremoval.com publishes (619) 566-1983, so that website is not attached.",
     ],
     links: [],
   },

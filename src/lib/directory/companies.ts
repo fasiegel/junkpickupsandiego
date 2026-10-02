@@ -873,14 +873,19 @@ export const COMPANIES: Company[] = [
     specialties: ["Veteran-owned", "Same-day", "Storage units"],
     needs: ["same-day", "furniture", "appliances", "construction", "cleanout"],
     coverage: "county",
-    images: ["/haulers/junk-haul-team-photo-1.jpg"],
+    images: [
+      "/haulers/junk-haul-team-photo-2.jpg",
+      "/haulers/junk-haul-team-photo-1.jpg",
+      "/haulers/junk-haul-team-photo-3.jpg",
+      "/haulers/junk-haul-team-photo-4.jpg",
+    ],
   },
   {
     slug: "gti-hauling",
     name: "Gti Hauling",
     url: null,
     phone: "(619) 560-6753",
-    email: null,
+    email: "gtihauling@gmail.com",
     address: "1455 Frazee Rd Ste 500, San Diego, CA 92108",
     hours: "Daily, 6:00 AM – 9:00 PM",
     blurb:
@@ -888,7 +893,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Appliances", "Furniture", "Property cleanouts", "Yard waste"],
     needs: ["furniture", "appliances", "cleanout"],
     coverage: ["mission-valley"],
-    images: [],
+    images: ["/haulers/gti-hauling-photo-1.jpg", "/haulers/gti-hauling-photo-2.jpg"],
   },
   {
     slug: "gabriels-junk-removal",
@@ -923,7 +928,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Junk removal", "Demolition", "Yard waste", "Appliances", "Cleanouts"],
     needs: ["furniture", "appliances", "cleanout", "construction"],
     coverage: [],
-    images: ["/haulers/nicos-hauling-photo-1.jpg"],
+    images: ["/haulers/nicos-hauling-photo-1.jpg", "/haulers/nicos-hauling-photo-2.jpg"],
   },
   {
     slug: "dan-the-man-haul-away",
@@ -1004,7 +1009,12 @@ export const COMPANIES: Company[] = [
       "downtown",
       "rancho-san-diego",
     ],
-    images: ["/haulers/impact-environmental-photo-1.webp"],
+    images: [
+      "/haulers/impact-environmental-photo-1.webp",
+      "/haulers/impact-environmental-photo-2.jpg",
+      "/haulers/impact-environmental-photo-3.jpg",
+      "/haulers/impact-environmental-photo-4.jpg",
+    ],
   },
   {
     slug: "top-tier-junk-removal",
@@ -1019,7 +1029,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Junk removal", "Online booking"],
     needs: [],
     coverage: [],
-    images: [],
+    images: [
+      "/haulers/top-tier-junk-removal-photo-1.jpg",
+      "/haulers/top-tier-junk-removal-photo-2.jpg",
+      "/haulers/top-tier-junk-removal-photo-3.jpg",
+    ],
   },
   {
     slug: "titos-junk-removal",
@@ -1034,7 +1048,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Junk removal"],
     needs: ["furniture", "appliances", "cleanout"],
     coverage: [],
-    images: [],
+    images: ["/haulers/titos-junk-removal-photo-1.jpg"],
   },
   {
     slug: "coastline-hauling",
@@ -1049,7 +1063,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Demolition", "Cleanouts", "Junk removal", "Concrete"],
     needs: ["cleanout", "construction"],
     coverage: [],
-    images: [],
+    images: ["/haulers/coastline-hauling-photo-1.jpg", "/haulers/coastline-hauling-photo-2.jpg"],
   },
   {
     slug: "jakes-junk-removal",
@@ -1074,7 +1088,7 @@ export const COMPANIES: Company[] = [
       "encinitas",
       "chula-vista",
     ],
-    images: [],
+    images: ["/haulers/jakes-junk-removal-photo-1.jpg", "/haulers/jakes-junk-removal-photo-2.jpg"],
   },
   {
     slug: "247-junk-removal",
@@ -1089,7 +1103,11 @@ export const COMPANIES: Company[] = [
     specialties: ["24/7", "Curbside", "In-home", "Volume pricing"],
     needs: ["furniture", "cleanout", "same-day"],
     coverage: [],
-    images: ["/haulers/247-junk-removal-photo-2.jpg"],
+    images: [
+      "/haulers/247-junk-removal-photo-3.jpg",
+      "/haulers/247-junk-removal-photo-4.jpg",
+      "/haulers/247-junk-removal-photo-2.jpg",
+    ],
   },
   {
     slug: "triple-eee-haul-junk",
@@ -1104,7 +1122,11 @@ export const COMPANIES: Company[] = [
     specialties: ["Cleanouts", "Appliances", "Furniture", "Yard waste", "Dumpster rental"],
     needs: ["cleanout", "furniture", "appliances"],
     coverage: ["north-park"],
-    images: [],
+    images: [
+      "/haulers/triple-eee-haul-junk-photo-1.jpg",
+      "/haulers/triple-eee-haul-junk-photo-2.jpg",
+      "/haulers/triple-eee-haul-junk-photo-3.jpg",
+    ],
   },
   {
     slug: "junkinator",
@@ -1119,7 +1141,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Junk removal"],
     needs: [],
     coverage: [],
-    images: [],
+    images: [
+      "/haulers/junkinator-photo-1.jpg",
+      "/haulers/junkinator-photo-2.jpg",
+      "/haulers/junkinator-photo-3.jpg",
+      "/haulers/junkinator-photo-4.jpg",
+    ],
   },
   {
     slug: "american-haul-away",
@@ -1152,7 +1179,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Appliances", "Furniture", "Yard waste", "Construction debris", "Hot tubs"],
     needs: ["furniture", "appliances", "construction", "cleanout", "same-day"],
     coverage: "county",
-    images: ["/haulers/junk-seekers-photo-1.png"],
+    images: [
+      "/haulers/junk-seekers-photo-2.jpg",
+      "/haulers/junk-seekers-photo-3.jpg",
+      "/haulers/junk-seekers-photo-1.png",
+      "/haulers/junk-seekers-photo-4.jpg",
+    ],
   },
   {
     slug: "fully-loaded-junk-removal",
@@ -1163,11 +1195,11 @@ export const COMPANIES: Company[] = [
     address: null,
     hours: null,
     blurb:
-      "Only this phone is on file. fullyloadedjunkremoval.com publishes a different number, (619) 566-1983, so that site is not linked.",
-    specialties: ["Junk removal"],
-    needs: [],
+      "A sign for this phone reads Fully Loaded Junk Removal and lists residential and commercial cleanouts, construction and demolition debris, furniture, appliances, recycling and green waste, single-item pickup, large-item pickup, and light demolition. fullyloadedjunkremoval.com publishes a different number, (619) 566-1983, so that site is not linked.",
+    specialties: ["Cleanouts", "Furniture", "Appliances", "Light demolition"],
+    needs: ["cleanout", "furniture", "appliances", "construction"],
     coverage: [],
-    images: [],
+    images: ["/haulers/fully-loaded-junk-removal-photo-1.jpg"],
   },
   {
     slug: "johans-junk-removal",
@@ -1182,7 +1214,12 @@ export const COMPANIES: Company[] = [
     specialties: ["Furniture", "Appliances", "Cleanouts", "Hot tubs", "Construction debris"],
     needs: ["furniture", "appliances", "cleanout", "construction"],
     coverage: [],
-    images: ["/haulers/johans-junk-removal-photo-1.png"],
+    images: [
+      "/haulers/johans-junk-removal-photo-2.jpg",
+      "/haulers/johans-junk-removal-photo-3.jpg",
+      "/haulers/johans-junk-removal-photo-1.png",
+      "/haulers/johans-junk-removal-photo-4.jpg",
+    ],
   },
   {
     slug: "pugs-junk-removal",
