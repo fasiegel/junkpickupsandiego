@@ -5,7 +5,6 @@ import { COMPANIES } from "@/lib/directory/companies";
 import {
   ITEM_PRICES,
   LOAD_PRICES,
-  UNMATCHED_LOADS,
   money,
   moneyRange,
   summarize,
@@ -57,7 +56,7 @@ function PricesPage() {
               Where the numbers come from
             </h2>
             <div className="mt-6 space-y-8">
-              {[...ITEM_PRICES, ...LOAD_PRICES, ...UNMATCHED_LOADS].map((group) => (
+              {[...ITEM_PRICES, ...LOAD_PRICES].map((group) => (
                 <QuoteList key={group.id} group={group} />
               ))}
             </div>
@@ -116,10 +115,7 @@ function QuoteList({ group }: { group: PriceGroup }) {
     <div>
       <h3 className="font-display text-xl font-bold tracking-wide text-ink uppercase">{group.title}</h3>
       <p className="mt-1 text-sm text-taupe">
-        {group.detail}{" "}
-        {group.average === false
-          ? null
-          : `Average ${money(summary.avg)} from ${summary.count} published prices.`}
+        {group.detail} Average {money(summary.avg)} from {summary.count} published prices.
       </p>
       <ul className="mt-3 divide-y divide-line rounded-xl bg-cream">
         {group.quotes.map((quote) => (

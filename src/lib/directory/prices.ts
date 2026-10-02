@@ -10,7 +10,6 @@ export type PriceGroup = {
   title: string;
   detail: string;
   quotes: PriceQuote[];
-  average?: boolean;
 };
 
 export const ITEM_PRICES: PriceGroup[] = [
@@ -144,32 +143,6 @@ export const LOAD_PRICES: PriceGroup[] = [
       { slug: "crisan-junk-removal", note: "Full load", low: 827, high: 827 },
       { slug: "junkmd", note: "Full truck", low: 899, high: 899 },
       { slug: "impact-environmental", note: "Full truck of household items", low: 949, high: 949 },
-    ],
-  },
-];
-
-export const UNMATCHED_LOADS: PriceGroup[] = [
-  {
-    id: "junk-fairy-bands",
-    title: "Junk Fairy load bands",
-    detail: "Named small, medium, large, and extra-large. Not matched to a fraction of a truck, so they are not in the averages.",
-    average: false,
-    quotes: [
-      { slug: "junk-fairy", note: "Small", low: 145, high: 365 },
-      { slug: "junk-fairy", note: "Medium", low: 365, high: 565 },
-      { slug: "junk-fairy", note: "Large", low: 565, high: 765 },
-      { slug: "junk-fairy", note: "Extra-large", low: 765, high: 965 },
-    ],
-  },
-  {
-    id: "haul-out-bands",
-    title: "Haul Out load bands",
-    detail: "Named small, medium, and large. Not matched to a fraction of a truck, so they are not in the averages.",
-    average: false,
-    quotes: [
-      { slug: "haul-out", note: "Small load", low: 149, high: 299 },
-      { slug: "haul-out", note: "Medium load", low: 299, high: 449 },
-      { slug: "haul-out", note: "Large load", low: 449, high: 599 },
     ],
   },
 ];
