@@ -58,7 +58,7 @@ export function CompanyCard({ company }: { company: Company }) {
           </p>
         </div>
       </Link>
-      <div className="px-4 pb-4">
+      <div className="relative z-20 px-4 pb-4">
         <VoteButton slug={company.slug} />
       </div>
     </article>
