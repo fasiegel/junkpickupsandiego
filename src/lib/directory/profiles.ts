@@ -6,9 +6,10 @@ export const PROFILES: Record<
     details: [
       "Fred’s publishes a household price list, a truck-load page, and a price-guarantee page, and asks for a photo by text before a pickup.",
       "Service pages cover general junk, furniture, mattresses, appliances, TV and e-waste, exercise equipment, garage cleanouts, yard waste, remodel debris, and commercial jobs.",
-      "The service-area section is organized by ZIP and neighborhood across the county.",
+      "The service-area page names the neighborhoods Fred’s hauls. It is not all of San Diego County. Clairemont Mesa is listed here as Clairemont.",
     ],
     links: [
+      { label: "Service area", href: "https://www.fredsjunkremoval.com/service-area" },
       { label: "Services", href: "https://www.fredsjunkremoval.com/services" },
       { label: "What we haul", href: "https://www.fredsjunkremoval.com/what-we-haul" },
       { label: "Price list", href: "https://www.fredsjunkremoval.com/pricelist" },
