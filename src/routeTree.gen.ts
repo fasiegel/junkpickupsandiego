@@ -13,6 +13,8 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as PricesRouteImport } from './routes/prices'
 import { Route as AreasIndexRouteImport } from './routes/areas/index'
 import { Route as AreasSlugRouteImport } from './routes/areas/$slug'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
+import { Route as BlogSlugRouteImport } from './routes/blog/$slug'
 import { Route as HaulersIndexRouteImport } from './routes/haulers/index'
 import { Route as HaulersSlugRouteImport } from './routes/haulers/$slug'
 import { Route as WhatWeHaulIndexRouteImport } from './routes/what-we-haul/index'
@@ -36,6 +38,16 @@ const AreasIndexRoute = AreasIndexRouteImport.update({
 const AreasSlugRoute = AreasSlugRouteImport.update({
   id: '/areas/$slug',
   path: '/areas/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HaulersIndexRoute = HaulersIndexRouteImport.update({
@@ -63,9 +75,11 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/prices': typeof PricesRoute
   '/areas/$slug': typeof AreasSlugRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/haulers/$slug': typeof HaulersSlugRoute
   '/what-we-haul/$slug': typeof WhatWeHaulSlugRoute
   '/areas/': typeof AreasIndexRoute
+  '/blog/': typeof BlogIndexRoute
   '/haulers/': typeof HaulersIndexRoute
   '/what-we-haul/': typeof WhatWeHaulIndexRoute
 }
@@ -73,9 +87,11 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/prices': typeof PricesRoute
   '/areas/$slug': typeof AreasSlugRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/haulers/$slug': typeof HaulersSlugRoute
   '/what-we-haul/$slug': typeof WhatWeHaulSlugRoute
   '/areas': typeof AreasIndexRoute
+  '/blog': typeof BlogIndexRoute
   '/haulers': typeof HaulersIndexRoute
   '/what-we-haul': typeof WhatWeHaulIndexRoute
 }
@@ -84,9 +100,11 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/prices': typeof PricesRoute
   '/areas/$slug': typeof AreasSlugRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/haulers/$slug': typeof HaulersSlugRoute
   '/what-we-haul/$slug': typeof WhatWeHaulSlugRoute
   '/areas/': typeof AreasIndexRoute
+  '/blog/': typeof BlogIndexRoute
   '/haulers/': typeof HaulersIndexRoute
   '/what-we-haul/': typeof WhatWeHaulIndexRoute
 }
@@ -96,9 +114,11 @@ export interface FileRouteTypes {
     | '/'
     | '/prices'
     | '/areas/$slug'
+    | '/blog/$slug'
     | '/haulers/$slug'
     | '/what-we-haul/$slug'
     | '/areas/'
+    | '/blog/'
     | '/haulers/'
     | '/what-we-haul/'
   fileRoutesByTo: FileRoutesByTo
@@ -106,9 +126,11 @@ export interface FileRouteTypes {
     | '/'
     | '/prices'
     | '/areas/$slug'
+    | '/blog/$slug'
     | '/haulers/$slug'
     | '/what-we-haul/$slug'
     | '/areas'
+    | '/blog'
     | '/haulers'
     | '/what-we-haul'
   id:
@@ -116,9 +138,11 @@ export interface FileRouteTypes {
     | '/'
     | '/prices'
     | '/areas/$slug'
+    | '/blog/$slug'
     | '/haulers/$slug'
     | '/what-we-haul/$slug'
     | '/areas/'
+    | '/blog/'
     | '/haulers/'
     | '/what-we-haul/'
   fileRoutesById: FileRoutesById
@@ -127,9 +151,11 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   PricesRoute: typeof PricesRoute
   AreasSlugRoute: typeof AreasSlugRoute
+  BlogSlugRoute: typeof BlogSlugRoute
   HaulersSlugRoute: typeof HaulersSlugRoute
   WhatWeHaulSlugRoute: typeof WhatWeHaulSlugRoute
   AreasIndexRoute: typeof AreasIndexRoute
+  BlogIndexRoute: typeof BlogIndexRoute
   HaulersIndexRoute: typeof HaulersIndexRoute
   WhatWeHaulIndexRoute: typeof WhatWeHaulIndexRoute
 }
@@ -162,6 +188,20 @@ declare module '@tanstack/react-router' {
       path: '/areas/$slug'
       fullPath: '/areas/$slug'
       preLoaderRoute: typeof AreasSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/haulers/': {
@@ -199,9 +239,11 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   PricesRoute: PricesRoute,
   AreasSlugRoute: AreasSlugRoute,
+  BlogSlugRoute: BlogSlugRoute,
   HaulersSlugRoute: HaulersSlugRoute,
   WhatWeHaulSlugRoute: WhatWeHaulSlugRoute,
   AreasIndexRoute: AreasIndexRoute,
+  BlogIndexRoute: BlogIndexRoute,
   HaulersIndexRoute: HaulersIndexRoute,
   WhatWeHaulIndexRoute: WhatWeHaulIndexRoute,
 }

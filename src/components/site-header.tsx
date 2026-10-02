@@ -41,6 +41,12 @@ export function SiteHeader() {
             >
               Prices
             </Link>
+            <Link
+              to="/blog"
+              className="text-sm font-medium text-ink-soft transition-colors duration-150 hover:text-rust"
+            >
+              Blog
+            </Link>
           </nav>
         </div>
       </div>
