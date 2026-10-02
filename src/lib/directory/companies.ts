@@ -1304,21 +1304,6 @@ export const COMPANIES: Company[] = [
     images: [],
   },
   {
-    slug: "getridofit",
-    name: "Getridofit.com San Diego",
-    url: "https://getridofit.com/",
-    phone: "(619) 780-2279",
-    email: null,
-    address: null,
-    hours: null,
-    blurb:
-      "getridofit.com says they buy valuables and collections, not that they haul junk. The number printed on that homepage is 877-405-3165. The local number on file is not on that page.",
-    specialties: ["Buys valuables"],
-    needs: [],
-    coverage: [],
-    images: [],
-  },
-  {
     slug: "a-and-n-coastal-hauling",
     name: "A & N Coastal Hauling",
     url: "https://anhauling.com/",

@@ -694,9 +694,4 @@ export const FACTS: Record<string, ListingFacts> = {
     curbside: "Not listed",
     publishedPrices: "No",
   }),
-  "getridofit": fact({
-    onlineBooking: "Not listed",
-    curbside: "No",
-    publishedPrices: "No",
-  }),
 };

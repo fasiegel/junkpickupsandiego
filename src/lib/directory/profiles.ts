@@ -855,13 +855,6 @@ export const PROFILES: Record<
       { label: "Yelp", href: "https://www.yelp.com/biz/clean-green-hauling-san-diego-2" },
     ],
   },
-  "getridofit": {
-    details: [
-      "getridofit.com is titled “GetRidOfIt - We Buy Your Valuables & Collections.” The page says they buy coin and stamp collections, jewelry, precious metals, and estate items. The phone printed there is 877-405-3165.",
-      "The San Diego number on file, (619) 780-2279, does not appear on that homepage. This is not a standard junk-hauling listing.",
-    ],
-    links: [{ label: "Website", href: "https://getridofit.com/" }],
-  },
   "a-and-n-coastal-hauling": {
     details: [
       "A&N Coastal Hauling and Demolition, anhauling.com, is posted with (619) 647-8154 on the company’s own X account. Nextdoor and a BOTW directory both give 281 Durian St, Vista 92083. The site says they are locally owned, licensed and insured, and give free estimates.",
