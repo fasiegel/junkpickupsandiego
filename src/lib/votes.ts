@@ -25,17 +25,10 @@ export const voteForListing = createServerFn({ method: "POST" })
 export function rankListings<T extends { slug: string; name: string }>(
   companies: T[],
   counts: Record<string, number>,
-  zeroOrder: string[],
 ): T[] {
-  const place = new Map(zeroOrder.map((slug, index) => [slug, index]));
-  const voted = companies
-    .filter((company) => (counts[company.slug] ?? 0) > 0)
-    .sort(
-      (a, b) =>
-        (counts[b.slug] ?? 0) - (counts[a.slug] ?? 0) || a.name.localeCompare(b.name),
-    );
-  const open = companies
-    .filter((company) => (counts[company.slug] ?? 0) === 0)
-    .sort((a, b) => (place.get(a.slug) ?? 0) - (place.get(b.slug) ?? 0));
-  return [...voted, ...open];
+  return [...companies].sort((a, b) => {
+    const votes = (counts[b.slug] ?? 0) - (counts[a.slug] ?? 0);
+    if (votes !== 0) return votes;
+    return a.name.localeCompare(b.name);
+  });
 }

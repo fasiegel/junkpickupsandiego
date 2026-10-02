@@ -1,5 +1,4 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
-import { COMPANIES } from "@/lib/directory/companies";
 import { getListingVotes, rankListings, voteForListing, type VoteState } from "@/lib/votes";
 
 type VoteContextValue = VoteState & {
@@ -10,22 +9,11 @@ type VoteContextValue = VoteState & {
 
 const VoteContext = createContext<VoteContextValue | null>(null);
 
-function shuffle(slugs: string[]): string[] {
-  const next = [...slugs];
-  for (let i = next.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [next[i], next[j]] = [next[j], next[i]];
-  }
-  return next;
-}
-
 export function VoteProvider({ children }: { children: ReactNode }) {
   const [state, setState] = useState<VoteState>({ counts: {}, mine: null });
   const [pending, setPending] = useState<string | null>(null);
-  const [zeroOrder, setZeroOrder] = useState<string[]>(() => COMPANIES.map((company) => company.slug));
 
   useEffect(() => {
-    setZeroOrder(shuffle(COMPANIES.map((company) => company.slug)));
     let cancel = false;
     getListingVotes()
       .then((next) => {
@@ -49,9 +37,9 @@ export function VoteProvider({ children }: { children: ReactNode }) {
           .catch(() => undefined)
           .finally(() => setPending(null));
       },
-      rank: (companies) => rankListings(companies, state.counts, zeroOrder),
+      rank: (companies) => rankListings(companies, state.counts),
     }),
-    [state, pending, zeroOrder],
+    [state, pending],
   );
 
   return <VoteContext.Provider value={value}>{children}</VoteContext.Provider>;
