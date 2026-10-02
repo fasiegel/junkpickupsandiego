@@ -841,6 +841,7 @@ export const PROFILES: Record<
       "A&N Coastal Hauling and Demolition, anhauling.com, is posted with (619) 647-8154 on the company’s own X account. Nextdoor and a BOTW directory both give 281 Durian St, Vista 92083. The site says they are locally owned, licensed and insured, and give free estimates.",
       "Services are demolition (homes, sheds, pools, decks, concrete, asphalt, fences, interior) and junk hauling (construction debris, furniture, appliances, yard waste). They say they sort each load and recycle what they can.",
       "Cities named on the site include Carlsbad, Clairemont, Del Cerro, Del Mar, El Cajon, Encinitas, Escondido, La Jolla, Lakeside, La Mesa, Linda Vista, Mira Mesa, Mission Beach, Ocean Beach, Oceanside, Pacific Beach, Point Loma, Poway, Ramona, Rancho Bernardo, Rancho Peñasquitos, San Carlos, San Marcos, Spring Valley, Santee, and Vista, plus a few cities outside this directory. A BOTW page shows 5.0 from 107 reviews. That is a directory score, not Google.",
+      "Their logo says “Gotta pile? Gimme a dial.” A flyer with this phone and www.anhauling.com advertises restaurant cleanouts. The truck photo on the site shows a blue pickup and trailer lettered A&N Coastal Hauling and Demolition, (619) 647-8154.",
     ],
     links: [
       { label: "Website", href: "https://anhauling.com/" },
