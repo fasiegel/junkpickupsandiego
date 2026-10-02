@@ -917,7 +917,7 @@ export const COMPANIES: Company[] = [
     specialties: ["Junk removal", "Demolition", "Yard waste", "Appliances", "Cleanouts"],
     needs: ["furniture", "appliances", "cleanout", "construction"],
     coverage: [],
-    images: [],
+    images: ["/haulers/nicos-hauling-photo-1.jpg"],
   },
   {
     slug: "dan-the-man-haul-away",
