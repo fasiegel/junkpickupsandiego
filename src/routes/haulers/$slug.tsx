@@ -11,6 +11,8 @@ import {
   getCompany,
   type Company,
 } from "@/lib/directory/companies";
+import { yearsInBusiness } from "@/lib/directory/order";
+import { ITEM_PRICES, YARD_PRICES, moneyRange } from "@/lib/directory/prices";
 
 export const Route = createFileRoute("/haulers/$slug")({
   loader: ({ params }) => {
@@ -29,6 +31,62 @@ export const Route = createFileRoute("/haulers/$slug")({
   },
   component: HaulerPage,
 });
+
+function ListingHighlights({ company }: { company: Company }) {
+  const facts = company.facts;
+  const item = ITEM_PRICES.find((group) => group.id === "starting")?.quotes.find(
+    (quote) => quote.slug === company.slug,
+  );
+  const yard = YARD_PRICES.find((group) => group.id === "per-yard")?.quotes.find(
+    (quote) => quote.slug === company.slug,
+  );
+  const years = yearsInBusiness(facts?.years);
+  const googleCount = facts?.googleReviews?.match(/(\d[\d,]*)/)?.[1];
+  const yelpCount = facts?.yelpReviews?.match(/(\d[\d,]*)/)?.[1];
+  const yelpRating = facts?.yelpReviews?.match(/\((\d+(?:\.\d+)?)/)?.[1];
+  const published = !facts?.publishedPrices || facts.publishedPrices === "Not listed"
+    ? "Not listed"
+    : facts.publishedPrices.startsWith("No")
+      ? "No"
+      : "Yes";
+  const tiles: { label: string; value: string; href?: string }[] = [
+    {
+      label: "Google reviews",
+      value: [facts?.googleRating, googleCount ? `${googleCount} reviews` : null].filter(Boolean).join(" · ") || "Not listed",
+      href: facts?.googleUrl ?? undefined,
+    },
+    {
+      label: "Yelp reviews",
+      value:
+        yelpRating || yelpCount
+          ? [yelpRating, yelpCount ? `${yelpCount} reviews` : null].filter(Boolean).join(" · ")
+          : (facts?.yelpReviews ?? "Not listed"),
+      href: facts?.yelpUrl ?? undefined,
+    },
+    { label: "Single item price", value: item ? moneyRange(item.low, item.high) : "Not listed" },
+    { label: "Price per cubic yard", value: yard ? moneyRange(yard.low, yard.high) : "Not listed" },
+    { label: "Published prices", value: published },
+    { label: "Years in business", value: years === null ? "Not listed" : `${years} years` },
+    { label: "North County", value: company.needs.includes("north-county") ? "Yes" : "No" },
+  ];
+
+  return (
+    <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
+      {tiles.map((tile) => (
+        <li key={tile.label} className="rounded-xl bg-cream px-4 py-4">
+          <p className="text-xs font-semibold tracking-wide text-taupe uppercase">{tile.label}</p>
+          {tile.href && tile.value !== "Not listed" ? (
+            <a href={tile.href} target="_blank" rel="noopener noreferrer" className="mt-2 block text-lg font-semibold leading-snug text-ink hover:text-rust">
+              {tile.value}
+            </a>
+          ) : (
+            <p className="mt-2 text-lg font-semibold leading-snug text-ink">{tile.value}</p>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 function ListingFacts({ company, places }: { company: Company; places: string[] }) {
   const facts = company.facts;
@@ -166,6 +224,11 @@ function HaulerPage() {
         ]}
         actions={false}
       />
+      <section className="border-b border-line bg-sand py-8">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <ListingHighlights company={company} />
+        </div>
+      </section>
       <section className="py-12">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">
           <div>
