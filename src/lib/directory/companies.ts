@@ -1394,7 +1394,7 @@ export const COMPANIES: Company[] = [
     address: "2676 Burgener Blvd, San Diego, CA 92110",
     hours: null,
     blurb:
-      "A federal motor-carrier filing for Junkinator lists this phone and a Kearny Mesa address under Ross G. Gardner. A separate public profile names owner Tucker B. and says the company was established in 1999. No website was confirmed for this number.",
+      "A federal motor-carrier filing for Junkinator lists this phone and a Kearny Mesa address under Ross G. Gardner. A separate public profile names owner Tucker B. In business since 2005. No website was confirmed for this number.",
     specialties: ["Junk removal"],
     needs: [],
     coverage: [],

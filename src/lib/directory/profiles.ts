@@ -750,7 +750,7 @@ export const PROFILES: Record<
   "junkinator": {
     details: [
       "A federal motor-carrier record for DBA Junkinator lists (858) 200-7130, legal name Ross G. Gardner, and 2676 Burgener Blvd, San Diego 92110.",
-      "A separate local profile for Junkinator Hauling Service at the same phone names owner Tucker B., says the company was established in 1999, and lists furniture, hot tubs, appliances, greenery, demolition and construction debris, electronics, and concrete. No website was confirmed for this number. The Yelp page Junkinator Hauling Services (4.7 from 195 reviews) prints 858-467-0050 and thedonationpros.com, so those reviews are not attached.",
+      "A separate local profile for Junkinator Hauling Service at the same phone names owner Tucker B. and lists furniture, hot tubs, appliances, greenery, demolition and construction debris, electronics, and concrete. The company has been in business since 2005. No website was confirmed for this number. The Yelp page Junkinator Hauling Services (4.7 from 195 reviews) prints 858-467-0050 and thedonationpros.com, so those reviews are not attached.",
     ],
     links: [],
   },

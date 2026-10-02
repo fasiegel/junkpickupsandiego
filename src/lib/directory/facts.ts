@@ -644,6 +644,7 @@ export const FACTS: Record<string, ListingFacts> = {
     publishedPrices: "No",
   }),
   "junkinator": fact({
+    years: "Since 2005.",
     googleUrl: "https://www.google.com/maps?cid=472706095677808637&hl=en",
     googleRating: "4.9",
     googleReviews: "1258 on Google Maps",
