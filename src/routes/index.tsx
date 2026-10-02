@@ -43,8 +43,7 @@ function Home() {
             San Diego’s best information source for junk removal
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-line">
-            Find a local hauler by the load you have and the neighborhood you live in.
-            Fred’s Junk Removal is the service this guide is built around.
+            Find a local hauler with a great reputation that suits your needs and budget.
           </p>
         </div>
       </section>
