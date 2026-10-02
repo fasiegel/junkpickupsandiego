@@ -484,7 +484,7 @@ export const PROFILES: Record<
     details: [
       "Flash Junk Removal is locally owned. Call or text (760) 639-8778, email Flashjunkremoval@gmail.com. Hours are 7 AM to 7 PM, seven days, with same-day or next-day service.",
       "The minimum and a quarter load are both listed at $160, including disposal, transport, and labor. Other loads are priced by volume. They do not take hazardous waste, paint, chemicals, or tires. Loads are sorted to recycle, donate, or dispose.",
-      "Cities named include Fallbrook, San Marcos, Escondido, Vista, Rancho Bernardo, Oceanside, Del Mar, Encinitas, Rancho Santa Fe, and Solana Beach. They also rent dumpsters and list hot tub, house, and RV removal.",
+      "Cities named on their site are Fallbrook, San Marcos, Escondido, Vista, Rancho Bernardo, Oceanside, Del Mar, Encinitas, Rancho Santa Fe, Fairbanks Ranch, and Solana Beach. They also rent dumpsters and list hot tub, house, and RV removal.",
     ],
     links: [
       { label: "Services", href: "https://www.flashjunkremoval.com/services" },

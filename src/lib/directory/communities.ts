@@ -97,8 +97,10 @@ export const COMMUNITIES: Community[] = [
   { slug: "vista", name: "Vista", region: "North County", zips: ["92081", "92083", "92084"] },
   { slug: "san-marcos", name: "San Marcos", region: "North County", zips: ["92069", "92078"] },
   { slug: "escondido", name: "Escondido", region: "North County", zips: ["92025", "92026", "92027", "92029"] },
+  { slug: "fallbrook", name: "Fallbrook", region: "North County", zips: ["92028"] },
   { slug: "poway", name: "Poway", region: "North County", zips: ["92064"] },
   { slug: "rancho-santa-fe", name: "Rancho Santa Fe", region: "North County", zips: ["92067"] },
+  { slug: "fairbanks-ranch", name: "Fairbanks Ranch", region: "North County", zips: ["92067"] },
 ];
 
 const bySlug = new Map(COMMUNITIES.map((c) => [c.slug, c]));
