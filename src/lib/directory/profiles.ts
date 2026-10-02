@@ -623,4 +623,245 @@ export const PROFILES: Record<
       { label: "About", href: "https://junkhaulteam.com/about-us/" },
     ],
   },
+  "gti-hauling": {
+    details: [
+      "Yelp lists Gti Hauling at (619) 560-6753, 1455 Frazee Rd Ste 500, San Diego 92108, in Mission Valley. Hours on that page are 6:00 AM to 9:00 PM every day. Services the business marked there include junk pickup, appliances, electronics, mattresses, furniture, landscaping waste, and property cleanouts.",
+      "The BBB profile names owner George Loyd, says the file opened September 13, 2022, and describes hauling, junk removal, post-construction, and apartment cleanouts. BBB rates the accredited profile A+.",
+      "Nextdoor lists the same phone at 14260 Garden Road, Poway 92064. No dedicated website was confirmed.",
+    ],
+    links: [
+      { label: "Yelp", href: "https://www.yelp.com/biz/gti-hauling-san-diego-3" },
+      { label: "BBB", href: "https://www.bbb.org/us/ca/san-diego/profile/junk-removal/gti-hauling-1126-1000101431" },
+    ],
+  },
+  "gabriels-junk-removal": {
+    details: [
+      "gabrielsjunkremoval.net prints (619) 957-4592 and says the company is in San Diego, serving San Diego, Chula Vista, Del Mar, and surrounding areas.",
+      "The page asks you to call for a consultation or use the free-estimate form. It does not publish a price list, hours, or a list of items.",
+    ],
+    links: [{ label: "Website", href: "https://gabrielsjunkremoval.net/" }],
+  },
+  "nicos-hauling": {
+    details: [
+      "The San Diego Yelp page for Nico’s Hauling shows 5.0 from 386 reviews, owner Edgar G., and ZIP 92115 in Rolando. Hours there are Monday–Friday 7 AM–7 PM and Saturday–Sunday 7 AM–6 PM.",
+      "Services marked on that page include junk pickup, appliances, furniture, mattresses, electronics, landscaping and storm debris, soil, construction debris, property cleanouts, and interior or exterior demolition.",
+      "A Yahoo listing with this phone gives the street as 4220 51st St #9. nicoshaulingco.com is also used by a Pacifica hauler with a different phone, so it is not linked here.",
+    ],
+    links: [{ label: "San Diego Yelp", href: "https://www.yelp.com/biz/nicos-hauling-san-diego-3" }],
+  },
+  "dan-the-man-haul-away": {
+    details: [
+      "Dan The Man Haul Away at (619) 277-9569 is a family-run junk, dumpster, and bobcat company based in Santee. The site says they cover San Diego County, including Santee, El Cajon, La Mesa, Lakeside, Alpine, Jamul, Poway, Chula Vista, National City, Spring Valley, and Lemon Grove.",
+      "Text a photo of the junk, dumpster spot, or job site to (619) 277-9569. Published starting prices on the homepage: junk and debris from $125, dumpster rentals from $550, dirt and grading $550 a load, concrete demo $750 a load.",
+      "The same homepage disagrees with itself on age and ratings. It says “since 2011,” “15 years,” and “Est. 2019.” It also prints both 4.7 and 4.9 for Google, plus 4.9 on Yelp and “400+ reviews.” Those Google numbers are not stored as a Maps rating because the page conflicts.",
+    ],
+    links: [{ label: "Website", href: "https://danthemanhaulaway.com/" }],
+  },
+  "impact-environmental": {
+    details: [
+      "Impact Environmental Company in El Cajon, (619) 393-6265, estimates@impact-eco.com, 507 Broadway Unit C, El Cajon 92021. The site prints CSLB #1101347 and says they are open seven days with a three-hour morning or afternoon window.",
+      "Work listed includes household junk, demolition, garage cleanouts, construction debris, appliances, commercial equipment, hot tubs, green waste, property-management cleanouts, hoarding, and estates. They say they recycle or donate 60–80% of every job.",
+      "Published prices: minimum pickup $189, full truck of household items $949, bedload of concrete, gravel, soil, or sand $349 per ton, demolition $399 per hour plus $149 per ton.",
+    ],
+    links: [
+      { label: "Website", href: "https://impact-eco.com/" },
+      { label: "Pricing", href: "https://impact-eco.com/demolition-debris-removal-service-pricing/" },
+      { label: "Household junk", href: "https://impact-eco.com/household-junk-removal" },
+      { label: "Demolition", href: "https://impact-eco.com/demolition-contractor/" },
+      { label: "Book", href: "https://book.housecallpro.com/book/Impact-Junk-Removal/b8047ef060c34f93952a992cf7ad3184" },
+    ],
+  },
+  "top-tier-junk-removal": {
+    details: [
+      "toptierjunkremoval.com prints (858) 428-5014. Hours on the site are Monday–Saturday 9:00 AM–5:00 PM, Sunday closed. The page says you can book online and save $20. It does not name cities or publish a price list.",
+    ],
+    links: [{ label: "Website", href: "https://toptierjunkremoval.com/" }],
+  },
+  "titos-junk-removal": {
+    details: [
+      "Directories that show (619) 466-6723 list Tito’s Junk Removal and Hauling at 761 Sunnyside Ave, San Diego 92114. A USDOT filing for Adrian Herrera, DBA Titos Hauling, uses the same phone and a different street, 8165 Guatas St.",
+      "titosjunkremoval.com is a different listing. That site prints (619) 666-0561 and talks about El Cajon, so its copy is not used here. Hours on the public pages for 466-6723 do not match each other.",
+    ],
+    links: [],
+  },
+  "coastline-hauling": {
+    details: [
+      "Yelp lists Coastline Hauling & Clean Up at (858) 265-8680, owner Victor O., 5.0 from 116 reviews. The business description covers trash and debris, kitchen and bathroom demolition, estate and property cleanouts, spa removal, and dirt and concrete. Yelp also shows a verified license.",
+      "Hours on Yelp run from about 5:30 or 6:00 AM until 11:00 PM. MapQuest, a DOT filing, and another directory give three different street addresses, so no street is shown.",
+    ],
+    links: [{ label: "Yelp", href: "https://www.yelp.com/biz/coastline-hauling-and-clean-up-san-diego" }],
+  },
+  "jakes-junk-removal": {
+    details: [
+      "Jake’s Junk Removal at (619) 723-6701, jakesjunkremovalsd@gmail.com, says it is family-owned and has served San Diego since 2017. The homepage says most jobs are bid by phone, larger jobs get an on-site look, and the price is a flat rate for the truck space, including labor, fuel, and dump fees.",
+      "Items named on the site: household junk, construction debris, yard waste, old furniture, and apartment, office, shed, and storage cleanouts. Area pages name Santee, Carmel Valley, Rancho Santa Fe, Rancho Peñasquitos, Rancho Bernardo, Tierrasanta, Normal Heights, Encinitas, and Chula Vista. The homepage does not describe demolition even though the directory name includes it.",
+      "The site says “300+” five-star Google reviews. The Google Maps listing matched to this phone shows 5.0 from 365 reviews.",
+    ],
+    links: [
+      { label: "Website", href: "https://jakesjunkremoval.com/" },
+      { label: "Santee", href: "https://jakesjunkremoval.com/santee" },
+      { label: "Encinitas", href: "https://jakesjunkremoval.com/encinitas" },
+    ],
+  },
+  "247-junk-removal": {
+    details: [
+      "24/7 Junk Removal LLC is owned by Gavin Hartman and Benjamin Starr. Phone (760) 820-5865, email CustomerService@24-7-JunkRemoval.com, mailing address 3223 Greyling Drive #23672, San Diego 92193. They say they answer 24 hours a day.",
+      "Pickup is in-home or curbside. Curbside is discounted. Price is how much of a 12-by-8-by-4-foot trailer the load fills. They do not charge by the hour. Tires are $25 each, including the rim.",
+      "The in-home page says they cannot take liquids, chemicals, light bulbs, batteries, treated wood, pressurized containers, hazardous waste, gasoline, diesel, or oil.",
+    ],
+    links: [
+      { label: "Website", href: "https://www.24-7-junkremoval.com/" },
+      { label: "In-home pickup", href: "https://www.24-7-junkremoval.com/in-home-pick-up" },
+      { label: "Curbside", href: "https://www.24-7-junkremoval.com/curbsidepickup" },
+      { label: "Request a quote", href: "https://www.24-7-junkremoval.com/request-a-quote" },
+    ],
+  },
+  "triple-eee-haul-junk": {
+    details: [
+      "Yelp lists Triple EEE Haul Junk at (619) 519-3300 in San Diego 92104, North Park, 5.0 from 10 reviews. Hours are Monday–Saturday 7 AM–9 PM, Sunday closed.",
+      "The business description covers estate cleanouts, storage units, garage, attic, and basement cleanouts, appliances, furniture, yard waste, and move-in or move-out. Yelp marks the listing Latinx-owned and lists dumpster rental. tripleeeehauljunk.com did not resolve.",
+    ],
+    links: [{ label: "Yelp", href: "https://www.yelp.com/biz/triple-eee-haul-junk-san-diego-3" }],
+  },
+  "junkinator": {
+    details: [
+      "A federal motor-carrier record for DBA Junkinator lists (858) 200-7130, legal name Ross G. Gardner, and 2676 Burgener Blvd, San Diego 92110.",
+      "A separate local profile for Junkinator Hauling Service at the same phone names owner Tucker B., says the company was established in 1999, and lists furniture, hot tubs, appliances, greenery, demolition and construction debris, electronics, and concrete. No website was confirmed for this number. Another line, 858-467-0050, appears on some pages and is not the number on file.",
+    ],
+    links: [],
+  },
+  "clear-space-junk": {
+    details: [
+      "Yahoo lists Clear Space Junk Solutions at (760) 871-3279, 456 Blue Sage Way, Oceanside 92057, email Csjsolutions1@gmail.com, owner Alberto “Beto” Lozada. The description says residential and commercial junk removal, property cleanouts, light demolition, and hauling in North County, and that they are insured.",
+      "A Thumbtack answer on a profile using this phone says basic junk removal starts at $160 including the dump fee. That page also says about one year in business. The Yahoo hours say open 24 hours.",
+    ],
+    links: [],
+  },
+  "sd-haul-and-dump": {
+    details: [
+      "A Yahoo listing for SD Haul & Dump at (619) 977-1272 says the company is veteran-owned, serves San Diego County, and does furniture pickups through full property clearouts, with same-day service. Email on that listing is info@sdhaulanddump.com.",
+      "Do not confuse this number with SD Hauling in Poway, (619) 348-5865. No working website was confirmed for 977-1272.",
+    ],
+    links: [],
+  },
+  "american-haul-away": {
+    details: [
+      "americanhaulaway.com lists (858) 551-9376 along with (619) 543-0375 and (760) 233-2033. The site says the company is family-owned, has served San Diego County since 1993, and holds CSLB license 821997.",
+      "Full-service junk removal starts at $65. They name yard waste, jacuzzis, furniture, appliances, lumber, concrete, asphalt, dirt, construction debris, garage and yard cleanups, and trash-outs. They say they recycle e-waste, scrap metal, green waste, and construction debris, and they do not take hazardous or toxic materials such as paint, pesticides, or motor oil.",
+    ],
+    links: [
+      { label: "Website", href: "https://www.americanhaulaway.com/" },
+      { label: "CSLB license", href: "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=821997" },
+    ],
+  },
+  "junk-seekers": {
+    details: [
+      "Junk Seekers, (619) 916-8419, junkseekers.com, says it is based in Spring Valley and serves San Diego County. Hours are Monday–Saturday 8 AM–8 PM, Sunday closed. Same-day is listed as available.",
+      "You book a two-hour window online. They call about 30 minutes before arrival and give the price after seeing the load. The terms page says phone or online estimates are approximate and the on-site quote is final. A new-customer online discount of $25 is advertised.",
+      "Services named on the site include furniture, appliances, e-waste, yard waste, hot tubs, deck and fence removal, shed demolition, office cleanouts, construction debris, and trailer drop-off. Google Maps for this phone shows 5.0 from 95 reviews.",
+    ],
+    links: [
+      { label: "Website", href: "https://junkseekers.com/" },
+      { label: "Book", href: "https://junkseekers.com/book-now" },
+      { label: "Google reviews", href: "https://g.page/r/CTHaqlEiFKC0EBM/review" },
+    ],
+  },
+  "fully-loaded-junk-removal": {
+    details: [
+      "The only confirmed detail is the phone on file, (619) 920-5303. fullyloadedjunkremoval.com publishes (619) 566-1983, so that website is not attached.",
+    ],
+    links: [],
+  },
+  "green-earth-usa": {
+    details: [
+      "Nextdoor lists Green Earth San Diego at (805) 490-1298 and 7850 North Ave, Lemon Grove 91945. Neighbors on that page name owner Dylon. The business story says they recycle, repurpose, and donate.",
+      "A Thumbtack profile titled Green Earth USA Inc, based in Santee, lists junk removal, demolition, packing, and handyman work, with a 5.0 from 10 reviews on Thumbtack. That is not a Google rating. Their own website did not load cleanly, so it is not linked.",
+    ],
+    links: [],
+  },
+  "north-park-haulers": {
+    details: [
+      "Yelp lists North Park Haulers at (619) 808-4405, 5.0 from 2 reviews. The description says junk removal, construction debris cleanup, and material delivery, with same-day service available. Hours on Yelp are Monday–Saturday 8 AM–6 PM and Sunday 9 AM–5 PM.",
+      "northparkhaulers.online is a thin directory page with different hours, so it is not used as the company site.",
+    ],
+    links: [{ label: "Yelp", href: "https://www.yelp.com/biz/north-park-haulers-san-diego" }],
+  },
+  "javier-junk-removal": {
+    details: [
+      "EZlocal and a city directory both list Javier Junk Removal & Concrete Work at (619) 886-8970, 4930 Genesee Ave, San Diego 92117. One page shows hours of 7 AM–5 PM and another shows 6 AM–9 PM, so hours are not displayed. No reviews were found. The website named on the directory was not confirmed.",
+    ],
+    links: [],
+  },
+  "johans-junk-removal": {
+    details: [
+      "johansjunkremoval.com prints (619) 942-8978 and hello@johansjunkremoval.com. Hours are Monday–Saturday 6 AM–8 PM and Sunday 2 PM–8 PM. The site says they serve all of San Diego and will not take hazardous items.",
+      "Items named on the site include carpets, office and home furniture, washers and dryers, mattresses, sofas, playsets, electronics, construction debris, yard debris, hot tubs, sheds, fences, and garage, attic, rental, foreclosure, and hoarder cleanouts.",
+      "Yelp shows 5.0 from 18 reviews and places the business in Rancho Bernardo, 92128.",
+    ],
+    links: [
+      { label: "Website", href: "https://www.johansjunkremoval.com/" },
+      { label: "Yelp", href: "https://www.yelp.com/biz/johans-junk-removal-and-hauling-san-diego" },
+    ],
+  },
+  "time-to-junk-it": {
+    details: [
+      "Time to Junk It at (619) 354-1042 is owned by Matt and Rose Spurr. A Yahoo listing gives 16855 Ralphs Ranch Rd, San Diego 92127, and hours Monday–Saturday 8 AM–8 PM, Sunday closed. The listing says they are licensed and speak Spanish.",
+      "The Poway Chamber page says they haul unwanted household items, greenery, construction debris, and appliances for homes and businesses across San Diego County. A 15% returning-customer discount appears only in a generated MapQuest summary, so it is not listed as a published price.",
+    ],
+    links: [{ label: "Poway Chamber", href: "https://business.poway.com/list/member/time-to-junk-it-14152" }],
+  },
+  "pugs-junk-removal": {
+    details: [
+      "The only confirmed detail is the phone on file, (858) 504-3745. Public listings for a company named Pug’s Junk Removal use (858) 276-1722, so those sites are not attached.",
+    ],
+    links: [],
+  },
+  "clean-green-hauling": {
+    details: [
+      "Clean Green Hauling, (858) 999-5477, sd@cghauling.com, says it is locally owned and based in North Pacific Beach. Hours on the dumpster pages are Monday–Friday 6:00 AM–5:00 PM. A junk-removal page says they cover all of San Diego County.",
+      "That junk page says pricing starts at $99 for a full-size pickup and that they cannot haul chemicals or paint. Named items include furniture, appliances, couches, concrete, fencing, construction debris, and hot tubs. Curbside residential junk removal is listed as available.",
+      "Dumpster pages list rentals starting at $625 on the main dumpster page, with extra tons at $185, plus flat rates for clean dirt and clean concrete. Other city pages on the same site show lower dumpster starting prices, so confirm the current number when you book. They offer online scheduling and LEED recycling certificates.",
+    ],
+    links: [
+      { label: "Dumpsters", href: "https://www.cghauling.com/" },
+      { label: "Junk removal", href: "https://cghauling.com/home.html" },
+      { label: "Book", href: "https://www.cghauling.com/book" },
+    ],
+  },
+  "getridofit": {
+    details: [
+      "getridofit.com is titled “GetRidOfIt - We Buy Your Valuables & Collections.” The page says they buy coin and stamp collections, jewelry, precious metals, and estate items. The phone printed there is 877-405-3165.",
+      "The San Diego number on file, (619) 780-2279, does not appear on that homepage. This is not a standard junk-hauling listing.",
+    ],
+    links: [{ label: "Website", href: "https://getridofit.com/" }],
+  },
+  "a-and-n-coastal-hauling": {
+    details: [
+      "A&N Coastal Hauling and Demolition, anhauling.com, is posted with (619) 647-8154 on the company’s own X account. Nextdoor and a BOTW directory both give 281 Durian St, Vista 92083. The site says they are locally owned, licensed and insured, and give free estimates.",
+      "Services are demolition (homes, sheds, pools, decks, concrete, asphalt, fences, interior) and junk hauling (construction debris, furniture, appliances, yard waste). They say they sort each load and recycle what they can.",
+      "Cities named on the site include Carlsbad, Clairemont, Del Cerro, Del Mar, El Cajon, Encinitas, Escondido, La Jolla, Lakeside, La Mesa, Linda Vista, Mira Mesa, Mission Beach, Ocean Beach, Oceanside, Pacific Beach, Point Loma, Poway, Ramona, Rancho Bernardo, Rancho Peñasquitos, San Carlos, San Marcos, Spring Valley, Santee, and Vista, plus a few cities outside this directory. A BOTW page shows 5.0 from 107 reviews. That is a directory score, not Google.",
+    ],
+    links: [
+      { label: "Website", href: "https://anhauling.com/" },
+      { label: "San Diego", href: "https://anhauling.com/san-diego/" },
+      { label: "Services", href: "https://anhauling.com/services/" },
+      { label: "Get a quote", href: "https://anhauling.com/get-a-quote/" },
+    ],
+  },
+  "matts-hauling": {
+    details: [
+      "Yelp lists Matt’s Hauling and Removal, owner Matt C., at (619) 226-9747 in City Heights (92105) and marks the business CLOSED. The rating shown there is 4.9 from 117 reviews. Services on the page include junk, appliances, construction debris, furniture, landscaping waste, electronics, mattresses, property cleanouts, and light demolition.",
+      "A Yellow Pages page for the same phone lists 340 S 49th St, San Diego 92113, and says cash and cards are accepted. Hours on public pages do not agree, so none are shown. Call before you count on this listing.",
+    ],
+    links: [{ label: "Yelp", href: "https://www.yelp.com/biz/matts-hauling-and-removal-san-diego" }],
+  },
+  "jfd-hauling": {
+    details: [
+      "A veteran-owned business directory lists JFD Hauling, owner Thomas Diaz, Navy, at (619) 581-1246 and 6820 Brooklyn Ave, San Diego 92114. It says commercial and residential hauling, free estimates, six days a week, and same-day or by appointment. Items named: appliances, cabinets, construction materials, furniture, mattresses, metals, pallets, shrubs, and trees.",
+      "BBB lists a start date of March 10, 2011, and prints the Brooklyn Ave address with ZIP 91942 instead of 92114. Yellow Pages lists ZIP 92120, cash only, and a thin hour range of 1:30 PM–8:00 PM. Confirm the address and hours by phone. No website was found.",
+    ],
+    links: [
+      { label: "BBB", href: "https://www.bbb.org/us/ca/san-diego/profile/light-haul-trucking/jfd-hauling-1126-172000633" },
+    ],
+  },
 };
