@@ -637,7 +637,8 @@ export const PROFILES: Record<
   "gabriels-junk-removal": {
     details: [
       "gabrielsjunkremoval.net prints (619) 957-4592 and says the company is in San Diego, serving San Diego, Chula Vista, Del Mar, and surrounding areas.",
-      "The page asks you to call for a consultation or use the free-estimate form. It does not publish a price list, hours, or a list of items.",
+      "Badges on the site say family owned, locally owned, budget friendly, and mobile service, with free on-site estimates and a satisfaction guarantee. They also advertise 10% off for new customers, 10% for military, and 10% for seniors.",
+      "A flyer with this phone says “text us now to show us your junk,” and lists junk removal and dumpster rental. The truck photos show Isuzu dump trucks lettered Gabriel’s Junk Removal.",
     ],
     links: [{ label: "Website", href: "https://gabrielsjunkremoval.net/" }],
   },

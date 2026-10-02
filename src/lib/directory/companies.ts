@@ -883,11 +883,16 @@ export const COMPANIES: Company[] = [
     address: "1903 Isla Del Carmen Wy, San Diego, CA 92173",
     hours: null,
     blurb:
-      "The site at this phone says they serve San Diego, Chula Vista, Del Mar, and surrounding areas, and asks you to call for a free estimate.",
-    specialties: ["Junk removal"],
-    needs: [],
+      "Locally owned, family-run hauler. The site serves San Diego, Chula Vista, Del Mar, and surrounding areas, with free on-site estimates. A flyer at this phone also advertises dumpster rental and says to text a photo of the junk.",
+    specialties: ["Family-owned", "Locally owned", "Dumpster rental", "Free estimates"],
+    needs: ["cleanout"],
     coverage: ["chula-vista", "del-mar"],
-    images: [],
+    images: [
+      "/haulers/gabriels-junk-removal-photo-2.jpg",
+      "/haulers/gabriels-junk-removal-photo-1.webp",
+      "/haulers/gabriels-junk-removal-photo-3.jpg",
+      "/haulers/gabriels-junk-removal-photo-4.jpg",
+    ],
   },
   {
     slug: "nicos-hauling",
