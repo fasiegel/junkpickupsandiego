@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as PricesRouteImport } from './routes/prices'
+import { Route as ApiVotesRouteImport } from './routes/api/votes'
 import { Route as AreasIndexRouteImport } from './routes/areas/index'
 import { Route as AreasSlugRouteImport } from './routes/areas/$slug'
 import { Route as BlogIndexRouteImport } from './routes/blog/index'
@@ -28,6 +29,11 @@ const IndexRoute = IndexRouteImport.update({
 const PricesRoute = PricesRouteImport.update({
   id: '/prices',
   path: '/prices',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiVotesRoute = ApiVotesRouteImport.update({
+  id: '/api/votes',
+  path: '/api/votes',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AreasIndexRoute = AreasIndexRouteImport.update({
@@ -74,6 +80,7 @@ const WhatWeHaulSlugRoute = WhatWeHaulSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/prices': typeof PricesRoute
+  '/api/votes': typeof ApiVotesRoute
   '/areas/$slug': typeof AreasSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/haulers/$slug': typeof HaulersSlugRoute
@@ -86,6 +93,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/prices': typeof PricesRoute
+  '/api/votes': typeof ApiVotesRoute
   '/areas/$slug': typeof AreasSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/haulers/$slug': typeof HaulersSlugRoute
@@ -99,6 +107,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/prices': typeof PricesRoute
+  '/api/votes': typeof ApiVotesRoute
   '/areas/$slug': typeof AreasSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/haulers/$slug': typeof HaulersSlugRoute
@@ -113,6 +122,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/prices'
+    | '/api/votes'
     | '/areas/$slug'
     | '/blog/$slug'
     | '/haulers/$slug'
@@ -125,6 +135,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/prices'
+    | '/api/votes'
     | '/areas/$slug'
     | '/blog/$slug'
     | '/haulers/$slug'
@@ -137,6 +148,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/prices'
+    | '/api/votes'
     | '/areas/$slug'
     | '/blog/$slug'
     | '/haulers/$slug'
@@ -150,6 +162,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   PricesRoute: typeof PricesRoute
+  ApiVotesRoute: typeof ApiVotesRoute
   AreasSlugRoute: typeof AreasSlugRoute
   BlogSlugRoute: typeof BlogSlugRoute
   HaulersSlugRoute: typeof HaulersSlugRoute
@@ -174,6 +187,13 @@ declare module '@tanstack/react-router' {
       path: '/prices'
       fullPath: '/prices'
       preLoaderRoute: typeof PricesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/votes': {
+      id: '/api/votes'
+      path: '/api/votes'
+      fullPath: '/api/votes'
+      preLoaderRoute: typeof ApiVotesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/areas/': {
@@ -238,6 +258,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   PricesRoute: PricesRoute,
+  ApiVotesRoute: ApiVotesRoute,
   AreasSlugRoute: AreasSlugRoute,
   BlogSlugRoute: BlogSlugRoute,
   HaulersSlugRoute: HaulersSlugRoute,
