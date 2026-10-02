@@ -708,6 +708,8 @@ export const FACTS: Record<string, ListingFacts> = {
     publishedPrices: "No",
   }),
   "asap-junk-hauling": fact({
+    googleRating: "4.8",
+    googleReviews: "23 on Google",
     yelpUrl: "https://www.yelp.com/biz/asap-junk-hauling-san-diego-5",
     yelpReviews: "122 (4.9 on Yelp)",
     onlineBooking: "Not listed — call (619) 581-0872",

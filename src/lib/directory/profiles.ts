@@ -895,7 +895,7 @@ export const PROFILES: Record<
   },
   "asap-junk-hauling": {
     details: [
-      "asapjunkhauling.com prints (619) 581-0872. Owner Jonathan F. gave the same number in a Yelp answer. Yelp is 4.9 from 122 reviews. The current Yelp page says open 24 hours. An older view of that page showed 7 AM–6 PM, so treat the hours as the current Yelp listing.",
+      "asapjunkhauling.com prints (619) 581-0872. Owner Jonathan F. gave the same number in a Yelp answer. Google is 4.8 from 23 reviews. Yelp is 4.9 from 122 reviews. The current Yelp page says open 24 hours. An older view of that page showed 7 AM–6 PM, so treat the hours as the current Yelp listing.",
       "They say they pull junk from wherever it is. Work includes hoarder cleanouts, evictions, residential loads, furniture, appliances, mattresses, and yard waste. A Yelp post advertises 10% off for first-time customers, plus military, law enforcement, teacher, and senior discounts.",
     ],
     links: [

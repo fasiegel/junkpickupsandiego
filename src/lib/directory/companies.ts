@@ -1432,7 +1432,7 @@ export const COMPANIES: Company[] = [
     address: null,
     hours: "Yelp currently lists open 24 hours",
     blurb:
-      "Owner Jonathan F. The site and a Yelp answer both use (619) 581-0872. Yelp is 4.9 from 122 reviews. They haul from the house, including hoarder, eviction, and cleanout jobs, and advertise a first-time 10% discount.",
+      "Owner Jonathan F. The site and a Yelp answer both use (619) 581-0872. Google is 4.8 from 23 reviews. Yelp is 4.9 from 122 reviews. They haul from the house, including hoarder, eviction, and cleanout jobs, and advertise a first-time 10% discount.",
     specialties: ["Same-day", "Cleanouts", "Furniture", "Appliances"],
     needs: ["furniture", "appliances", "cleanout", "same-day"],
     coverage: "county",
