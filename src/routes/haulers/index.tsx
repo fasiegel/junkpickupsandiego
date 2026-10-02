@@ -10,11 +10,11 @@ import { directoryNote, orderCompanies, type DirectoryMode } from "@/lib/directo
 export const Route = createFileRoute("/haulers/")({
   head: () => ({
     meta: [
-      { title: "San Diego Junk Removal Companies | Junk Pickup San Diego" },
+      { title: "San Diego Junk Removal Companies | Junk Removal Pick Up - San Diego Junk Removal Professionals" },
       {
         name: "description",
         content:
-          "Directory of local San Diego junk removal companies with phones, photos, and the communities they say they serve.",
+          "Local San Diego junk removal companies with phones, photos, and the communities they say they serve.",
       },
     ],
   }),
@@ -31,7 +31,7 @@ function HaulersIndex() {
   return (
     <SiteShell>
       <PageHero
-        kicker="Directory"
+        kicker="Haulers"
         title="Every hauler in this guide."
         lede="Each page has the phone, email, and photos we could read on that company’s own site, plus where they say they work."
         crumbs={[{ label: "Home", to: "/" }, { label: "Haulers" }]}

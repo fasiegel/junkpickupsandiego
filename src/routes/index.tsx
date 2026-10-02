@@ -12,11 +12,11 @@ import { directoryNote, orderCompanies, type DirectoryMode } from "@/lib/directo
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Junk Pickup San Diego | Local Hauler Directory" },
+      { title: "Junk Removal Pick Up - San Diego Junk Removal Professionals" },
       {
         name: "description",
         content:
-          "San Diego’s best information source for junk removal. Compare local haulers by neighborhood and ZIP. A directory powered by Fred’s Junk Removal.",
+          "Junk removal pick up from San Diego junk removal professionals. Compare local haulers by neighborhood and ZIP. Powered by Fred’s Junk Removal.",
       },
     ],
   }),
@@ -103,7 +103,7 @@ function Directory() {
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="font-display text-sm font-semibold tracking-[0.18em] text-rust uppercase">
-              The directory
+              The haulers
             </p>
             <h2 className="mt-2 font-display text-4xl font-bold tracking-wide text-ink uppercase">
               Local haulers
