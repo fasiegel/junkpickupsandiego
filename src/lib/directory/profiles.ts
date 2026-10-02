@@ -660,7 +660,7 @@ export const PROFILES: Record<
   },
   "impact-environmental": {
     details: [
-      "Impact Environmental Company in El Cajon, (619) 393-6265, estimates@impact-eco.com, 507 Broadway Unit C, El Cajon 92021. The site prints CSLB #1101347 and says they are open seven days with a three-hour morning or afternoon window.",
+      "Impact Environmental Company in El Cajon, (619) 393-6265, estimates@impact-eco.com, 507 Broadway Unit C, El Cajon 92021. The site prints CSLB #1101347 and says they are open seven days with a three-hour morning or afternoon window. Google Maps lists this phone as Impact Demolition.",
       "Work listed includes household junk, demolition, garage cleanouts, construction debris, appliances, commercial equipment, hot tubs, green waste, property-management cleanouts, hoarding, and estates. They say they recycle or donate 60–80% of every job.",
       "Published prices: minimum pickup $189, full truck of household items $949, bedload of concrete, gravel, soil, or sand $349 per ton, demolition $399 per hour plus $149 per ton.",
     ],
