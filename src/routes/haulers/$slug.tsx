@@ -72,7 +72,7 @@ function ListingFacts({ company, places }: { company: Company; places: string[] 
         Listing facts
       </h2>
       <p className="mt-2 text-sm text-taupe">
-        Ratings and review counts are shown only when a public page states them. Blank fields are not a score.
+        Ratings are the Google Maps score for the listing that matches this company. Review counts are included when Maps showed one.
       </p>
       <dl className="mt-4 divide-y divide-line rounded-xl bg-cream">
         {rows.map((row) => (
