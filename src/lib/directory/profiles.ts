@@ -45,6 +45,7 @@ export const PROFILES: Record<
       "Work includes residential and commercial junk removal, interior and exterior light demolition, garage, home, office, and yard cleanups, moving assistance, office relocations, hot tub removal, appliance disposal, and furniture hauling. Their site also lists mattresses, sheds, pianos, storage cleanouts, construction debris, and yard waste.",
       "They say they recycle up to 80% of what they haul. Special discounts are offered for military relocations and major house cleanups.",
       "Free estimates are by phone at (657) 254-3058, by email at info@junkbegoneinc.com, or on their website. A cost page says the price depends on the size and weight of the load, and the site offers an online booking discount.",
+      "No Google or Yelp rating was confirmed for (657) 254-3058. A Carlsbad Yelp page, a Chula Vista search result, and a La Mesa Nextdoor page that uses (619) 337-5795 are different listings, so those reviews are not attached.",
     ],
     links: [
       { label: "San Diego junk removal", href: "https://junkbegoneinc.com/" },
@@ -846,5 +847,57 @@ export const PROFILES: Record<
       "No Yelp page and no Google Maps rating were found for (858) 325-5220. Rancho Junk Removal in Murrieta is a different company.",
     ],
     links: [{ label: "Website", href: "https://ranchoremoval.com/" }],
+  },
+  "pick-ur-junk": {
+    details: [
+      "pickurjunk.net and Yelp both use (760) 521-0530. Owner Kevin C. The business is in Vista, 92084, and says it is licensed, insured, and family-owned, serving San Diego County. Hours are 6 AM–8 PM every day.",
+      "Yelp is 5.0 from 195 reviews. They say they donate or recycle 60% to 80% of what they haul.",
+      "The site lists a $100 minimum. A quarter load is $120–$180, a half load $200–$280, two-thirds $300–$400, and a full haul $450–$500. They say a truck can haul up to 8,000 pounds and that they will meet or beat a competing bid.",
+    ],
+    links: [
+      { label: "Website", href: "https://pickurjunk.net/" },
+      { label: "Yelp", href: "https://www.yelp.com/biz/pick-ur-junk-san-marcos-2" },
+    ],
+  },
+  "fs-junk-hauling": {
+    details: [
+      "fs-junkhauling.com prints (760) 445-1262. Owner Felipe S. answered a Yelp question with the same number. The company is based in San Marcos and says it serves San Diego County and South Riverside County. Hours are 5 AM–9 PM every day.",
+      "Yelp is 5.0 from 136 reviews. They are veteran- and family-owned. Services include junk removal, curbside pickup, single-item pickup, cleanouts, dirt, green waste, furniture, appliances, construction debris, mini bobcat work, and dumpsters from 5-yard lowboys up to 25 yards.",
+    ],
+    links: [
+      { label: "Website", href: "https://www.fs-junkhauling.com/" },
+      { label: "Yelp", href: "https://www.yelp.com/biz/fs-junk-hauling-san-marcos" },
+    ],
+  },
+  "junk-n-haul": {
+    details: [
+      "A Yahoo listing for Junk N Haul at (619) 396-1559 places the business in San Diego 92111. Hours are Monday–Saturday 7 AM–6 PM, Sunday closed. The description says junk removal and landscape work, residential and commercial.",
+      "That listing mirrors Yelp at 5.0 from 41 reviews. Reviews name Emmanuel. The Yelp page URL was not confirmed, so it is not linked. Colorado Springs and Castle Rock businesses named Junk-N-Haul are different companies.",
+    ],
+    links: [],
+  },
+  "low-cost-hauling": {
+    details: [
+      "lowcosthaul.com lists (619) 655-8280 and Lowcosthaul20@outlook.com. The site says the company is family-owned, serves San Diego County, and offers free estimates and same-day service when available. Named work includes junk removal, demolition, yard cleanup, tree work, appliances, trailer rental, move-out cleanouts, and hot tub breakdowns.",
+      "Yelp search results for Low Cost Hauling in San Diego show 5.0 from 84 reviews, and the business text matches the site slogan, “making the impossible possible.” Reviews on the site name Juan. A Google Maps star rating was not confirmed. The Yelp URL was not confirmed, so it is not linked.",
+    ],
+    links: [{ label: "Website", href: "https://www.lowcosthaul.com/" }],
+  },
+  "franks-demo-and-hauling": {
+    details: [
+      "Yelp lists Franks Demo and Hauling in Escondido at 4.8 from 85 reviews, open 24 hours. The description names dirt removal, concrete, wall, pool, tile, and carpet demolition, grading, tractor work, and junk removal. A Yahoo listing for this name and city shows (760) 443-9244.",
+      "A second Yelp page, franks-demo-and-hauling-escondido, showed 4.9 from 76 reviews. Those reviews are not added on top of the current page. No website was confirmed.",
+    ],
+    links: [{ label: "Yelp", href: "https://www.yelp.com/biz/franks-demo-and-hauling-escondido-3" }],
+  },
+  "asap-junk-hauling": {
+    details: [
+      "asapjunkhauling.com prints (619) 581-0872. Owner Jonathan F. gave the same number in a Yelp answer. Yelp is 4.9 from 122 reviews. The current Yelp page says open 24 hours. An older view of that page showed 7 AM–6 PM, so treat the hours as the current Yelp listing.",
+      "They say they pull junk from wherever it is. Work includes hoarder cleanouts, evictions, residential loads, furniture, appliances, mattresses, and yard waste. A Yelp post advertises 10% off for first-time customers, plus military, law enforcement, teacher, and senior discounts.",
+    ],
+    links: [
+      { label: "Website", href: "https://www.asapjunkhauling.com/" },
+      { label: "Yelp", href: "https://www.yelp.com/biz/asap-junk-hauling-san-diego-5" },
+    ],
   },
 };
