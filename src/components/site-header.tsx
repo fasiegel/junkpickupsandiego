@@ -10,7 +10,7 @@ export function SiteHeader() {
       </p>
       <div className="border-b border-line/80 bg-sand/90 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-          <Link to="/" className="flex min-h-11 items-center text-ink" aria-label="Local junk only, home">
+          <Link to="/" className="flex min-h-11 items-center text-ink" aria-label='Local "Junkers" Only, home'>
             <SiteLogo />
           </Link>
 
