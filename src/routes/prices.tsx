@@ -60,11 +60,7 @@ function PricesPage() {
             </div>
           </div>
           <p className="max-w-3xl text-sm leading-relaxed text-taupe">
-            Fred’s rows run from the curbside price to the full-service price. The average uses the middle of that range. A quarter or three-quarter truck is not listed for Fred’s because those sizes are not on the posted chart.{" "}
-            <Link to="/" hash="calculator" className="font-medium text-rust">
-              Open the truck load calculator
-            </Link>
-            .
+            Fred’s rows run from the curbside price to the full-service price. The average uses the middle of that range. A quarter or three-quarter truck is not listed for Fred’s because those sizes are not on the posted chart.
           </p>
         </div>
       </section>

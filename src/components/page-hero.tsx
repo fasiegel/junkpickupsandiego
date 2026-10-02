@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { MessageSquareText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { smsHref } from "@/lib/contact";
@@ -51,11 +50,6 @@ export function PageHero({
               <MessageSquareText />
               Text Fred a picture
             </a>
-          </Button>
-          <Button asChild variant="outline" size="lg">
-            <Link to="/" hash="calculator">
-              Truck load calculator
-            </Link>
           </Button>
         </div>
         ) : null}
