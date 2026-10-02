@@ -52,9 +52,9 @@ function Home() {
       <section className="border-b border-line bg-cream py-12 sm:py-16">
         <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <img
-            src="/images/job-driveway-sofas.jpg"
-            alt="Sofas staged for a Fred's Junk Removal pickup"
-            className="aspect-[16/10] w-full rounded-xl object-cover shadow-[var(--shadow-border)]"
+            src="/haulers/freds-junk-removal-photo-1.jpg"
+            alt="Fred in the cab of his junk removal truck"
+            className="aspect-[16/10] w-full rounded-xl object-cover object-[center_30%] shadow-[var(--shadow-border)]"
           />
           <div>
             <p className="font-display text-sm font-semibold tracking-[0.18em] text-rust uppercase">
