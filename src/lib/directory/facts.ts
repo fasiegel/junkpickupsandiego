@@ -685,6 +685,7 @@ export const FACTS: Record<string, ListingFacts> = {
     publishedPrices: "No",
   }),
   "junk-n-haul": fact({
+    yelpUrl: "https://www.yelp.com/biz/junk-n-haul-san-diego",
     yelpReviews: "40 (5.0 on Yelp)",
     onlineBooking: "Not listed",
     curbside: "Not listed",
