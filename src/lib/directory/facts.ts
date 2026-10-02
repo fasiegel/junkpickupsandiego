@@ -100,6 +100,9 @@ export const FACTS: Record<string, ListingFacts> = {
   }),
   "junk-guys-san-diego": fact({
     years: "Their site says 13 years",
+    googleUrl: "https://www.google.com/maps?cid=9954948730008415201&hl=en",
+    googleRating: "5.0",
+    googleReviews: "4 on Google Maps",
     yelpUrl: "https://www.yelp.com/biz/junk-guys-vista-2",
     onlineBooking: "Yes",
     curbside: "No",
