@@ -31,9 +31,9 @@ function HaulersIndex() {
         actions={false}
       />
       <section className="py-14">
-        <ul className="mx-auto grid max-w-6xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
+        <ul className="mx-auto grid max-w-6xl items-stretch gap-5 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
           {[...featured, ...rest].map((company) => (
-            <li key={company.slug}>
+            <li key={company.slug} className="min-w-0">
               <CompanyCard company={company} />
             </li>
           ))}

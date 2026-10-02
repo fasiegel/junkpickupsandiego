@@ -50,9 +50,9 @@ function AreaPage() {
       <section className="py-12">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <p className="text-sm text-taupe">{companies.length} haulers listed</p>
-          <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="mt-6 grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {[...featured, ...rest].map((company) => (
-              <li key={company.slug}>
+              <li key={company.slug} className="min-w-0">
                 <CompanyCard company={company} />
               </li>
             ))}

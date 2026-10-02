@@ -96,41 +96,42 @@ function Directory() {
   }, [need]);
 
   return (
-    <section className="py-14 sm:py-18">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="font-display text-sm font-semibold tracking-[0.18em] text-rust uppercase">
-                The directory
-              </p>
-              <h2 className="mt-2 font-display text-4xl font-bold tracking-wide text-ink uppercase">
-                Local haulers
-              </h2>
-            </div>
-            <Link to="/haulers" className="text-sm font-medium text-rust hover:text-rust-hover">
-              All {COMPANIES.length} companies
-            </Link>
+    <section className="py-12 sm:py-16">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="font-display text-sm font-semibold tracking-[0.18em] text-rust uppercase">
+              The directory
+            </p>
+            <h2 className="mt-2 font-display text-4xl font-bold tracking-wide text-ink uppercase">
+              Local haulers
+            </h2>
+            <p className="mt-2 text-sm text-taupe">{list.length} local companies</p>
           </div>
-          <div className="mt-6 flex flex-wrap gap-2">
-            <FilterChip active={need === null} onClick={() => setNeed(null)} label="All needs" />
-            {NEEDS.map((item) => (
-              <FilterChip
-                key={item.id}
-                active={need === item.id}
-                onClick={() => setNeed(need === item.id ? null : item.id)}
-                label={item.label}
-              />
-            ))}
-          </div>
-          <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {list.map((company) => (
-              <li key={company.slug}>
-                <CompanyCard company={company} />
-              </li>
-            ))}
-          </ul>
+          <Link to="/haulers" className="text-sm font-medium text-rust hover:text-rust-hover">
+            All {COMPANIES.length} companies
+          </Link>
         </div>
-      </section>
+        <div className="mt-6 flex flex-wrap gap-2">
+          <FilterChip active={need === null} onClick={() => setNeed(null)} label="All needs" />
+          {NEEDS.map((item) => (
+            <FilterChip
+              key={item.id}
+              active={need === item.id}
+              onClick={() => setNeed(need === item.id ? null : item.id)}
+              label={item.label}
+            />
+          ))}
+        </div>
+        <ul className="mt-8 grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {list.map((company) => (
+            <li key={company.slug} className="min-w-0">
+              <CompanyCard company={company} />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
   );
 }
 
@@ -150,7 +151,7 @@ function FilterChip({
       className={
         active
           ? "min-h-11 rounded-full bg-ink px-4 text-sm font-medium text-cream"
-          : "min-h-11 rounded-full bg-cream px-4 text-sm font-medium text-ink-soft shadow-[var(--shadow-border)] hover:text-rust"
+          : "min-h-11 rounded-full border border-line bg-paper px-4 text-sm font-medium text-ink-soft hover:border-ink hover:text-ink"
       }
     >
       {label}
