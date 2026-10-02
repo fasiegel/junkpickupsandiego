@@ -856,13 +856,4 @@ export const PROFILES: Record<
     ],
     links: [{ label: "Yelp", href: "https://www.yelp.com/biz/matts-hauling-and-removal-san-diego" }],
   },
-  "jfd-hauling": {
-    details: [
-      "A veteran-owned business directory lists JFD Hauling, owner Thomas Diaz, Navy, at (619) 581-1246 and 6820 Brooklyn Ave, San Diego 92114. It says commercial and residential hauling, free estimates, six days a week, and same-day or by appointment. Items named: appliances, cabinets, construction materials, furniture, mattresses, metals, pallets, shrubs, and trees.",
-      "BBB lists a start date of March 10, 2011, and prints the Brooklyn Ave address with ZIP 91942 instead of 92114. Yellow Pages lists ZIP 92120, cash only, and a thin hour range of 1:30 PM–8:00 PM. Confirm the address and hours by phone. No website was found.",
-    ],
-    links: [
-      { label: "BBB", href: "https://www.bbb.org/us/ca/san-diego/profile/light-haul-trucking/jfd-hauling-1126-172000633" },
-    ],
-  },
 };

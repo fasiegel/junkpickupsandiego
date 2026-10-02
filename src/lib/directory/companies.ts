@@ -1375,21 +1375,6 @@ export const COMPANIES: Company[] = [
     coverage: ["city-heights"],
     images: [],
   },
-  {
-    slug: "jfd-hauling",
-    name: "JFD Hauling",
-    url: null,
-    phone: "(619) 581-1246",
-    email: null,
-    address: "6820 Brooklyn Ave, San Diego, CA 92114",
-    hours: null,
-    blurb:
-      "Veteran-owned listing for Thomas Diaz, Navy. The veteran directory says commercial and residential hauling, free estimates, six days a week, and same-day when they can. Yellow Pages says cash only. ZIP codes on public pages disagree, so confirm the address.",
-    specialties: ["Veteran-owned", "Furniture", "Appliances", "Construction debris"],
-    needs: ["furniture", "appliances", "construction", "same-day"],
-    coverage: [],
-    images: [],
-  },
 ];
 
 const bySlug = new Map(COMPANIES.map((c) => [c.slug, c]));

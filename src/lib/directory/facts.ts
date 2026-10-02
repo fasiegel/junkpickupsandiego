@@ -633,13 +633,6 @@ export const FACTS: Record<string, ListingFacts> = {
     curbside: "Not listed",
     publishedPrices: "No",
   }),
-  "jfd-hauling": fact({
-    years: "BBB lists a start date of March 10, 2011",
-    bbbUrl: "https://www.bbb.org/us/ca/san-diego/profile/light-haul-trucking/jfd-hauling-1126-172000633",
-    onlineBooking: "Not listed",
-    curbside: "Not listed",
-    publishedPrices: "No",
-  }),
   "getridofit": fact({
     onlineBooking: "Not listed",
     curbside: "No",
