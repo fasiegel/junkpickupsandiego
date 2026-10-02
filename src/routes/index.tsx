@@ -6,7 +6,7 @@ import { DirectoryFilters } from "@/components/directory-filters";
 import { SiteShell } from "@/components/site-shell";
 import { Button } from "@/components/ui/button";
 import { PARENT_NAME, PHONE_DISPLAY, smsHref } from "@/lib/contact";
-import { COMPANIES, NEEDS } from "@/lib/directory/companies";
+import { COMPANIES } from "@/lib/directory/companies";
 import { directoryNote, orderCompanies, type DirectoryMode } from "@/lib/directory/order";
 
 export const Route = createFileRoute("/")({
@@ -91,13 +91,11 @@ function Home() {
 }
 
 function Directory() {
-  const [need, setNeed] = useState<string | null>(null);
   const [mode, setMode] = useState<DirectoryMode>("default");
   const list = useMemo(() => {
     const rest = mode === "default" ? COMPANIES.filter((c) => !c.featured) : COMPANIES;
-    const filtered = need ? rest.filter((c) => c.needs.includes(need)) : rest;
-    return orderCompanies(filtered, mode);
-  }, [need, mode]);
+    return orderCompanies(rest, mode);
+  }, [mode]);
 
   return (
     <section className="py-12 sm:py-16">
@@ -119,19 +117,8 @@ function Directory() {
         <div className="mt-6">
           <DirectoryFilters mode={mode} onChange={setMode} />
         </div>
-        <div className="mt-5 flex flex-wrap gap-2">
-          <FilterChip active={need === null} onClick={() => setNeed(null)} label="All needs" />
-          {NEEDS.map((item) => (
-            <FilterChip
-              key={item.id}
-              active={need === item.id}
-              onClick={() => setNeed(need === item.id ? null : item.id)}
-              label={item.label}
-            />
-          ))}
-        </div>
         {list.length === 0 ? (
-          <p className="mt-8 text-sm text-taupe">No companies in this list have that published.</p>
+          <p className="mt-8 text-sm text-taupe">No companies match this filter.</p>
         ) : (
           <ul className="mt-8 grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {list.map((company) => (
@@ -143,29 +130,5 @@ function Directory() {
         )}
       </div>
     </section>
-  );
-}
-
-function FilterChip({
-  active,
-  onClick,
-  label,
-}: {
-  active: boolean;
-  onClick: () => void;
-  label: string;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={
-        active
-          ? "min-h-11 rounded-full bg-ink px-4 text-sm font-medium text-cream"
-          : "min-h-11 rounded-full border border-line bg-paper px-4 text-sm font-medium text-ink-soft hover:border-ink hover:text-ink"
-      }
-    >
-      {label}
-    </button>
   );
 }

@@ -2,7 +2,7 @@ import { FACTS } from "@/lib/directory/facts";
 import { ITEM_PRICES, LOAD_PRICES } from "@/lib/directory/prices";
 import type { Company } from "@/lib/directory/companies";
 
-export type DirectoryMode = "default" | "google" | "yelp" | "item" | "truck" | "published" | "years";
+export type DirectoryMode = "default" | "google" | "yelp" | "item" | "truck" | "published" | "years" | "north";
 
 export const DIRECTORY_MODES: { id: Exclude<DirectoryMode, "default">; label: string; hint: string }[] = [
   { id: "google", label: "Google reviews", hint: "Highest Google rating first. Most reviews break a tie." },
@@ -11,6 +11,7 @@ export const DIRECTORY_MODES: { id: Exclude<DirectoryMode, "default">; label: st
   { id: "truck", label: "Full truck price", hint: "Lowest published full-truck price first." },
   { id: "published", label: "Published prices", hint: "Only companies that publish prices." },
   { id: "years", label: "Years in business", hint: "Longest published history first." },
+  { id: "north", label: "North County", hint: "Companies that list North County." },
 ];
 
 const WORD_YEARS: Record<string, number> = {
@@ -87,7 +88,7 @@ function scoreFor(slug: string, mode: DirectoryMode): number | null {
 }
 
 export function directoryNote(company: Company, mode: DirectoryMode): string | null {
-  if (mode === "default" || scoreFor(company.slug, mode) === null) return null;
+  if (mode === "default" || mode === "north" || scoreFor(company.slug, mode) === null) return null;
   const facts = factsFor(company.slug);
   if (mode === "google") {
     const count = leadingCount(facts?.googleReviews);
@@ -119,6 +120,7 @@ export function directoryNote(company: Company, mode: DirectoryMode): string | n
 
 export function orderCompanies(companies: Company[], mode: DirectoryMode): Company[] {
   if (mode === "default") return companies;
+  if (mode === "north") return companies.filter((company) => company.needs.includes("north-county"));
   return companies
     .filter((company) => scoreFor(company.slug, mode) !== null)
     .sort((a, b) => {

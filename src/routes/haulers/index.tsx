@@ -42,7 +42,7 @@ function HaulersIndex() {
           <DirectoryFilters mode={mode} onChange={setMode} />
           <p className="mt-4 text-sm text-taupe">{companies.length} companies</p>
           {companies.length === 0 ? (
-            <p className="mt-8 text-sm text-taupe">No companies in this list have that published.</p>
+            <p className="mt-8 text-sm text-taupe">No companies match this filter.</p>
           ) : (
             <ul className="mt-6 grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {companies.map((company) => (
