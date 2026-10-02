@@ -34,7 +34,7 @@ function ListingFacts({ company, places }: { company: Company; places: string[] 
   const facts = company.facts;
   const area =
     company.coverage === "county"
-      ? `San Diego County. Communities in this guide include ${places.slice(0, 8).join(", ")}.`
+      ? "San Diego County"
       : places.length > 0
         ? places.join(", ")
         : "Not listed on their site";
@@ -150,7 +150,7 @@ function GoogleReviews({ company }: { company: Company }) {
 function HaulerPage() {
   const { company } = Route.useLoaderData();
   const places = communitiesForCompany(company);
-  const showPlaces = company.coverage === "county" ? places.slice(0, 12) : places;
+  const namedPlaces = company.coverage === "county" ? [] : places;
   const photos = company.images;
 
   return (
@@ -191,7 +191,7 @@ function HaulerPage() {
                 </li>
               ))}
             </ul>
-            <ListingFacts company={company} places={showPlaces.map((place) => place.name)} />
+            <ListingFacts company={company} places={places.map((place) => place.name)} />
             <GoogleReviews company={company} />
             {company.details && company.details.length > 0 ? (
               <div className="mt-8">
@@ -282,13 +282,14 @@ function HaulerPage() {
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-taupe">
             {company.coverage === "county"
-              ? "Their site describes San Diego County service. These are the communities in this guide."
+              ? "Their site says San Diego County. It does not name a shorter city list."
               : company.coverage.length === 0
                 ? "No service area was listed for this company. Call and confirm they cover your address."
-                : "Matched from the cities named on their site."}
+                : "Cities named on their site."}
           </p>
+          {namedPlaces.length > 0 ? (
           <ul className="mt-6 flex flex-wrap gap-2">
-            {showPlaces.map((place) => (
+            {namedPlaces.map((place) => (
               <li key={place.slug}>
                 <Link
                   to="/areas/$slug"
@@ -301,6 +302,7 @@ function HaulerPage() {
               </li>
             ))}
           </ul>
+          ) : null}
           {company.coverage === "county" ? (
             <Link to="/areas" className="mt-6 inline-block text-sm font-medium text-rust">
               See every ZIP and community

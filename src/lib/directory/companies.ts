@@ -521,7 +521,7 @@ export const COMPANIES: Company[] = [
       "Chula Vista junk removal for a single item or a full property cleanout. Same-day or next-day. The quote includes labor, travel, and disposal. They name National City, Bonita, Imperial Beach, Spring Valley, La Mesa, and Jamul.",
     specialties: ["Chula Vista", "Same-day", "Cleanouts", "Upfront pricing"],
     needs: ["same-day", "furniture", "appliances", "cleanout", "commercial"],
-    coverage: "county",
+    coverage: ["chula-vista", "national-city", "bonita", "imperial-beach", "spring-valley", "la-mesa", "jamul"],
     images: [
       "/haulers/pick-and-dump-photo-1.jpg",
       "/haulers/pick-and-dump-photo-2.jpg",
