@@ -83,7 +83,7 @@ export const COMPANIES: Company[] = [
     hours: "Mon–Sat, 9:00 AM – 4:00 PM",
     blurb:
       "Local, veteran-owned hauler behind this directory. Posted household truck-load prices, same-day often available, and a photo text is the quote.",
-    specialties: ["Furniture", "Appliances", "Garage cleanouts", "Same-day", "Posted pricing"],
+    specialties: ["Veteran-owned", "Furniture", "Appliances", "Garage cleanouts", "Same-day", "Posted pricing"],
     needs: ["same-day", "furniture", "appliances", "cleanout"],
     coverage: [
       "allied-gardens",
