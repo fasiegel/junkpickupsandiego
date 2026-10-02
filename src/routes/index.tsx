@@ -86,7 +86,100 @@ function Home() {
 
       <Directory />
       <ServicesGuide />
+      <PrepareGuide />
     </SiteShell>
+  );
+}
+
+function PrepareGuide() {
+  const groups = [
+    {
+      title: "Sort and separate items",
+      steps: [
+        {
+          title: "Make a list",
+          body: "Walk through your home and list what you want gone to estimate volume and get an accurate quote.",
+        },
+        {
+          title: "Divide categories",
+          body: "Separate what you want to keep, donate, sell, or throw away ahead of time.",
+        },
+        {
+          title: "Protect valuables",
+          body: "Remove sentimental items, important papers, cash, and electronics from the junk pile so they are not accidentally hauled away.",
+        },
+        {
+          title: "Mark what stays",
+          body: "Use sticky notes or signs to clearly label items you are keeping if you plan to step away.",
+        },
+      ],
+    },
+    {
+      title: "Clear access paths",
+      steps: [
+        {
+          title: "Clear hallways and stairs",
+          body: "Move tripping hazards like cords, rugs, or boxes out of the way for the crew.",
+        },
+        {
+          title: "Move vehicles",
+          body: "Park your cars away from the driveway so the hauling truck can park close to your home.",
+        },
+        {
+          title: "Secure pets",
+          body: "Keep your dogs and cats in a safe, closed room while workers are carrying heavy objects.",
+        },
+      ],
+    },
+    {
+      title: "Handle prohibited materials",
+      steps: [
+        {
+          title: "Check hazardous waste",
+          body: "Most standard haulers cannot take items like wet paint, chemicals, motor oil, car batteries, or propane tanks.",
+        },
+        {
+          title: "Set aside special items",
+          body: "Ask your provider about local rules for tires, medical waste, or asbestos before your scheduled pickup.",
+        },
+      ],
+    },
+  ];
+
+  return (
+    <section className="border-t border-line bg-cream py-12 sm:py-16">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <p className="font-display text-sm font-semibold tracking-[0.18em] text-rust uppercase">
+          Before the truck arrives
+        </p>
+        <h2 className="mt-2 font-display text-4xl font-bold tracking-wide text-ink uppercase">
+          How to prepare for junk removal
+        </h2>
+        <p className="mt-4 max-w-3xl text-base leading-relaxed text-taupe">
+          Preparing for a junk removal service requires sorting your belongings, clearing safe
+          pathways, and separating any items the crew cannot legally haul.
+        </p>
+        <div className="mt-10 space-y-10">
+          {groups.map((group) => (
+            <div key={group.title}>
+              <h3 className="font-display text-2xl font-bold tracking-wide text-ink uppercase">
+                {group.title}
+              </h3>
+              <ul className="mt-5 grid gap-4 sm:grid-cols-2">
+                {group.steps.map((step) => (
+                  <li key={step.title} className="rounded-xl bg-sand px-5 py-5">
+                    <h4 className="font-display text-lg font-bold tracking-wide text-ink uppercase">
+                      {step.title}
+                    </h4>
+                    <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.body}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
