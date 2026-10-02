@@ -15,6 +15,8 @@ import { PROFILES } from "@/lib/directory/profiles";
  * - SD Haul & Dump LLC, (619) 977-1272. Owner asked it removed.
  * - Clear Space Junk Solutions, (760) 871-3279. Owner asked it removed.
  * - Junk and Trash Hauling San Diego, (619) 908-0333. Owner asked it removed.
+ * - Fully Loaded Junk Removal, (619) 920-5303. Owner asked it removed.
+ * - Pug's Junk Removal, (858) 504-3745. Owner asked it removed.
  * Only list a hauler when the phone or address matches a public page.
  */
 
@@ -1187,21 +1189,6 @@ export const COMPANIES: Company[] = [
     ],
   },
   {
-    slug: "fully-loaded-junk-removal",
-    name: "Fully Loaded Junk Removal",
-    url: null,
-    phone: "(619) 920-5303",
-    email: null,
-    address: null,
-    hours: null,
-    blurb:
-      "A sign for this phone reads Fully Loaded Junk Removal and lists residential and commercial cleanouts, construction and demolition debris, furniture, appliances, recycling and green waste, single-item pickup, large-item pickup, and light demolition. fullyloadedjunkremoval.com publishes a different number, (619) 566-1983, so that site is not linked.",
-    specialties: ["Cleanouts", "Furniture", "Appliances", "Light demolition"],
-    needs: ["cleanout", "furniture", "appliances", "construction"],
-    coverage: [],
-    images: ["/haulers/fully-loaded-junk-removal-photo-1.jpg"],
-  },
-  {
     slug: "johans-junk-removal",
     name: "Johan's Junk Removal & Hauling",
     url: "https://www.johansjunkremoval.com/",
@@ -1220,21 +1207,6 @@ export const COMPANIES: Company[] = [
       "/haulers/johans-junk-removal-photo-1.png",
       "/haulers/johans-junk-removal-photo-4.jpg",
     ],
-  },
-  {
-    slug: "pugs-junk-removal",
-    name: "Pug's Junk Removal",
-    url: null,
-    phone: "(858) 504-3745",
-    email: null,
-    address: null,
-    hours: null,
-    blurb:
-      "Only this phone is on file. Public pages for a business named Pug’s Junk Removal use (858) 276-1722, so those sites are not linked.",
-    specialties: ["Junk removal"],
-    needs: [],
-    coverage: [],
-    images: [],
   },
   {
     slug: "clean-green-hauling",

@@ -777,12 +777,6 @@ export const PROFILES: Record<
       { label: "Yelp", href: "https://www.yelp.com/biz/junk-seekers-san-diego-2" },
     ],
   },
-  "fully-loaded-junk-removal": {
-    details: [
-      "A sign for (619) 920-5303 reads Fully Loaded Junk Removal. It lists residential and commercial cleanouts, construction and demolition debris, furniture removal, appliance removal, recycling and green waste, single-item pickup, large-item pickup, and light demolition. fullyloadedjunkremoval.com publishes (619) 566-1983, so that website is not attached.",
-    ],
-    links: [],
-  },
   "johans-junk-removal": {
     details: [
       "johansjunkremoval.com prints (619) 942-8978 and hello@johansjunkremoval.com. Hours are Monday–Saturday 6 AM–8 PM and Sunday 2 PM–8 PM. The site says they serve all of San Diego and will not take hazardous items.",
@@ -793,12 +787,6 @@ export const PROFILES: Record<
       { label: "Website", href: "https://www.johansjunkremoval.com/" },
       { label: "Yelp", href: "https://www.yelp.com/biz/johans-junk-removal-and-hauling-san-diego" },
     ],
-  },
-  "pugs-junk-removal": {
-    details: [
-      "The only confirmed detail is the phone on file, (858) 504-3745. Public listings for a company named Pug’s Junk Removal use (858) 276-1722, so those sites are not attached.",
-    ],
-    links: [],
   },
   "clean-green-hauling": {
     details: [
