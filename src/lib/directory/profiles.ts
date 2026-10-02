@@ -458,7 +458,7 @@ export const PROFILES: Record<
   },
   "fast-pickup-junk": {
     details: [
-      "Fast Pickup Junk is a locally owned San Diego metro hauler. The live site blocked a direct visit, so there is still no phone or email on the listing. They advertise $20 off and say they will beat another quote.",
+      "Fast Pickup Junk is a locally owned San Diego metro hauler. Call (760) 504-2026. They advertise $20 off and say they will beat another quote.",
       "Work includes furniture, appliances, mattresses, dump runs, construction debris, and property, eviction, estate, hoarder, and garage cleanouts, plus shed and hot tub demolition. Price is by how much of the truck you fill. Same-day service is listed.",
       "Cities named include Chula Vista, Oceanside, Carlsbad, Escondido, El Cajon, Encinitas, and Vista.",
     ],

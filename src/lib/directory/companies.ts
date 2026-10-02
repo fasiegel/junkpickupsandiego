@@ -866,7 +866,7 @@ export const COMPANIES: Company[] = [
     slug: "fast-pickup-junk",
     name: "Fast Pickup Junk",
     url: "https://fastpickupjunksd.com/",
-    phone: null,
+    phone: "(760) 504-2026",
     email: null,
     address: null,
     hours: null,
