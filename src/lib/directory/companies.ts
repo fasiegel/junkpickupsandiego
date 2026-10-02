@@ -1360,21 +1360,6 @@ export const COMPANIES: Company[] = [
     ],
     images: [],
   },
-  {
-    slug: "matts-hauling",
-    name: "Matt's Hauling and Removal",
-    url: null,
-    phone: "(619) 226-9747",
-    email: null,
-    address: "San Diego, CA 92105",
-    hours: null,
-    blurb:
-      "Yelp lists Matt’s Hauling and Removal, owner Matt C., at this phone in City Heights and marks the business CLOSED. The same page still describes junk, hot tubs, evictions, and light demolition. A Yellow Pages page lists 340 S 49th St, 92113.",
-    specialties: ["Hot tubs", "Cleanouts", "Light demolition"],
-    needs: ["cleanout", "furniture", "appliances"],
-    coverage: ["city-heights"],
-    images: [],
-  },
 ];
 
 const bySlug = new Map(COMPANIES.map((c) => [c.slug, c]));

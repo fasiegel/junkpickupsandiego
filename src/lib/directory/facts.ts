@@ -626,13 +626,6 @@ export const FACTS: Record<string, ListingFacts> = {
     curbside: "Not listed",
     publishedPrices: "No",
   }),
-  "matts-hauling": fact({
-    yelpUrl: "https://www.yelp.com/biz/matts-hauling-and-removal-san-diego",
-    yelpReviews: "117 (4.9 on Yelp). Yelp marks this business closed.",
-    onlineBooking: "Not listed",
-    curbside: "Not listed",
-    publishedPrices: "No",
-  }),
   "getridofit": fact({
     onlineBooking: "Not listed",
     curbside: "No",

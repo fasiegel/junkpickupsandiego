@@ -849,11 +849,4 @@ export const PROFILES: Record<
       { label: "Get a quote", href: "https://anhauling.com/get-a-quote/" },
     ],
   },
-  "matts-hauling": {
-    details: [
-      "Yelp lists Matt’s Hauling and Removal, owner Matt C., at (619) 226-9747 in City Heights (92105) and marks the business CLOSED. The rating shown there is 4.9 from 117 reviews. Services on the page include junk, appliances, construction debris, furniture, landscaping waste, electronics, mattresses, property cleanouts, and light demolition.",
-      "A Yellow Pages page for the same phone lists 340 S 49th St, San Diego 92113, and says cash and cards are accepted. Hours on public pages do not agree, so none are shown. Call before you count on this listing.",
-    ],
-    links: [{ label: "Yelp", href: "https://www.yelp.com/biz/matts-hauling-and-removal-san-diego" }],
-  },
 };
