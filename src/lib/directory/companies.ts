@@ -881,7 +881,7 @@ export const COMPANIES: Company[] = [
     phone: "(619) 957-4592",
     email: null,
     address: "1903 Isla Del Carmen Wy, San Diego, CA 92173",
-    hours: null,
+    hours: "Yelp: Mon–Sat 7:00 AM – 7:00 PM; Sun 8:00 AM – 4:00 PM",
     blurb:
       "Locally owned, family-run hauler. The site serves San Diego, Chula Vista, Del Mar, and surrounding areas, with free on-site estimates. A flyer at this phone also advertises dumpster rental and says to text a photo of the junk.",
     specialties: ["Family-owned", "Locally owned", "Dumpster rental", "Free estimates"],
@@ -1057,7 +1057,7 @@ export const COMPANIES: Company[] = [
     phone: "(619) 723-6701",
     email: "jakesjunkremovalsd@gmail.com",
     address: "3158 Aurora Vista Dr, Spring Valley, CA 91978",
-    hours: null,
+    hours: "Yelp: Mon–Sat 8:00 AM – 4:00 PM. Sunday closed.",
     blurb:
       "Family-owned hauler. Their site says they have served San Diego since 2017, price by truck volume, and text a picture for a quote. The homepage lists household junk, construction debris, yard waste, and cleanouts. It does not describe demolition.",
     specialties: ["Furniture", "Construction debris", "Yard waste", "Cleanouts", "Since 2017"],
