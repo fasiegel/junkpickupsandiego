@@ -91,10 +91,12 @@ function Home() {
 
 function Directory() {
   const [mode, setMode] = useState<DirectoryMode>("default");
+  const [expanded, setExpanded] = useState(false);
   const list = useMemo(() => {
     const rest = mode === "default" ? COMPANIES.filter((c) => !c.featured) : COMPANIES;
     return orderCompanies(rest, mode);
   }, [mode]);
+  const shown = expanded ? list : list.slice(0, 12);
 
   return (
     <section className="py-12 sm:py-16">
@@ -114,18 +116,33 @@ function Directory() {
           </Link>
         </div>
         <div className="mt-6">
-          <DirectoryFilters mode={mode} onChange={setMode} />
+          <DirectoryFilters
+            mode={mode}
+            onChange={(next) => {
+              setMode(next);
+              setExpanded(false);
+            }}
+          />
         </div>
         {list.length === 0 ? (
           <p className="mt-8 text-sm text-taupe">No companies match this filter.</p>
         ) : (
-          <ul className="mt-8 grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {list.map((company) => (
-              <li key={company.slug} className="min-w-0">
-                <CompanyCard company={company} note={directoryNote(company, mode)} />
-              </li>
-            ))}
-          </ul>
+          <>
+            <ul className="mt-8 grid items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {shown.map((company) => (
+                <li key={company.slug} className="min-w-0">
+                  <CompanyCard company={company} note={directoryNote(company, mode)} />
+                </li>
+              ))}
+            </ul>
+            {!expanded && list.length > 12 ? (
+              <div className="mt-8 flex justify-center">
+                <Button type="button" variant="outline" onClick={() => setExpanded(true)}>
+                  See more
+                </Button>
+              </div>
+            ) : null}
+          </>
         )}
       </div>
     </section>
