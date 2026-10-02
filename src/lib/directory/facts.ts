@@ -650,4 +650,20 @@ export const FACTS: Record<string, ListingFacts> = {
     curbside: "Not listed",
     publishedPrices: "No",
   }),
+  "acosta-services": fact({
+    years: "Their site says over two decades",
+    onlineBooking: "A contact form is on the site",
+    curbside: "Not listed",
+    publishedPrices: "No — 10% off for new customers",
+  }),
+  "no-limit-hauling": fact({
+    onlineBooking: "Not listed",
+    curbside: "Yes — the truck says curbside pickup",
+    publishedPrices: "The truck advertises mattress removal $30 and appliance removal $30",
+  }),
+  "rancho-removal": fact({
+    onlineBooking: "Not listed — call or text (858) 325-5220",
+    curbside: "Yes — small curbside from $99",
+    publishedPrices: "Small curbside from $99. Half load $350–$450+. Full load $499–$699+.",
+  }),
 };

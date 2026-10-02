@@ -818,4 +818,27 @@ export const PROFILES: Record<
       { label: "Get a quote", href: "https://anhauling.com/get-a-quote/" },
     ],
   },
+  "acosta-services": {
+    details: [
+      "acostaservicejunkremoval.com lists (619) 715-0958, ageevictor@hotmail.com, and 9957 Caminito Tomatillo, San Diego 92131. The page says the company has worked for over two decades and offers 10% off for new customers.",
+      "Services named on the site are spa debris removal, demolition, transportation, cleaning, tree removal, appliance removal and recycling, and furniture removal. The page also says they serve projects throughout California.",
+      "Their dump truck is lettered Acosta. A second photo shows the crew in maroon shirts in front of the truck.",
+    ],
+    links: [{ label: "Website", href: "https://acostaservicejunkremoval.com/" }],
+  },
+  "no-limit-hauling": {
+    details: [
+      "nolimithauling.com lists (619) 468-4888, support@nolimithauling.com, and San Diego 92014. Hours are 7:00 AM–7:00 PM, seven days. The site says junk removal, light demolition, curbside pickup, and full-service hauling in San Diego and the surrounding area.",
+      "The box truck prints the same phone and NoLimitHauling.com, and advertises mattress removal $30 and appliance removal $30, plus curbside pickup, full-service junk removal, and light demolition.",
+    ],
+    links: [{ label: "Website", href: "https://nolimithauling.com/" }],
+  },
+  "rancho-removal": {
+    details: [
+      "ranchoremoval.com lists (858) 325-5220 and names owner Joe. Small curbside starts at $99. A half load is $350–$450+ and a full load is $499–$699+. The page says to text photos for a faster quote, and that same-day or next-day openings are available.",
+      "Services named include garage and property cleanouts, furniture and appliance removal, yard debris, construction debris, and move-out or rental cleanouts.",
+      "The site’s strongest coverage is Rancho Peñasquitos, Rancho Bernardo, Carmel Mountain Ranch, Scripps Ranch, 4S Ranch, Sabre Springs, Poway, and Mira Mesa, with more neighborhoods across San Diego County.",
+    ],
+    links: [{ label: "Website", href: "https://ranchoremoval.com/" }],
+  },
 };
