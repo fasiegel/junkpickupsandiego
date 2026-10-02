@@ -45,16 +45,6 @@ export const FACTS: Record<string, ListingFacts> = {
     curbside: "Yes",
     publishedPrices: "Yes",
   }),
-  "jdog-junk-removal": fact({
-    googleUrl: "https://www.google.com/maps?cid=15157132366364354932&hl=en",
-    googleRating: "5.0",
-    googleReviews: "309 on Google Maps",
-    yelpUrl: "https://www.yelp.com/biz/jdog-junk-removal-and-hauling-san-diego-lemon-grove",
-    yelpReviews: "50 (4.6 on the San Diego Yelp page)",
-    onlineBooking: "Yes",
-    curbside: "No",
-    publishedPrices: "No",
-  }),
   "junk-be-gone": fact({
     onlineBooking: "Yes",
     curbside: "No",

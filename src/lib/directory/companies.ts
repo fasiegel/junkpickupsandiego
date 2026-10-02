@@ -17,6 +17,7 @@ import { PROFILES } from "@/lib/directory/profiles";
  * - Junk and Trash Hauling San Diego, (619) 908-0333. Owner asked it removed.
  * - Fully Loaded Junk Removal, (619) 920-5303. Owner asked it removed.
  * - Pug's Junk Removal, (858) 504-3745. Owner asked it removed.
+ * - JDog Junk Removal & Hauling, (844) 438-5364 and (760) 291-8917. Franchise. Owner asked it removed.
  * Only list a hauler when the phone or address matches a public page.
  */
 
@@ -144,45 +145,6 @@ export const COMPANIES: Company[] = [
       "/haulers/freds-junk-removal-photo-4.jpg",
     ],
     featured: true,
-  },
-  {
-    slug: "jdog-junk-removal",
-    name: "JDog Junk Removal & Hauling",
-    url: "https://www.jdogjunkremoval.com/locations/california/san-diego-junk-removal/",
-    phone: "(844) 438-5364 · (760) 291-8917",
-    email: null,
-    address: null,
-    hours: null,
-    blurb:
-      "Veteran-owned, military-family franchise for homes and businesses. The San Diego location is run by brothers Ryan and Seamus Fitzpatrick and covers junk removal, light demolition, dumpster rentals, and cleanouts.",
-    specialties: ["Veteran-owned", "Dumpster rental", "Light demolition", "Cleanouts", "Commercial"],
-    needs: ["furniture", "appliances", "cleanout", "construction", "commercial", "north-county"],
-    coverage: [
-      "la-jolla",
-      "pacific-beach",
-      "chula-vista",
-      "el-cajon",
-      "la-mesa",
-      "escondido",
-      "oceanside",
-      "carlsbad",
-      "encinitas",
-      "poway",
-      "rancho-santa-fe",
-      "solana-beach",
-      "vista",
-      "san-marcos",
-      "cardiff",
-      "rancho-bernardo",
-      "del-mar",
-      "carmel-valley",
-      "university-city",
-    ],
-    images: [
-      "/haulers/jdog-trucks.jpeg",
-      "/haulers/jdog-trailer.jpeg",
-      "/haulers/jdog-logo.jpeg",
-    ],
   },
   {
     slug: "junk-be-gone",

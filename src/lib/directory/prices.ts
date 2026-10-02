@@ -92,7 +92,6 @@ export const LOAD_PRICES: PriceGroup[] = [
       { slug: "pick-ur-junk", note: "Quarter load", low: 120, high: 180 },
       { slug: "dmd-junk-removal", note: "Quarter trailer", low: 150, high: 175 },
       { slug: "flash-junk-removal", note: "Quarter load, same as their minimum", low: 160, high: 160 },
-      { slug: "jdog-junk-removal", note: "1/4 truck", low: 175, high: 250 },
       { slug: "fetch-junk", note: "Quarter load", low: 189, high: 189 },
       { slug: "the-junk-transporter", note: "Quarter dump truck", low: 220, high: 220 },
       { slug: "severin-hauling", note: "1/4 load", low: 249, high: 249 },
@@ -108,7 +107,6 @@ export const LOAD_PRICES: PriceGroup[] = [
     quotes: [
       { slug: "freds-junk-removal", note: "Half of a 20-yard truck, curbside to full-service", low: 299, high: 450 },
       { slug: "pick-ur-junk", note: "Half load", low: 200, high: 280 },
-      { slug: "jdog-junk-removal", note: "1/2 truck", low: 250, high: 350 },
       { slug: "fetch-junk", note: "Half load", low: 349, high: 349 },
       { slug: "severin-hauling", note: "1/2 load", low: 349, high: 349 },
       { slug: "the-junk-transporter", note: "Half dump truck", low: 350, high: 350 },
@@ -124,7 +122,6 @@ export const LOAD_PRICES: PriceGroup[] = [
     title: "Three-quarter truck",
     detail: "Fewer companies print this size.",
     quotes: [
-      { slug: "jdog-junk-removal", note: "3/4 truck", low: 350, high: 500 },
       { slug: "severin-hauling", note: "3/4 load", low: 429, high: 429 },
       { slug: "dmd-junk-removal", note: "Three-quarter trailer", low: 500, high: 525 },
       { slug: "monarch-junk-removal", note: "Three-quarter truck", low: 500, high: 600 },
@@ -141,7 +138,6 @@ export const LOAD_PRICES: PriceGroup[] = [
       { slug: "severin-hauling", note: "Full 12-cubic-yard load", low: 495, high: 495 },
       { slug: "the-junk-transporter", note: "Full dump truck", low: 550, high: 550 },
       { slug: "rancho-removal", note: "Full load, listed as $499–$699+", low: 499, high: 699 },
-      { slug: "jdog-junk-removal", note: "Full truck", low: 500, high: 700 },
       { slug: "fetch-junk", note: "Full load", low: 649, high: 649 },
       { slug: "dmd-junk-removal", note: "Full trailer", low: 700, high: 750 },
       { slug: "monarch-junk-removal", note: "Full truck", low: 650, high: 800 },
