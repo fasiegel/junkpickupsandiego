@@ -40,7 +40,7 @@ function Home() {
             Powered by {PARENT_NAME}
           </p>
           <h1 className="mt-4 max-w-3xl font-display text-5xl leading-[0.92] font-extrabold tracking-wide text-cream uppercase sm:text-7xl">
-            San Diego’s best information source for junk removal
+            San Diego Junk Removal - The best of the best!
           </h1>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-line">
             Find a local hauler with a great reputation that suits your needs and budget.
