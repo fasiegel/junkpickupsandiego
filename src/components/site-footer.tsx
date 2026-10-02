@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { MessageSquareText, Phone } from "lucide-react";
-import { TruckMark } from "@/components/truck-mark";
+import { SiteLogo } from "@/components/site-logo";
 import { Button } from "@/components/ui/button";
 import { PARENT_NAME, PHONE_DISPLAY, smsHref, telHref } from "@/lib/contact";
 
@@ -9,12 +9,7 @@ export function SiteFooter() {
     <footer className="bg-ink pb-20 text-cream sm:pb-0">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-3">
         <div>
-          <div className="flex items-center gap-2.5">
-            <TruckMark className="size-8 text-rust" />
-            <p className="font-display text-2xl font-bold tracking-wide uppercase">
-              Junk Pickup San Diego
-            </p>
-          </div>
+          <SiteLogo light />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-line">
             San Diego’s information source for local junk removal. A directory
             powered by {PARENT_NAME}. Listing a company is not an endorsement

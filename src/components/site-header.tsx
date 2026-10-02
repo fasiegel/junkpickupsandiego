@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { TruckMark } from "@/components/truck-mark";
+import { SiteLogo } from "@/components/site-logo";
 import { PARENT_NAME } from "@/lib/contact";
 
 export function SiteHeader() {
@@ -10,16 +10,8 @@ export function SiteHeader() {
       </p>
       <div className="border-b border-line/80 bg-sand/90 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-          <Link to="/" className="flex min-h-11 items-center gap-2.5 text-ink">
-            <TruckMark className="size-8 text-rust" />
-            <span className="leading-none">
-              <span className="font-display text-lg font-bold tracking-wide uppercase">
-                Junk Pickup
-              </span>
-              <span className="block font-sans text-[0.65rem] font-medium tracking-[0.14em] text-taupe uppercase">
-                San Diego
-              </span>
-            </span>
+          <Link to="/" className="flex min-h-11 items-center text-ink" aria-label="Local junk only, home">
+            <SiteLogo />
           </Link>
 
           <nav className="flex items-center gap-6" aria-label="Primary">
