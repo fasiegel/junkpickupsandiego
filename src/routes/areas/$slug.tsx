@@ -20,7 +20,7 @@ export const Route = createFileRoute("/areas/$slug")({
     return {
       meta: [
         {
-          title: `${loaderData.area.name} Junk Removal (${zips}) | Junk Removal Pick Up - San Diego Junk Removal Professionals`,
+          title: `${loaderData.area.name} Junk Removal (${zips}) | San Diego Junk Removal Professionals`,
         },
         {
           name: "description",

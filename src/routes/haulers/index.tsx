@@ -10,7 +10,7 @@ import { directoryNote, orderCompanies, type DirectoryMode } from "@/lib/directo
 export const Route = createFileRoute("/haulers/")({
   head: () => ({
     meta: [
-      { title: "San Diego Junk Removal Companies | Junk Removal Pick Up - San Diego Junk Removal Professionals" },
+      { title: "San Diego Junk Removal Companies | San Diego Junk Removal Professionals" },
       {
         name: "description",
         content:

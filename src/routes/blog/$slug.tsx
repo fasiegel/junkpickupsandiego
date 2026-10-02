@@ -12,7 +12,7 @@ export const Route = createFileRoute("/blog/$slug")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: loaderData ? `${loaderData.title} | Junk Removal Pick Up - San Diego Junk Removal Professionals` : "Blog" },
+      { title: loaderData ? `${loaderData.title} | San Diego Junk Removal Professionals` : "Blog" },
       { name: "description", content: loaderData?.description ?? "" },
     ],
   }),

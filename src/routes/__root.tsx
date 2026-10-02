@@ -4,9 +4,9 @@ import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { SiteShell } from "@/components/site-shell";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Junk Removal Pick Up - San Diego Junk Removal Professionals";
+const APP_NAME = "San Diego Junk Removal Professionals";
 const DESCRIPTION =
-  "Junk removal pick up from San Diego junk removal professionals. Compare local haulers by neighborhood and ZIP. Powered by Fred’s Junk Removal.";
+  "Compare local San Diego junk removal professionals by neighborhood and ZIP. Powered by Fred’s Junk Removal.";
 
 export const Route = createRootRoute({
   head: () => ({

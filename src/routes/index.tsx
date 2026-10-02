@@ -12,11 +12,11 @@ import { directoryNote, orderCompanies, type DirectoryMode } from "@/lib/directo
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Junk Removal Pick Up - San Diego Junk Removal Professionals" },
+      { title: "San Diego Junk Removal Professionals" },
       {
         name: "description",
         content:
-          "Junk removal pick up from San Diego junk removal professionals. Compare local haulers by neighborhood and ZIP. Powered by Fred’s Junk Removal.",
+          "Compare local San Diego junk removal professionals by neighborhood and ZIP. Powered by Fred’s Junk Removal.",
       },
     ],
   }),

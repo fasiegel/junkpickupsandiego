@@ -22,7 +22,7 @@ export const Route = createFileRoute("/haulers/$slug")({
     if (!loaderData) return {};
     return {
       meta: [
-        { title: `${loaderData.company.name} | Junk Removal Pick Up - San Diego Junk Removal Professionals` },
+        { title: `${loaderData.company.name} | San Diego Junk Removal Professionals` },
         { name: "description", content: loaderData.company.blurb },
       ],
     };

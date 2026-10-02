@@ -11,7 +11,7 @@ export function SiteFooter() {
         <div>
           <SiteLogo light />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-line">
-            Junk removal pick up from San Diego junk removal professionals.
+            Local San Diego junk removal professionals.
             Powered by {PARENT_NAME}. Listing a company is not an endorsement
             except where Fred’s is marked featured.
           </p>
@@ -71,8 +71,8 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-ink-soft">
         <p className="mx-auto max-w-6xl px-4 py-5 text-xs text-fill sm:px-6">
-          © {new Date().getFullYear()} {PARENT_NAME}. Junk Removal Pick Up lists San Diego
-          junk removal professionals. Photos and phone numbers come from each
+          © {new Date().getFullYear()} {PARENT_NAME}. San Diego Junk Removal Professionals.
+          Photos and phone numbers come from each
           company’s own website when we could read them.
         </p>
       </div>
