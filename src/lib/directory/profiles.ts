@@ -872,7 +872,7 @@ export const PROFILES: Record<
   "junk-n-haul": {
     details: [
       "A Yahoo listing for Junk N Haul at (619) 396-1559 places the business in San Diego 92111. Hours are Monday–Saturday 7 AM–6 PM, Sunday closed. The description says junk removal and landscape work, residential and commercial.",
-      "That listing mirrors Yelp at 5.0 from 41 reviews. Reviews name Emmanuel. The Yelp page URL was not confirmed, so it is not linked. Colorado Springs and Castle Rock businesses named Junk-N-Haul are different companies.",
+      "Yelp search results for Junk N Haul in San Diego show 5.0 from 40 reviews, and reviews name Emmanuel. The Yelp page URL was not confirmed, so it is not linked. Colorado Springs and Castle Rock businesses named Junk-N-Haul are different companies.",
     ],
     links: [],
   },

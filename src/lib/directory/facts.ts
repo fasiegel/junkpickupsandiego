@@ -685,7 +685,7 @@ export const FACTS: Record<string, ListingFacts> = {
     publishedPrices: "No",
   }),
   "junk-n-haul": fact({
-    yelpReviews: "41 (5.0 on Yelp)",
+    yelpReviews: "40 (5.0 on Yelp)",
     onlineBooking: "Not listed",
     curbside: "Not listed",
     publishedPrices: "No",

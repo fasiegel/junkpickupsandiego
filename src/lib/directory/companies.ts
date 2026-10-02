@@ -1387,7 +1387,7 @@ export const COMPANIES: Company[] = [
     address: "San Diego, CA 92111",
     hours: "Mon–Sat 7:00 AM – 6:00 PM. Sunday closed.",
     blurb:
-      "Kearny Mesa hauler. Yelp is 5.0 from 41 reviews, and reviews name Emmanuel. Junk removal and landscape work, residential and commercial. No website was confirmed for this phone.",
+      "Kearny Mesa hauler. Yelp is 5.0 from 40 reviews, and reviews name Emmanuel. Junk removal and landscape work, residential and commercial. No website was confirmed for this phone.",
     specialties: ["Junk removal", "Landscaping"],
     needs: ["furniture", "construction", "cleanout"],
     coverage: ["kearny-mesa"],
