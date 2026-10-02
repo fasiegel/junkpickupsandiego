@@ -1400,9 +1400,9 @@ export const COMPANIES: Company[] = [
     phone: "(619) 655-8280",
     email: "Lowcosthaul20@outlook.com",
     address: "Lakeside, CA 92040",
-    hours: null,
+    hours: "Mon–Fri 7:00 AM – 5:00 PM; Sat 7:00 AM – 2:00 PM. Sunday closed.",
     blurb:
-      "Family-owned Lakeside hauler. The site says they serve San Diego County, with free estimates and same-day service when available. Yelp for this name is 5.0 from 84 reviews. Reviews name Juan.",
+      "Family-owned Lakeside hauler. The site says they serve San Diego County, with free estimates and same-day service when available. Google is 5.0 from 7 reviews. Yelp is 5.0 from 87 reviews. Reviews name Juan.",
     specialties: ["Family-owned", "Same-day", "Demolition", "Yard cleanup"],
     needs: ["furniture", "appliances", "construction", "cleanout", "same-day"],
     coverage: "county",

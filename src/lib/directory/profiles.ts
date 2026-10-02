@@ -879,9 +879,12 @@ export const PROFILES: Record<
   "low-cost-hauling": {
     details: [
       "lowcosthaul.com lists (619) 655-8280 and Lowcosthaul20@outlook.com. The site says the company is family-owned, serves San Diego County, and offers free estimates and same-day service when available. Named work includes junk removal, demolition, yard cleanup, tree work, appliances, trailer rental, move-out cleanouts, and hot tub breakdowns.",
-      "Yelp search results for Low Cost Hauling in San Diego show 5.0 from 84 reviews, and the business text matches the site slogan, “making the impossible possible.” Reviews on the site name Juan. A Google Maps star rating was not confirmed. The Yelp URL was not confirmed, so it is not linked.",
+      "Yelp lists Low Cost Hauling in Lakeside at 5.0 from 87 reviews. The page uses the same slogan as the site, “making the impossible possible,” and hours are Monday–Friday 7 AM–5 PM, Saturday 7 AM–2 PM, Sunday closed. Reviews name Juan. Google is 5.0 from 7 reviews. A Maps link for that count was not found, so it is not linked.",
     ],
-    links: [{ label: "Website", href: "https://www.lowcosthaul.com/" }],
+    links: [
+      { label: "Website", href: "https://www.lowcosthaul.com/" },
+      { label: "Yelp", href: "https://www.yelp.com/biz/low-cost-hauling-lakeside" },
+    ],
   },
   "franks-demo-and-hauling": {
     details: [

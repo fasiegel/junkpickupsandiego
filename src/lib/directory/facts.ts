@@ -691,7 +691,10 @@ export const FACTS: Record<string, ListingFacts> = {
     publishedPrices: "No",
   }),
   "low-cost-hauling": fact({
-    yelpReviews: "84 (5.0 on Yelp)",
+    googleRating: "5.0",
+    googleReviews: "7 on Google",
+    yelpUrl: "https://www.yelp.com/biz/low-cost-hauling-lakeside",
+    yelpReviews: "87 (5.0 on Yelp)",
     onlineBooking: "Yes — a booking form is on the site",
     curbside: "Not listed",
     publishedPrices: "No",
