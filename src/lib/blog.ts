@@ -4,6 +4,7 @@ export type BlogPost = {
   description: string;
   date: string;
   paragraphs: string[];
+  figures?: { after: number; src: string; alt: string }[];
 };
 
 export const POSTS: BlogPost[] = [
@@ -20,6 +21,18 @@ export const POSTS: BlogPost[] = [
       "The same method covers the truck. A quarter truck averages $232. A half truck averages $386. Three-quarters of a truck averages $525. A full truck of household junk averages $694. Where a hauler also states cubic yards, the price per cubic yard averages $44. Stairs, extra weight, concrete, and yard waste can move the number. Matching the pile to a size is how junk removal service prices stay fair. A full-truck price for two chairs is not a deal. A single-item price for a packed garage is not one either.",
       "To find the best junk removal service for your street, open the neighborhood page and read who says they haul there. Then open two or three listings. Check the phone, the hours, and any junk removal service prices they posted. Text a photo to the crews that fit the job and ask them to name the price before they roll. The best junk removal service is the local one that states the price, arrives when it said it would, and takes the pile you pointed at.",
       "Fred’s Junk Removal is where this guide starts, because the directory is his and the posted prices are part of how he works. The rest of the collection is here for the same reason: local small businesses across San Diego, from the beach neighborhoods through the central city, East County, and the South Bay. Compare the average costs, then hire the hauler who actually covers your block. That is how junk removal service prices and a local list work together.",
+    ],
+    figures: [
+      {
+        after: 2,
+        src: "/images/blog-item-prices.png",
+        alt: "Average prices for a single item and the haulers who published them",
+      },
+      {
+        after: 3,
+        src: "/images/blog-truck-prices.png",
+        alt: "Average prices for a quarter, half, three-quarter, and full truck",
+      },
     ],
   },
 ];

@@ -37,8 +37,20 @@ function BlogPostPage() {
       <FredBlogGraphic />
       <article className="py-12">
         <div className="mx-auto max-w-3xl space-y-5 px-4 text-base leading-relaxed text-ink-soft sm:px-6">
-          {post.paragraphs.map((paragraph) => (
-            <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+          {post.paragraphs.map((paragraph, index) => (
+            <div key={paragraph.slice(0, 40)} className="space-y-5">
+              <p>{paragraph}</p>
+              {post.figures
+                ?.filter((figure) => figure.after === index)
+                .map((figure) => (
+                  <img
+                    key={figure.src}
+                    src={figure.src}
+                    alt={figure.alt}
+                    className="w-full rounded-xl"
+                  />
+                ))}
+            </div>
           ))}
           <p>
             <Link to="/prices" className="font-medium text-rust hover:underline">
