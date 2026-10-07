@@ -12,6 +12,7 @@ import {
   type Company,
 } from "@/lib/directory/companies";
 import { yearsInBusiness } from "@/lib/directory/order";
+import { listingSocialLinks } from "@/lib/directory/social";
 import { ITEM_PRICES, YARD_PRICES, moneyRange } from "@/lib/directory/prices";
 
 export const Route = createFileRoute("/haulers/$slug")({
@@ -31,6 +32,30 @@ export const Route = createFileRoute("/haulers/$slug")({
   },
   component: HaulerPage,
 });
+
+function SocialLinks({ company }: { company: Company }) {
+  const links = listingSocialLinks(company.slug, company.facts);
+  if (links.length === 0) return null;
+  return (
+    <div className="mt-4">
+      <p className="text-xs font-semibold tracking-wide text-taupe uppercase">Social</p>
+      <ul className="mt-2 flex flex-wrap gap-2">
+        {links.map((link) => (
+          <li key={link.label}>
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 items-center rounded-full bg-ink px-4 text-sm font-medium text-cream hover:bg-ink-soft"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 function ListingHighlights({ company }: { company: Company }) {
   const facts = company.facts;
@@ -227,6 +252,7 @@ function HaulerPage() {
       <section className="border-b border-line bg-sand py-8">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <ListingHighlights company={company} />
+          <SocialLinks company={company} />
         </div>
       </section>
       <section className="py-12">
